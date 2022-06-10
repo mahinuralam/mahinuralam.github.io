@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="og:title" content="Ann's week3_hw1">
+    <meta name="og:description" content="這是 Ann 的第一個網頁切版作業">   
+    <title>Ann's week3_hw1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .navbar {
+            position: fixed;
+            background: #1F2835;
+            padding: 13px 30px;
+            width: 100%;
+
+        }
+
+        :hover {
+            transition: all 0.3s ease-out;
+        }
+
+        .navbar__name {
+            display: inline-block;
+            margin: 0 5px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar__menu {
+            display: inline-block;
+        }
+
+        .navbar__menu a {
+            display: inline-block;
+            margin: 0 5px;
+            color: grey;
+
+            text-decoration: none;
+        }
+
+        .header {
+            background: #E9FAFF;
+            padding: 100px 150px 50px 150px;
+
+        }
+
+        .header__title {
+            margin: 0px;
+            padding: 0px;
+            font-size: 72px;
+            font-weight: normal;
+        }
+
+        a.header__button {
+            display: block;
+            background: #1F7EF2;
+            margin: 10px 0px;
+            border: 0;
+            border-radius: 5px;
+            padding: 15px;
+            width: 150px;
+            color: white;
+            font-size: 20px;
+        }
+
+        a.header__button:hover {
+            background: blue;
+        }
+
+        .content {
+            margin: 0 100px;
+            padding: 30px 50px;
+        }
+
+
+        .content__pack {
+            margin: 20 0px;
+            display: block;
+        }
+
+        .content__title {
+            margin: 0;
+            font-size: 35px;
+            font-weight: normal;
+        }
+
+        .content__capture {
+            margin: 15px 0;
+        }
+
+        a.content__button {
+            display: block;
+            background: #939393;
+            margin: 15px 0;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px 15px;
+            width: 120px;
+            height: 18px;
+            color: white;
+        }
+
+        a.content__button:hover {
+            background: #5c5858
+        }
+
+        footer {
+            border-top-color: grey;
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+
+        @media screen and (max-width: 900px) {
+            .header {
+                padding: 100px 50px 50px 50px;
+            }
+
+            .content {
+                margin: 0px;
+            }
+
+            footer {
+                margin: 0px 50px;
+                padding: 20px 0px;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .content {
+                display: flex;
+            }
+
+            .content .content__pack:nth-child(2) {
+                margin: 0 15px;
+            }
+
+            footer {
+                margin: 0px 150px;
+                padding: 20px 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__name">Navbar</div>
+        <div class="navbar__menu">
+            <a href="">Home</a>
+            <a href="">Link</a>
+        </div>
+    </nav>
+    <div class="header">
+        <h1 class="header__title">Hello, World!</h1>
+        <p class="header__content">This is a template for a simple marketing or informational website. It includes a
+            large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to
+            create something more unique.</p>
+        <a class="header__button"> Learn More >> </a>
+    </div>
+
+    <div class="content">
+        <div class="content__pack">
+            <h1 class="content__title">Heading</h1>
+            <p class="content__capture">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore debitis magni dolor excepturi
+                est facere deleniti rerum eaque modi voluptate, numquam fugiat vel optio earum quisquam consequatur
+                delectus illo.
+            </p>
+            <a class="content__button"> View details >>> </a>
+        </div>
+        <div class="content__pack">
+            <h1 class="content__title">Heading</h1>
+            <p class="content__capture">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore debitis magni dolor excepturi
+                est facere deleniti rerum eaque modi voluptate, numquam fugiat vel optio earum quisquam consequatur
+                delectus illo.
+            </p>
+            <a class="content__button"> View details >>> </a>
+        </div>
+        <div class="content__pack">
+            <h1 class="content__title">Heading</h1>
+            <p class="content__capture">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore debitis magni dolor excepturi
+                est facere deleniti rerum eaque modi voluptate, numquam fugiat vel optio earum quisquam consequatur
+                delectus illo.
+            </p>
+            <a class="content__button"> View details >>> </a>
+        </div>
+    </div>
+
+    <footer>© Company 2017-2018</footer>
+
+</body>
+
+</html>

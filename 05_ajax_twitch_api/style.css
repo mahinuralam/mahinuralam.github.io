@@ -1,0 +1,108 @@
+.wallpaper{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(./wallpaper.png);
+    height: 100%;
+    width: 100%;
+    z-index: -50;
+}
+
+.container{
+    margin: 0 auto;    
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    align-Items: center;
+    justify-content: space-between;
+    
+}
+
+.Wrapper{
+    position: relative;
+    display: block;
+    width: 320px;    
+    background:	rgb(255,255,255, .5);
+    margin-top: 50px;
+}
+
+.live{
+    height: 180px;
+}
+
+.liveThumb{
+    height: 180px;
+    width: 320px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.viewerAndDate{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 13px;
+    background:	rgb(255,255,255, .5);
+}
+
+.viewers{
+    display: inline-block;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    padding: 5px 3px;
+}
+
+.date{
+    display: inline-block;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    padding: 5px 3px;
+    
+}
+
+.info{
+    position: relative;    
+    display: flex;
+    width: 320px;
+    padding-top: 5px;
+}
+
+.groupLogo{
+    display: inline-block;
+}
+
+.logo{
+    height: 45px;
+    width: 45px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 5px;
+}
+
+.info_right{
+    display: inline-block;
+    position: absolute;
+    left: 55px;
+    width: 80%;
+    
+}
+
+.status{
+    font-weight: bold;
+    font-size: 16px;
+    height: 1.2em;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;  // 以...替代並隱藏超過長度的字元    
+}
+
+.displayname, .gamename{
+    font-size: 12px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;  // 以...替代並隱藏超過長度的字元
+
+}

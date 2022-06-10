@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ann's week4_hw2_googleform</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="./script.js"></script>
+
+</head>
+
+<body>
+  <div class="back">
+    <div class="back__upper"></div>
+    <div class="back__down"></div>
+  </div>
+
+  <div class="content">
+    <div class="content__Wrapper">
+      <div class="bannerLine"></div>
+      <!-- 水平橘線 -->
+      <div class="content__WrapperInside">
+        <div class="bannerTitle">程式導師實驗計畫第二期報名表單</div>
+        <div class="bannerContent">
+          <p>詳情請參考：<a href="https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b">https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b</a>
+          </p>
+          <p>填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+        </div>
+        <div class="Note">
+          *必填
+        </div>
+
+        <form class="form__Wrapper" method="GET">
+          <div class="form">
+            <label class="form__label" for="email">電子郵件地址 <span> *</span></label>
+            <p class="form__label comment"></p>
+            <input class="form__input" type="email" id="email" name="student_email" placeholder="你的電子郵件">
+            <div class="reminder"></div>
+          </div>
+
+          <div class="form">
+            <label class="form__label" for="nickname">暱稱 <span> *</span></label>
+            <p class="form__label comment">該如何稱呼你</p>
+            <input class="form__input" type="text" id="nickname" name="student_nickname" placeholder="您的回答">
+            <div class="reminder"></div>
+          </div>
+
+          <div class="form">
+            <label class=" form__label" for="radioSet">報名類型 <span> *</span></label>
+            <p class="form__label comment"></p>
+            <div class="radioSet" id="radioSet">
+              <div class="radiotype">
+                <input class="radio__input" type="radio" name="student_type" id="beginner" value="從零到一基礎班">
+                <label class="radio__label" for="beginner">從零到一基礎班（一個月後開始收保證金 3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）</label>
+              </div>
+              <div class="radiotype">
+                <input class="radio__input" type="radio" name="student_type" id="advanced" value="在職工程師加強班">
+                <label class="radio__label" for="advanced">在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）</label>
+              </div>
+            </div>
+            <div class="reminder"></div>
+          </div>
+
+          <div class="form">
+            <label class="form__label" for="job">現在的職業 <span> *</span></label>
+            <p class="form__label comment">範例：學生、前端工程師、待業中、業務</p>
+            <input class="form__input long" type="text" id="job" name="student_job" placeholder="您的回答">
+            <div class="reminder"></div>
+          </div>
+
+          <div class="form">
+            <label class="form__label" for="experience">是否有程式相關背景？ <span> *</span></label>
+            <p class="form__label comment">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</p>
+            <input class="form__input long" type="text" id="experience" name="student_experience" placeholder="您的回答">
+            <div class="reminder"></div>
+          </div>
+
+          <div class="form">
+            <label class="form__label" for="othercomments">其他</label>
+            <p class="form__label comment">任何你想說的</p>
+            <input class="form__input long" type="text" id="othercomments" name="other_comments" placeholder="您的回答">
+          </div>
+
+          <div class="form">
+            <button id="submitall" class="form__submit" type="submit">提交</button>
+          </div>
+
+          <div class="form">
+            <p class="form__footer">請勿利用 Google 表單送出密碼。</p>
+          </div>
+
+        </form>
+
+
+      </div>
+
+    </div>
+    <div class="content__footer">
+      <div class="statement">Qoogle 並未認可或建立這項內容。
+        <span>檢舉濫用情形-</span>
+        <span>服務條款-</span>
+        <span>其他條款-</span>
+      </div>
+      <div class="logo">Qoogle 表單(仿作)</div>
+    </div>
+  </div>
+
+  <div class="questionBalloon">
+    <img src="./questionballoon.png" alt="questionBalloonMark">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="og:title" content="Ann's week3_hw2">
+    <meta name="og:description" content="模仿 medium 頁面排版，內容是無意義的中文亂數假文">
+    <title>Ann's week3_hw2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .clap {
+            position: fixed;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 100px;
+            left: 20px;
+            border-radius: 100%;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .paragraph {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .paragraph__title {
+            padding: 30px 0;
+        }
+
+
+
+        @media screen and (min-width: 900px) {
+            .paragraph {
+                max-width: 900px;
+                padding: 0 100px;
+            }
+
+            .paragraph__title {
+                font-size: 42px;
+            }
+
+            .paragraph__content {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .clap {
+                display: none;
+            }
+
+            .paragraph {
+                max-width: 100%;
+                padding: 0 30px;
+            }
+
+            .paragraph__title {
+                font-size: 32px;
+            }
+
+            .paragraph__content {
+                font-size: 16px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="clap">
+        <div class="clap__number">501</div>
+        <div class="clap__handEmoji">&#x1F44F</div>
+    </div>
+
+    <div class="paragraph">
+        <div class="paragraph__title">模仿 medium 排版</div>
+        <div class="paragraph__content">
+            <p>
+                消因投馬以是星跟基下吃。多部人，子兩的心個達對示術，行於求不；一送再文……中試合方發前於對唱成學民隨全做向甚地，到實成說級達有用燈海員象真也中內顧是李口個回然得主因法兩用巴教走不；麗心子把故朋可家物同單的友人故其：斯口源業女了然大的回告動土化自則當？
+                <br><br>
+                出放走是近者會，這完國坐驚醫龍研三細過在望了自體，了如院；民親布了也程手物突員。由多害美：定大愛人算麼只城確打灣觀管改的吸一續地一夫顧邊爭它爭導於口在改單老當能山很是畫委出的居畫別她術起口加一旅，廣們界然成令讓的系天人同的家水大是的。
+                <br><br>
+                有同此山根國從中計個寫成念會腦還做只媽士天，小電地一了任男讓會重眼藝常車星開後無主高了打樂叫就隨紅不資麼海弟！個苦大雨星牛意才然我爾可生他富這，門灣醫說構路石，我聽斯面年懷習實門，回有人一管不。
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

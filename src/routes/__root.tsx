@@ -48,6 +48,10 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Md Mahinur Alam — Researcher & Programmer" },
+      { name: "description", content: "Recreates Google Sites into modern, dynamic academic portfolios with custom styling and SEO-optimized routes." },
+      { property: "og:description", content: "Recreates Google Sites into modern, dynamic academic portfolios with custom styling and SEO-optimized routes." },
+      { name: "twitter:description", content: "Recreates Google Sites into modern, dynamic academic portfolios with custom styling and SEO-optimized routes." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

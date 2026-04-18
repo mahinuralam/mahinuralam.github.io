@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github, Database } from "lucide-react";
 
 export const Route = createFileRoute("/publications")({
   head: () => ({
@@ -26,7 +26,12 @@ type Pub = {
   title: string;
   venue: string;
   meta?: string;
+  /** Paper / publisher link */
   link?: string;
+  /** GitHub repository link */
+  code?: string;
+  /** Dataset link */
+  dataset?: string;
 };
 
 const JOURNALS: Pub[] = [

@@ -8,9 +8,272 @@
       name="description"
       content="PhD student at Georgia Southern University. Research in Machine/Deep Learning, Computer Vision, Federated Learning, LLMs, and Security & Privacy."
     />
+    <style>
+      :root {
+        --bg: #f8f6f1;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #b38b2d;
+        --border: #e5e7eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .container { width: min(1100px, 92vw); margin: 0 auto; }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        background: color-mix(in oklab, white 85%, transparent);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav { display: flex; gap: 10px; flex-wrap: wrap; padding: 12px 0; }
+      .nav a {
+        text-decoration: none; color: var(--text); font-size: 14px;
+        border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; background: white;
+      }
+      .hero { padding: 60px 0 34px; }
+      h1,h2,h3 { line-height: 1.2; margin: 0; }
+      h1 { font-size: clamp(2rem, 4vw, 3rem); }
+      h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 14px; }
+      section { padding: 42px 0; border-top: 1px solid var(--border); }
+      p.lead { max-width: 760px; color: var(--muted); }
+      .grid { display: grid; gap: 14px; }
+      .grid.two { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .grid.three { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+      .tag { display:inline-block; font-size:12px; color:#7c5f1a; background:#fff5d8; padding:2px 8px; border-radius:999px; margin-bottom:8px; }
+      ul { margin: 8px 0 0; padding-left: 18px; }
+      li { margin-bottom: 6px; }
+      .muted { color: var(--muted); }
+      .kpi { display:flex; gap:16px; flex-wrap:wrap; margin-top:14px; }
+      .kpi span { background:white; border:1px solid var(--border); border-radius:999px; padding:8px 12px; font-size:13px; }
+      footer { padding: 36px 0 50px; border-top: 1px solid var(--border); color: var(--muted); }
+      a { color: #0f4c81; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header>
+      <div class="container nav">
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#moments">Moments</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home" class="hero" style="border-top:0;">
+        <p class="tag">Researcher · PhD Student</p>
+        <h1>Hi, I'm Md Mahinur Alam.</h1>
+        <p class="lead">
+          PhD student at Georgia Southern University. I research Machine and Deep Learning,
+          Computer Vision, Federated Learning, LLMs, and Security & Privacy — bridging theory and
+          real industrial systems.
+        </p>
+        <div class="kpi">
+          <span>Graduate Research Assistant — ARMOR Lab, GSU</span>
+          <span>MEng (KIT, South Korea) GPA 4.44/4.50</span>
+          <span>1600+ DSA problems solved</span>
+          <span>IEEE Access · ICT Express · ICC · ICTC · ICCIT</span>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <p class="lead">A timeline of research and engineering work.</p>
+        <div class="grid two">
+          <article class="card">
+            <p class="tag">Present</p>
+            <h3>Graduate Research Assistant</h3>
+            <p class="muted">ARMOR Lab, Georgia Southern University</p>
+            <ul>
+              <li>Depth estimation pipelines for hazard detection in autonomous vehicles.</li>
+              <li>Microbes & disease analysis using BlueBoat water sample data.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="tag">Mar 2024 – Dec 2025</p>
+            <h3>Graduate Research Assistant</h3>
+            <p class="muted">Kumoh National Institute of Technology, South Korea</p>
+            <ul>
+              <li>Real-time multimodal hazard detection for autonomous driving.</li>
+              <li>Digital twin warehouse optimization with Omniverse Isaac Sim + FlexSim.</li>
+              <li>Edge-device daycare face/action recognition (98% / 97% accuracy).</li>
+              <li>Industrial anomaly detection with diffusion-augmented training.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="tag">Oct 2023 – Dec 2023</p>
+            <h3>Data Scientist</h3>
+            <p class="muted">AIMS Lab, United International University, Bangladesh</p>
+            <ul>
+              <li>Analyzed heart failure, kidney disease, and stroke data from rural regions.</li>
+              <li>Identified high-impact regions and prevalence factors.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="tag">Sep 2022 – Sep 2023</p>
+            <h3>Software Engineer (Python)</h3>
+            <p class="muted">Divine IT Ltd., Bangladesh</p>
+            <ul>
+              <li>Built ERP and ATS features across APIs, forms, workflows, and portals.</li>
+              <li>Improved performance via parallelization and database optimization.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="lead">Selected journals and conference papers.</p>
+        <div class="grid two">
+          <article class="card">
+            <h3>Journals</h3>
+            <ul>
+              <li>Stable Diffusion-Augmented Industrial Anomaly Detection — <b>IEEE Access</b>.</li>
+              <li>TMNet: Multimodal Emotion Recognition via EEG + Speech — <b>ICT Express</b>.</li>
+              <li>AI-Enhanced Digital Twin for Warehouse Logistics — <b>ICT Express</b>.</li>
+              <li>FMACNN for Artificial Image Detection — <b>JISA</b> (Accepted).</li>
+              <li>Blockchain-Aided IDS in Marine Tactical Network — <b>KICS Journal</b>.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>International Conferences</h3>
+            <ul>
+              <li>Digital Twin-Driven Semi-Supervised Knowledge Distillation — <b>IEEE ICTC 2025</b>.</li>
+              <li>Federated Semi-Supervised Digital Twin for HMI — <b>IEEE ICTC 2024</b>.</li>
+              <li>Healthcare Data Governance with Hyperledger Fabric — <b>IEEE ICCIT 2023</b>.</li>
+              <li>RealAIGI Dataset for Real vs AI-Generated Images — <b>IEEE ICMIC 2025</b>.</li>
+              <li>BLIND-Twin (Blockchain + LLM CDS) — <b>IEEE ICC 2025</b>.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Domestic Conferences (KICS)</h3>
+            <ul>
+              <li>Multi-modal Real-time Hazard Detection for Autonomous Driving — Fall 2025.</li>
+              <li>Zero-Day / Zero-Touch IDS with Generative AI + LLM — Summer 2025.</li>
+              <li>DCFL-Chain for Smart Factory Energy Prediction — Fall 2024 (<b>Best Paper</b>).</li>
+              <li>Digital Twin Smart Warehouse Monitoring — Fall 2025.</li>
+              <li>Digital Twin FL Intrusion Detection under Adversarial Conditions — ICTC 2025.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Profiles & Resources</h3>
+            <ul>
+              <li><a target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=6i6cCDwAAAAJ">Google Scholar</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://github.com/mahinuralam">GitHub</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://ieeexplore.ieee.org/document/11361039">IEEE Access paper</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">ICT Express paper</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>Software Development</h3>
+            <ul>
+              <li>Python, C++, JavaScript, SQL</li>
+              <li>DRF, FastAPI, Express.js, REST APIs</li>
+              <li>MySQL, SQLite, NoSQL</li>
+              <li>Docker, Linux, AWS, Postman</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Data Science & AI</h3>
+            <ul>
+              <li>PyTorch, TensorFlow, Scikit-Learn, Keras</li>
+              <li>Pandas, NumPy, OpenCV, Matplotlib</li>
+              <li>LLMs, Generative AI, Diffusion Models</li>
+              <li>Computer Vision, Federated Learning, IDS</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Blockchain</h3>
+            <ul>
+              <li>Solidity, Rust, JavaScript</li>
+              <li>Hyperledger Fabric / Besu / Caliper</li>
+              <li>Web3.js, IPFS, MetaMask</li>
+              <li>Cryptography, Zero Knowledge Proofs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards">
+        <h2>Awards & Achievements</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>Research Awards</h3>
+            <ul>
+              <li>Outstanding Graduate Thesis Award — Spring 2026.</li>
+              <li>KICS Fall 2024 Energy Contest — 2× Best Paper.</li>
+              <li>KICS Summer Conference 2025 — Best Paper Award.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Programming Contests</h3>
+            <ul>
+              <li>Champion — IUBAT Intra University Programming Contest (2021, 2022).</li>
+              <li>ACM ICPC Asia Dhaka Regional Contest Finalist (2021).</li>
+              <li>Best Fresher Programmer (2019).</li>
+              <li>First Runner-up (2020), Second Runner-up at UITS (2022).</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Online & Mentorship</h3>
+            <ul>
+              <li>Solved 1600+ DSA problems.</li>
+              <li>Flower Finance LLM leaderboard rank: top 5 (Qwen2.5-7B fine-tuning).</li>
+              <li>Mentor for Data Structures, Algorithms & Programming at IUBAT.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Supervised ML (Regression & Classification)</li>
+              <li>Intro/Intermediate Machine Learning, Data Cleaning</li>
+              <li>Introduction to Solidity, Blockchain with Rust on Substrate</li>
+              <li>IELTS — 7.0 (All modules)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="moments">
+        <h2>Moments</h2>
+        <p class="lead">Conferences, contests, and milestone snapshots.</p>
+        <div class="grid three">
+          <article class="card"><h3>KICS Fall 2025</h3><p class="muted">Gyeongju, South Korea</p></article>
+          <article class="card"><h3>ICTC 2025</h3><p class="muted">Jeju Island, South Korea</p></article>
+          <article class="card"><h3>ICMIC 2025</h3><p class="muted">Cebu, Philippines</p></article>
+          <article class="card"><h3>KICS Fall 2024</h3><p class="muted">Jeju + Gyeongju, South Korea</p></article>
+          <article class="card"><h3>ACM ICPC Asia Dhaka Regional</h3><p class="muted">Bangladesh</p></article>
+          <article class="card"><h3>Graduation Day</h3><p class="muted">IUBAT, Dhaka, Bangladesh</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Md Mahinur Alam · Single-file GitHub Pages build.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

@@ -39,6 +39,8 @@ const JOURNALS: Pub[] = [
     authors: "Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion",
     venue: "IEEE Access",
+    link: "https://ieeexplore.ieee.org/document/11361039",
+    code: "https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-",
   },
   {
     authors: "Md Mahinur Alam, Mohamed A. Dini, Taesoo Jun",
@@ -46,23 +48,28 @@ const JOURNALS: Pub[] = [
     venue: "ICT Express",
     meta: "SCIE · IF 4.2 · Q1",
     link: "https://www.sciencedirect.com/science/article/pii/S2405959525000517",
+    code: "https://github.com/mahinuralam/TMNet",
   },
   {
     authors: "Md Mahinur Alam, Reimbaev Azizbek Nurkat Ugli, Kanita Jerin Tanha, Taesoo Jun",
     title: "AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions",
     venue: "ICT Express",
     meta: "SCIE · IF 4.2 · Q1",
+    link: "https://www.sciencedirect.com/science/article/pii/S2405959526000093",
   },
   {
     authors: "Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "FMACNN: Federated Multi-Attention CNN Framework for Artificial Image Detection",
     venue: "Journal of Information Security and Applications",
     meta: "SCIE · IF 3.7 · Q2 · Accepted",
+    code: "https://github.com/mahinuralam/FMACNN",
+    dataset: "https://dx.doi.org/10.21227/0da4-g645",
   },
   {
     authors: "Md Raihan Subhan, Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "Blockchain-Aided Intrusion Detection in Marine Tactical Network Using Reinforcement Learning",
     venue: "The Journal of the Korean Institute of Communications and Information Sciences",
+    link: "https://journal.kics.or.kr/digital-library/105210",
   },
   {
     authors: "M. A. I. Khan, Md Mahinur Alam, M. S. Islam, A. S. Mahmoud, T. R. Sheltami",
@@ -89,6 +96,7 @@ const INT_CONFERENCES: Pub[] = [
     authors: "Md Mahinur Alam, Kanita Jerin Tanha, Taesoo Jun",
     title: "Digital Twin-Driven Semi-Supervised Knowledge Distillation for HMI Monitoring on Edge Device",
     venue: "IEEE ICTC 2025",
+    link: "https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view",
   },
   {
     authors: "Md Mahinur Alam, Mohtasin Golam, Md Raihan Subhan, Dong-Seong Kim, Taesoo Jun",
@@ -106,11 +114,14 @@ const INT_CONFERENCES: Pub[] = [
     authors: "Md Mahinur Alam, Kanita Jerin Tanha, Taesoo Jun",
     title: "RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images",
     venue: "IEEE ICMIC 2025",
+    link: "https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view",
+    dataset: "https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset",
   },
   {
     authors: "Mohtasin Golam, Md Mahinur Alam, Md Raihan Subhan, Dong-Seong Kim, Jae-Min Lee",
     title: "BLIND-Twin: Blockchain-Assisted LLM-Based CDS for Digital Twin-Enhanced Industrial AIoT",
     venue: "IEEE ICC 2025",
+    link: "https://ieeexplore.ieee.org/abstract/document/11161313/",
   },
   {
     authors: "Kanita Jerin Tanha, Md Mahinur Alam, Taesoo Jun",
@@ -126,6 +137,8 @@ const INT_CONFERENCES: Pub[] = [
     authors: "A. I. Khan, Md Mahinur Alam, Kanita Jerin Tanha, S. Islam",
     title: "Safety-Critical IoMT Security: A Lightweight, Cost-Aware Approach at the Network Edge",
     venue: "IEEE ICCIT 2025",
+    link: "https://ieeexplore.ieee.org/document/11257756",
+    code: "https://github.com/mahinuralam/-IoMT-Security",
   },
   {
     authors: "Kanita Jerin Tanha, Md Mahinur Alam, Taesoo Jun",
@@ -168,6 +181,7 @@ const DOM_CONFERENCES: Pub[] = [
     title: "DCFL-Chain: Digital-Twin-Based Collaborative FL-Integrated Energy Consumption Prediction for Smart Factory",
     venue: "KICS Fall Conference 2024",
     meta: "Best Paper",
+    code: "https://github.com/mahinuralam/Gumi-Industiral-Enegy-Consumption-Competition",
   },
   {
     authors: "Md Mahinur Alam, Md Javed Ahmed Shanto, Dong-Seong Kim, Taesoo Jun",
@@ -216,6 +230,7 @@ const DOM_CONFERENCES: Pub[] = [
     title: "Energy-Twin: Explainable AI-Driven Energy Optimization using Digital-Twin for Smart Industry",
     venue: "KICS Fall Conference 2024",
     meta: "Best Paper",
+    link: "https://www.researchgate.net/publication/390921228_Energy-Twin_Explainable_AI-Driven_Energy_Optimization_using_Digital-Twin_for_Smart_Industry",
   },
   {
     authors: "Md Raihan Subhan, Mohtasin Golam, Md Facklasur Rahaman, Md Mahinur Alam, Dong-Seong Kim, Taesoo Jun",

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github, Database } from "lucide-react";
 
 export const Route = createFileRoute("/publications")({
   head: () => ({
@@ -26,7 +26,12 @@ type Pub = {
   title: string;
   venue: string;
   meta?: string;
+  /** Paper / publisher link */
   link?: string;
+  /** GitHub repository link */
+  code?: string;
+  /** Dataset link */
+  dataset?: string;
 };
 
 const JOURNALS: Pub[] = [
@@ -34,6 +39,8 @@ const JOURNALS: Pub[] = [
     authors: "Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion",
     venue: "IEEE Access",
+    link: "https://ieeexplore.ieee.org/document/11361039",
+    code: "https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-",
   },
   {
     authors: "Md Mahinur Alam, Mohamed A. Dini, Taesoo Jun",
@@ -41,23 +48,28 @@ const JOURNALS: Pub[] = [
     venue: "ICT Express",
     meta: "SCIE · IF 4.2 · Q1",
     link: "https://www.sciencedirect.com/science/article/pii/S2405959525000517",
+    code: "https://github.com/mahinuralam/TMNet",
   },
   {
     authors: "Md Mahinur Alam, Reimbaev Azizbek Nurkat Ugli, Kanita Jerin Tanha, Taesoo Jun",
     title: "AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions",
     venue: "ICT Express",
     meta: "SCIE · IF 4.2 · Q1",
+    link: "https://www.sciencedirect.com/science/article/pii/S2405959526000093",
   },
   {
     authors: "Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "FMACNN: Federated Multi-Attention CNN Framework for Artificial Image Detection",
     venue: "Journal of Information Security and Applications",
     meta: "SCIE · IF 3.7 · Q2 · Accepted",
+    code: "https://github.com/mahinuralam/FMACNN",
+    dataset: "https://dx.doi.org/10.21227/0da4-g645",
   },
   {
     authors: "Md Raihan Subhan, Md Mahinur Alam, Mohtasin Golam, Taesoo Jun",
     title: "Blockchain-Aided Intrusion Detection in Marine Tactical Network Using Reinforcement Learning",
     venue: "The Journal of the Korean Institute of Communications and Information Sciences",
+    link: "https://journal.kics.or.kr/digital-library/105210",
   },
   {
     authors: "M. A. I. Khan, Md Mahinur Alam, M. S. Islam, A. S. Mahmoud, T. R. Sheltami",
@@ -84,6 +96,7 @@ const INT_CONFERENCES: Pub[] = [
     authors: "Md Mahinur Alam, Kanita Jerin Tanha, Taesoo Jun",
     title: "Digital Twin-Driven Semi-Supervised Knowledge Distillation for HMI Monitoring on Edge Device",
     venue: "IEEE ICTC 2025",
+    link: "https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view",
   },
   {
     authors: "Md Mahinur Alam, Mohtasin Golam, Md Raihan Subhan, Dong-Seong Kim, Taesoo Jun",
@@ -101,11 +114,14 @@ const INT_CONFERENCES: Pub[] = [
     authors: "Md Mahinur Alam, Kanita Jerin Tanha, Taesoo Jun",
     title: "RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images",
     venue: "IEEE ICMIC 2025",
+    link: "https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view",
+    dataset: "https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset",
   },
   {
     authors: "Mohtasin Golam, Md Mahinur Alam, Md Raihan Subhan, Dong-Seong Kim, Jae-Min Lee",
     title: "BLIND-Twin: Blockchain-Assisted LLM-Based CDS for Digital Twin-Enhanced Industrial AIoT",
     venue: "IEEE ICC 2025",
+    link: "https://ieeexplore.ieee.org/abstract/document/11161313/",
   },
   {
     authors: "Kanita Jerin Tanha, Md Mahinur Alam, Taesoo Jun",
@@ -121,6 +137,8 @@ const INT_CONFERENCES: Pub[] = [
     authors: "A. I. Khan, Md Mahinur Alam, Kanita Jerin Tanha, S. Islam",
     title: "Safety-Critical IoMT Security: A Lightweight, Cost-Aware Approach at the Network Edge",
     venue: "IEEE ICCIT 2025",
+    link: "https://ieeexplore.ieee.org/document/11257756",
+    code: "https://github.com/mahinuralam/-IoMT-Security",
   },
   {
     authors: "Kanita Jerin Tanha, Md Mahinur Alam, Taesoo Jun",
@@ -163,6 +181,7 @@ const DOM_CONFERENCES: Pub[] = [
     title: "DCFL-Chain: Digital-Twin-Based Collaborative FL-Integrated Energy Consumption Prediction for Smart Factory",
     venue: "KICS Fall Conference 2024",
     meta: "Best Paper",
+    code: "https://github.com/mahinuralam/Gumi-Industiral-Enegy-Consumption-Competition",
   },
   {
     authors: "Md Mahinur Alam, Md Javed Ahmed Shanto, Dong-Seong Kim, Taesoo Jun",
@@ -211,6 +230,7 @@ const DOM_CONFERENCES: Pub[] = [
     title: "Energy-Twin: Explainable AI-Driven Energy Optimization using Digital-Twin for Smart Industry",
     venue: "KICS Fall Conference 2024",
     meta: "Best Paper",
+    link: "https://www.researchgate.net/publication/390921228_Energy-Twin_Explainable_AI-Driven_Energy_Optimization_using_Digital-Twin_for_Smart_Industry",
   },
   {
     authors: "Md Raihan Subhan, Mohtasin Golam, Md Facklasur Rahaman, Md Mahinur Alam, Dong-Seong Kim, Taesoo Jun",
@@ -219,34 +239,46 @@ const DOM_CONFERENCES: Pub[] = [
   },
 ];
 
+function LinkChip({
+  href,
+  label,
+  Icon,
+}: {
+  href: string;
+  label: string;
+  Icon: typeof ExternalLink;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-1 rounded-full border border-border px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground transition-colors hover:border-gold hover:bg-gold/10 hover:text-ink"
+    >
+      <Icon className="h-3 w-3" />
+      {label}
+    </a>
+  );
+}
+
 function PublicationItem({ pub, index }: { pub: Pub; index: number }) {
   return (
     <li className="grid gap-3 border-b border-border/60 py-6 last:border-0 md:grid-cols-[60px_1fr] md:gap-6">
       <span className="font-mono text-xs text-gold">{String(index + 1).padStart(2, "0")}</span>
       <div>
-        <h3 className="font-display text-lg leading-snug text-ink">
-          {pub.title}
-          {pub.link && (
-            <a
-              href={pub.link}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full text-gold hover:underline"
-              aria-label="External link"
-            >
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
-          )}
-        </h3>
+        <h3 className="font-display text-lg leading-snug text-ink">{pub.title}</h3>
         <p className="mt-1.5 text-sm text-muted-foreground">{pub.authors}</p>
-        <p className="mt-2 text-sm">
+        <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
           <span className="italic text-foreground">{pub.venue}</span>
           {pub.meta && (
-            <span className="ml-2 inline-block rounded-full bg-accent px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-accent-foreground">
+            <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-accent-foreground">
               {pub.meta}
             </span>
           )}
-        </p>
+          {pub.link && <LinkChip href={pub.link} label="Paper" Icon={ExternalLink} />}
+          {pub.code && <LinkChip href={pub.code} label="Code" Icon={Github} />}
+          {pub.dataset && <LinkChip href={pub.dataset} label="Dataset" Icon={Database} />}
+        </div>
       </div>
     </li>
   );

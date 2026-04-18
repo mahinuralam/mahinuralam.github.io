@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Github } from "lucide-react";
 
 export const Route = createFileRoute("/experience")({
   head: () => ({
@@ -25,7 +26,7 @@ type Role = {
   org: string;
   period: string;
   blurb?: string;
-  projects?: { title: string; period?: string; bullets: string[]; papers?: string[] }[];
+  projects?: { title: string; period?: string; bullets: string[]; papers?: string[]; repo?: string }[];
   bullets?: string[];
 };
 
@@ -57,6 +58,7 @@ const ROLES: Role[] = [
       {
         title: "Real-Time Autonomous Driving Hazard Analysis",
         period: "Sep 2025 – Dec 2025",
+        repo: "https://github.com/mahinuralam/multi-modal-autonomous-driving-hazard-detection",
         bullets: [
           "Multimodal model fusing speed, vision, and sound for real-time driving hazard detection.",
           "Lightweight regression model for speed/sound-based driver state detection and a VLM for visual detection.",
@@ -68,6 +70,7 @@ const ROLES: Role[] = [
       {
         title: "AI for Digital Twin-Based Warehouse Logistics Optimization",
         period: "Jul 2024 – Dec 2025",
+        repo: "https://github.com/mahinuralam/warehouse-logistics-optimization-RL",
         bullets: [
           "Digital Twin warehouse simulation using NVIDIA Omniverse Isaac Sim and FlexSim.",
           "AI on real-time RF-based and vision-based sensor data for intelligent decision-making in warehouse logistics.",
@@ -81,6 +84,7 @@ const ROLES: Role[] = [
       {
         title: "Daycare Face and Action Recognition on Edge Device",
         period: "Sep 2024 – Dec 2024",
+        repo: "https://github.com/mahinuralam/Image-Analysis-on-Edge-Devices-for-Daycare-Application",
         bullets: [
           "98% accuracy Transformer model for daycare face recognition using MTCNN facial embeddings.",
           "97% accuracy BiLSTM model for action recognition using MoveNet pose embeddings.",
@@ -90,6 +94,7 @@ const ROLES: Role[] = [
       {
         title: "Industrial Manufacturing System Anomaly Detection",
         period: "Mar 2024 – Jun 2024",
+        repo: "https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-",
         bullets: [
           "Attention-Enhanced Multi-CNN Transformer fusion achieving 98% accuracy.",
           "Stable Diffusion synthetic defect generation to mitigate data limitation and class imbalance.",
@@ -172,11 +177,24 @@ function ExperiencePage() {
                     >
                       <div className="flex flex-wrap items-baseline justify-between gap-2">
                         <h3 className="font-display text-lg text-ink">{p.title}</h3>
-                        {p.period && (
-                          <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-                            {p.period}
-                          </span>
-                        )}
+                        <div className="flex items-center gap-3">
+                          {p.repo && (
+                            <a
+                              href={p.repo}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-1 rounded-full border border-border px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground transition-colors hover:border-gold hover:bg-gold/10 hover:text-ink"
+                            >
+                              <Github className="h-3 w-3" />
+                              Code
+                            </a>
+                          )}
+                          {p.period && (
+                            <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+                              {p.period}
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <ul className="mt-4 space-y-2 text-sm text-foreground">
                         {p.bullets.map((b) => (

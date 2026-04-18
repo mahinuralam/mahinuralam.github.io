@@ -239,34 +239,46 @@ const DOM_CONFERENCES: Pub[] = [
   },
 ];
 
+function LinkChip({
+  href,
+  label,
+  Icon,
+}: {
+  href: string;
+  label: string;
+  Icon: typeof ExternalLink;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-1 rounded-full border border-border px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground transition-colors hover:border-gold hover:bg-gold/10 hover:text-ink"
+    >
+      <Icon className="h-3 w-3" />
+      {label}
+    </a>
+  );
+}
+
 function PublicationItem({ pub, index }: { pub: Pub; index: number }) {
   return (
     <li className="grid gap-3 border-b border-border/60 py-6 last:border-0 md:grid-cols-[60px_1fr] md:gap-6">
       <span className="font-mono text-xs text-gold">{String(index + 1).padStart(2, "0")}</span>
       <div>
-        <h3 className="font-display text-lg leading-snug text-ink">
-          {pub.title}
-          {pub.link && (
-            <a
-              href={pub.link}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full text-gold hover:underline"
-              aria-label="External link"
-            >
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
-          )}
-        </h3>
+        <h3 className="font-display text-lg leading-snug text-ink">{pub.title}</h3>
         <p className="mt-1.5 text-sm text-muted-foreground">{pub.authors}</p>
-        <p className="mt-2 text-sm">
+        <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
           <span className="italic text-foreground">{pub.venue}</span>
           {pub.meta && (
-            <span className="ml-2 inline-block rounded-full bg-accent px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-accent-foreground">
+            <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-accent-foreground">
               {pub.meta}
             </span>
           )}
-        </p>
+          {pub.link && <LinkChip href={pub.link} label="Paper" Icon={ExternalLink} />}
+          {pub.code && <LinkChip href={pub.code} label="Code" Icon={Github} />}
+          {pub.dataset && <LinkChip href={pub.dataset} label="Dataset" Icon={Database} />}
+        </div>
       </div>
     </li>
   );

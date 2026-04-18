@@ -33,20 +33,18 @@ const CONTESTS = [
 ];
 
 const PAPER_AWARDS = [
+  { title: "Outstanding Graduate Thesis Award", detail: "Spring 2026" },
   {
     title: "KICS Fall 2024 — Gumi Industrial Complex Energy Self-Sufficiency Data Academic Paper Contest",
-    detail: "Winner · $1,400 prize · 2× Best Paper",
+    detail: "2× Best Paper",
   },
   { title: "KICS Summer Conference 2025", detail: "Best Paper Award" },
-  { title: "Outstanding Academic Research Achievement Award", detail: "Recognized for sustained research contribution" },
-  { title: "Best Graduate Thesis Award", detail: "Spring 2026" },
 ];
 
 const ONLINE = [
-  "Solved 1600+ Data Structure & Algorithm problems on Codeforces, HackerRank, UVa, Spoj, and more.",
-  "1× Kaggle Expert in Machine Learning competitions.",
-  "Top 25 of 600+ participants in a Solidity Programming Contest.",
-  "Federated fine-tuning with Qwen2.5-7B — ranked 5th globally on the Finance LLM Leaderboard.",
+  "Solved 1600+ Data Structure & Algorithm problems across multiple online judges.",
+  "Federated fine-tuning of Qwen2.5-7B — currently ranked 5th globally on the Flower Finance LLM Leaderboard.",
+  "Data Structures, Algorithms & Programming Language Mentor at IUBAT.",
 ];
 
 const CERTIFICATIONS = [
@@ -57,13 +55,12 @@ const CERTIFICATIONS = [
   "Python",
   "Introduction to Solidity",
   "Develop a Blockchain with Rust on Substrate",
-  "IELTS Certificate — 7.0 All Modules",
-  "Letter of Acceptance — Tampere University, Finland",
+  "IELTS — 7.0 All Modules",
 ];
 
 const VOLUNTEER = [
   "Organized IUBAT Intra-University Competitive Programming Contest (2021 & 2022).",
-  "Organizing Competitive Programming learning sessions.",
+  "Organized Competitive Programming learning sessions.",
   "Mentor — Beginner C / C++ language sessions.",
   "Mentor — Intermediate Data Structures & Algorithms.",
 ];

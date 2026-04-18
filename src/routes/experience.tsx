@@ -32,78 +32,82 @@ type Role = {
 const ROLES: Role[] = [
   {
     title: "Graduate Research Assistant",
-    org: "Georgia Southern University (GSU)",
-    period: "Nov 2024 – Present",
+    org: "ARMOR Lab, Georgia Southern University (GSU)",
+    period: "Present",
     projects: [
       {
-        title: "Multi-Robot System",
-        period: "Nov 2025 – Present",
+        title: "Depth Estimation for Autonomous Vehicles",
         bullets: [
-          "Cooperative UAV / UGV coordination and sensor network optimization.",
-          "Real-time target tracking and decision-making with partial information.",
+          "Depth estimation pipelines for hazard detection in autonomous vehicles.",
+        ],
+      },
+      {
+        title: "Microbes & Disease Analysis using BlueBoat",
+        bullets: [
+          "Analyzing water sample data collected from BlueBoat to study microbes and disease patterns.",
         ],
       },
     ],
   },
   {
     title: "Graduate Research Assistant",
-    org: "Pervasive Intelligent Computing Lab (PICL), Kumoh NIT",
-    period: "Mar 2024 – Present",
+    org: "Kumoh National Institute of Technology, South Korea",
+    period: "Mar 2024 – Dec 2025",
     projects: [
       {
-        title: "Real-Time Autonomous Driving Hazard Analysis (Project Lead)",
-        period: "Sep 2025 – Present",
+        title: "Real-Time Autonomous Driving Hazard Analysis",
+        period: "Sep 2025 – Dec 2025",
         bullets: [
-          "Lightweight multimodal framework for unknown-hazard detection.",
-          "Speed, video, and motion fusion for multi-sensor hazard detection.",
+          "Multimodal model fusing speed, vision, and sound for real-time driving hazard detection.",
+          "Lightweight regression model for speed/sound-based driver state detection and a VLM for visual detection.",
         ],
         papers: [
           "M. M. Alam, K. J. Tanha, M. Kim, T. Jun. Multi-modal Real-time Hazard Detection for Autonomous Driving Systems. KICS Fall 2025.",
         ],
       },
       {
-        title: "AI for Digital Twin-Based Warehouse Logistics (Project Lead)",
-        period: "Jul 2024 – Present",
+        title: "AI for Digital Twin-Based Warehouse Logistics Optimization",
+        period: "Jul 2024 – Dec 2025",
         bullets: [
-          "Digital Twin warehouse simulation with NVIDIA Omniverse Isaac Sim and FlexSim.",
-          "RF + vision sensor fusion for intelligent decision-making and process optimization.",
+          "Digital Twin warehouse simulation using NVIDIA Omniverse Isaac Sim and FlexSim.",
+          "AI on real-time RF-based and vision-based sensor data for intelligent decision-making in warehouse logistics.",
         ],
         papers: [
-          "Federated Semi-Supervised Digital Twin for Enhanced Human-Machine Interaction in Industry 5.0 — ICTC 2024.",
-          "AI for Digital Twin-Based Warehouse Logistics Optimization: A Review — ICT Express (under review).",
-          "Deep Q-Network Agent-Driven Dynamic Slotting Optimization in FlexSim Digital Twin — ICT Express (under review).",
+          "AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization — ICT Express (Q1, IF 4.2).",
+          "Federated Semi-Supervised Digital Twin for Enhanced HMI in Industry 5.0 — IEEE ICTC 2024.",
+          "Deep Q-Network Agent-Driven Dynamic Slotting Optimization in FlexSim Digital Twin — Computers and Industrial Engineering (submitted).",
         ],
       },
       {
-        title: "Image Analysis on Edge Devices for Daycare Application (Project Lead)",
+        title: "Daycare Face and Action Recognition on Edge Device",
         period: "Sep 2024 – Dec 2024",
         bullets: [
-          "98% accuracy Transformer for face recognition with MTCNN + diffusion-generated images.",
-          "97% accuracy BiLSTM for action recognition using MoveNet pose embeddings.",
+          "98% accuracy Transformer model for daycare face recognition using MTCNN facial embeddings.",
+          "97% accuracy BiLSTM model for action recognition using MoveNet pose embeddings.",
+          "Constructed a Korean children face and action recognition dataset.",
         ],
       },
       {
-        title: "Manufacturing Execution Systems (MES)",
+        title: "Industrial Manufacturing System Anomaly Detection",
         period: "Mar 2024 – Jun 2024",
         bullets: [
-          "Transformer-fused Multi-CNN reaching 98% accuracy, surpassing prior defect detection models.",
-          "Stable Diffusion synthetic defect generation to mitigate class imbalance.",
+          "Attention-Enhanced Multi-CNN Transformer fusion achieving 98% accuracy.",
+          "Stable Diffusion synthetic defect generation to mitigate data limitation and class imbalance.",
           "Improved baseline accuracy by 4.64% via preprocessing, augmentation, and fine-tuning.",
         ],
         papers: [
-          "Stable Diffusion-Augmented Industrial Anomaly Detection — IEEE Access (minor revision).",
-          "Enhanced Anomaly Detection with Optimized Deep Learning in Manufacturing — J-KICS (under review).",
+          "Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion — IEEE Access.",
         ],
       },
     ],
   },
   {
-    title: "Research Assistant",
-    org: "AIMS Lab, United International University",
+    title: "Data Scientist",
+    org: "AIMS Lab, United International University, Bangladesh",
     period: "Oct 2023 – Dec 2023",
     bullets: [
-      "Analyzed heart failure, kidney disease, and stroke data from rural Bangladesh.",
-      "Identified high-impact regions and uncovered drivers of disease prevalence.",
+      "Analyzed heart failure, kidney disease, and stroke data from rural areas of Bangladesh.",
+      "Identified high-impact regions and uncovered reasons for disease prevalence.",
     ],
   },
   {
@@ -111,13 +115,12 @@ const ROLES: Role[] = [
     org: "Divine IT Ltd., Bangladesh",
     period: "Sep 2022 – Sep 2023",
     blurb:
-      "Worked on PrismHRM and PrismATS as a responsible engineer — implementing new features, modifications, and bug fixes.",
+      "Developed and implemented new modules and features for the PrismERP and PrismATS software suites.",
     bullets: [
-      "PrismATS — built recruitment APIs, redesigned the job portal UI, candidate forms, application steps, password & attachment flows, dynamic form builder.",
-      "PrismHRM — improved leave policies (study & Hajj leave), employee list and add flows, departmental layers.",
-      "Disciplinary Management — built a Complaint sub-module with dynamic Reply section and committee actions.",
-      "Movement Register & Movement Pass — added travel-medium typing, comprehensive employee movement tracking.",
-      "Mode of Travel & Asset Management — improved data capture and assignment workflows.",
+      "Enhanced system stability and performance by resolving bugs and optimizing processes using parallel processing, efficient algorithms, and database optimization.",
+      "Contributed to full-stack development for Enterprise Resource Planning (ERP) and Applicant Tracking Systems (ATS).",
+      "PrismATS — recruitment APIs, job portal UI, candidate forms, application steps, password & attachment flows, dynamic form builder.",
+      "PrismERP — leave policies, employee list/add flows, disciplinary management, movement register, asset management.",
     ],
   },
 ];

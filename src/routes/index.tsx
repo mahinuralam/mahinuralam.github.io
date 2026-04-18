@@ -23,33 +23,33 @@ export const Route = createFileRoute("/")({
 });
 
 const QUICK_FACTS = [
-  "Graduate Research Assistant at GSU",
-  "Graduate Research Assistant at PICL, KIT",
-  "Data Scientist at AIMS Lab",
-  "Software Engineer at Divine IT Ltd.",
-  "1× IEEE Access Journal · multiple ICTC, KICS, ICCIT papers",
-  "KICS Fall 2024 Energy Self-Sufficiency Contest — Winner ($1,400)",
-  "ACM ICPC Dhaka Regional Finalist 2021",
-  "1600+ DSA problems solved across competitive judges",
+  "Graduate Research Assistant at ARMOR Lab, GSU",
+  "Graduate Research Assistant at Kumoh NIT, South Korea",
+  "Data Scientist at AIMS Lab, UIU",
+  "Software Engineer (Python) at Divine IT Ltd.",
+  "Published in IEEE Access, ICT Express, JISA, IEEE ICC, ICTC & ICCIT",
+  "Outstanding Graduate Thesis Award — Spring 2026",
+  "KICS 2× Best Paper (Fall 2024) · KICS Best Paper (Summer 2025)",
+  "ACM ICPC Dhaka Regional Finalist 2021 · 1600+ DSA problems solved",
 ];
 
 const EDUCATION = [
   {
     degree: "PhD in Engineering",
-    school: "Georgia Southern University, Statesboro, USA",
+    school: "Georgia Southern University, Statesboro, GA, USA",
     period: "Present",
   },
   {
     degree: "MEng in IT Convergence Engineering",
-    school: "Kumoh National Institute of Technology, South Korea",
-    period: "Mar 2023 – Present",
-    detail: "GPA 4.44 / 4.50",
+    school: "Kumoh National Institute of Technology, Gumi, South Korea",
+    period: "Mar 2024 – Dec 2025",
+    detail: "GPA 4.44 / 4.50 (WES 4.00 / 4.00)",
   },
   {
     degree: "BSc in Computer Science & Engineering",
-    school: "International University of Business Agriculture & Technology, Bangladesh",
+    school: "International University of Business Agriculture & Technology, Dhaka, Bangladesh",
     period: "Jan 2019 – Dec 2022",
-    detail: "GPA 3.79 / 4.00",
+    detail: "GPA 3.79 / 4.00 (WES 3.69 / 4.00)",
   },
 ];
 

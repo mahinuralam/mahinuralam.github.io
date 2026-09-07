@@ -252,8 +252,10 @@
       .signal-cards { display: grid; gap: 1rem; }
       .signal-card { padding: 1.3rem; }
       .signal-card .big { margin: 0; color: transparent; background: linear-gradient(90deg, var(--cyan), var(--violet)); background-clip: text; -webkit-background-clip: text; font-family: "Instrument Serif", Georgia, serif; font-size: 3.2rem; line-height: 1; }
-      .signal-card h3 { margin: .45rem 0 .25rem; color: #dae2eb; font-size: .82rem; }
-      .signal-card p { margin: 0; color: #7f8b99; font-size: .71rem; }
+      .signal-card h3 { margin: 0 0 .55rem; color: #dae2eb; font-size: .9rem; }
+      .signal-card p { margin: 0; color: #7f8b99; font-size: .82rem; }
+      .activity-list { margin: 0; padding-left: 1.05rem; color: #96a3b4; font-size: .82rem; line-height: 1.6; }
+      .activity-list li + li { margin-top: .35rem; }
 
       .toolkit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
       .toolkit-card { padding: 1.3rem; }
@@ -554,8 +556,7 @@
       <div class="wrap nav-shell">
         <a class="brand" href="#top" aria-label="Md Mahinur Alam, home">Md Mahinur <span>Alam</span></a>
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#awards">Awards</a>
@@ -564,7 +565,7 @@
         <details class="mobile-nav">
           <summary>Menu</summary>
           <div>
-            <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a>
+            <a href="#publications">Publications</a><a href="#experience">Experience</a>
             <a href="#education">Education</a><a href="#awards">Awards</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
           </div>
         </details>
@@ -578,22 +579,11 @@
             <div class="status-pill"><span class="status-dot" aria-hidden="true"></span>PhD Student in Information Systems · UMBC</div>
             <h1>Md Mahinur <span>Alam</span></h1>
             <p class="hero-copy">
-              I research <strong>federated learning, large-language-model reasoning, computer vision, and intelligent automation</strong>. My work focuses on practical AI systems for heterogeneous data, UAV perception, industrial inspection, and digital-twin applications.
+              I am a PhD student in Information Systems at the <strong>University of Maryland, Baltimore County</strong>. My research focuses on federated learning, large-language-model reasoning, computer vision, and intelligent automation, with applications in heterogeneous data, UAV perception, industrial inspection, and digital twins. Previously, I worked in applied AI research and Python software engineering.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#research">View research <span aria-hidden="true">↓</span></a>
+              <a class="button primary" href="#publications">View publications <span aria-hidden="true">↓</span></a>
               <a class="button" href="mailto:mahinuralam213@gmail.com">Email me <span aria-hidden="true">↗</span></a>
-            </div>
-            <div class="tag-row" aria-label="Research interests">
-              <span class="tag">Federated learning</span><span class="tag">LLM reasoning</span><span class="tag">Computer vision</span><span class="tag">Digital twins</span>
-            </div>
-            <div class="now-card">
-              <div class="now-head"><strong>Current work at UMBC</strong><span>2026</span></div>
-              <div class="now-list">
-                <div class="now-item"><b>Federated LLMs</b>Studying reasoning collapse under heterogeneous data distributions.</div>
-                <div class="now-item"><b>Scientific digital twins</b>Simulating mosquito movement with NVIDIA Omniverse Isaac Sim.</div>
-                <div class="now-item"><b>Computer vision</b>Continuing research in efficient small-object detection and multimodal perception.</div>
-              </div>
             </div>
           </div>
           <div class="portrait-column" aria-label="Portrait and profile highlights">
@@ -603,39 +593,11 @@
         </div>
       </section>
 
-      <div class="wrap metric-strip" aria-label="Profile highlights">
-        <div class="metric"><strong>3+ years</strong><span>academic and industry experience</span></div>
-        <div class="metric"><strong>Q1 journals</strong><span>IEEE Access, ICT Express, and JISA</span></div>
-        <div class="metric"><strong>5 awards</strong><span>research and best-paper recognition</span></div>
-        <div class="metric"><strong>Peer reviewer</strong><span>IEEE Access, ICT Express, and FGCS</span></div>
-      </div>
-
-      <section id="about">
+      <section id="publications">
         <div class="wrap">
           <div class="section-head reveal">
-            <div><p class="section-kicker">01 · About</p><h2>Research profile</h2></div>
-            <p>PhD student at UMBC with experience spanning <strong>academic research, applied machine learning, and production software development.</strong></p>
-          </div>
-          <div class="about-grid reveal">
-            <article class="glass-card about-copy">
-              <p>I am a PhD student in Information Systems at the <strong>University of Maryland, Baltimore County</strong>. My current research investigates federated-LLM reasoning under heterogeneous data and scientific digital twins for mosquito-movement analysis.</p>
-              <p>Previously, I was a graduate researcher at <strong>Georgia Southern University</strong> and <strong>Kumoh National Institute of Technology</strong>, where I worked on UAV perception, multimodal hazard detection, industrial anomaly detection, edge vision, and warehouse automation.</p>
-              <p>Before graduate research, I worked as a <strong>Python software engineer at Divine IT</strong>, contributing to enterprise ERP, HRM, and applicant-tracking systems.</p>
-            </article>
-            <aside class="glass-card focus-list" aria-label="Current focus">
-              <div class="focus-item"><span>01</span><strong>Federated learning and LLM reasoning</strong><p>Robust learning and reasoning across heterogeneous, decentralized data.</p></div>
-              <div class="focus-item"><span>02</span><strong>Computer vision and multimodal AI</strong><p>Small-object detection, vision-language models, sensor fusion, and industrial inspection.</p></div>
-              <div class="focus-item"><span>03</span><strong>Digital twins and automation</strong><p>Simulation-driven decision support for scientific and industrial systems.</p></div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section id="research">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">02 · Selected research</p><h2>Projects and publications</h2></div>
-            <p>Representative work in <strong>computer vision, federated learning, multimodal AI, and digital twins</strong>, with results taken directly from my CV.</p>
+            <div><p class="section-kicker">01 · Publications</p><h2>Selected publications</h2></div>
+            <p>Selected journal and conference papers in computer vision, federated learning, multimodal AI, and digital twins. The complete publication archive is available below.</p>
           </div>
           <div class="research-grid">
             <article class="research-card reveal">
@@ -643,7 +605,7 @@
               <h3>AI-driven digital twins for warehouse optimization</h3>
               <p>Developed a warehouse digital twin with NVIDIA Omniverse Isaac Sim and FlexSim, then trained a DQN agent for dynamic product-slotting decisions.</p>
               <div class="research-result"><span class="micro-tag">30.83% less picking time</span><span class="micro-tag">13.15% less travel distance</span></div>
-              <a class="card-link" href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL" target="_blank" rel="noreferrer">Project &amp; code ↗</a>
+              <a class="card-link" href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL" target="_blank" rel="noreferrer">Code ↗</a>
             </article>
             <article class="research-card reveal">
               <div class="research-meta"><span>IEEE ICMIC · Best Paper</span><span>2026</span></div>
@@ -673,15 +635,16 @@
               <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X" target="_blank" rel="noreferrer">Read the paper ↗</a>
             </article>
             <article class="research-card reveal">
-              <div class="research-meta"><span>Flower AI Leaderboard</span><span>Project</span></div>
-              <h3>Federated instruction-tuning for a financial LLM</h3>
-              <p>Fine-tuned Qwen2.5-7B with Flower, LoRA, PEFT, and FedAvg across 50 client partitions, with reproducible checkpoints and evaluation.</p>
-              <div class="research-result"><span class="micro-tag">Global rank #5</span><span class="micro-tag">50 clients</span><span class="micro-tag">FIQA/FPB/TFNS 61.53</span></div>
+              <div class="research-meta"><span>IEEE ICTC</span><span>2025</span></div>
+              <h3>Digital twin-driven knowledge distillation for edge HMI monitoring</h3>
+              <p>Combined digital twins with semi-supervised knowledge distillation to support efficient human–machine-interaction monitoring on edge devices.</p>
+              <div class="research-result"><span class="micro-tag">Digital twin</span><span class="micro-tag">Knowledge distillation</span><span class="micro-tag">Edge AI</span></div>
+              <a class="card-link" href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view" target="_blank" rel="noreferrer">Read the paper ↗</a>
             </article>
           </div>
           <div class="research-footer reveal"><a class="button small" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a></div>
 
-          <details class="archive reveal" id="publications">
+          <details class="archive reveal" id="publication-archive">
             <summary>Browse the complete publication archive <span>40 works · journals &amp; conferences</span></summary>
             <div class="archive-body">
               <div class="publication-tools">
@@ -702,7 +665,7 @@
       <section id="experience">
         <div class="wrap">
           <div class="section-head reveal">
-            <div><p class="section-kicker">03 · Experience</p><h2>Research and industry experience</h2></div>
+            <div><p class="section-kicker">02 · Experience</p><h2>Research and industry experience</h2></div>
             <p>More than three years of combined experience in <strong>machine-learning research and enterprise software development.</strong></p>
           </div>
           <div class="timeline">
@@ -718,7 +681,7 @@
       <section id="education">
         <div class="wrap">
           <div class="section-head reveal">
-            <div><p class="section-kicker">04 · Education &amp; mentoring</p><h2>Education</h2></div>
+            <div><p class="section-kicker">03 · Education</p><h2>Education</h2></div>
             <p>Graduate training in information systems and IT convergence, supported by a foundation in computer science and engineering.</p>
           </div>
           <div class="edu-grid">
@@ -727,27 +690,27 @@
             <article class="edu-card reveal"><span class="edu-year">2024 — 2025 · South Korea</span><h3>M.Eng. in IT Convergence Engineering</h3><p><strong>Kumoh National Institute of Technology</strong> · GPA 4.44/4.50</p><p>Generative-AI-assisted industrial anomaly detection.</p></article>
             <article class="edu-card reveal"><span class="edu-year">2019 — 2022 · Bangladesh</span><h3>B.Sc. in Computer Science &amp; Engineering</h3><p><strong>IUBAT</strong> · GPA 3.79/4.00</p><p>Blockchain-based land deed verification and reservation.</p></article>
           </div>
-          <article class="glass-card mentoring reveal"><h3>Programming mentor</h3><p>Data Structures, Algorithms, and Programming Language mentor at IUBAT. I also helped organize programming contests and supported students learning C, C++, and competitive problem solving.</p></article>
         </div>
       </section>
 
       <section id="awards">
         <div class="wrap">
           <div class="section-head reveal">
-            <div><p class="section-kicker">05 · Recognition</p><h2>Awards and professional activities</h2></div>
-            <p>Research awards, competitive-programming achievements, and peer-review service.</p>
+            <div><p class="section-kicker">04 · Recognition</p><h2>Awards and professional activities</h2></div>
+            <p>Research distinctions, competitive-programming honors, mentoring, and scholarly service.</p>
           </div>
           <div class="awards-grid">
             <div class="award-list reveal">
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Best Paper Award</strong><small>IEEE ICMIC · Taiwan</small></div><time>2026</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Outstanding Academic Research Achievement</strong><small>Kumoh National Institute of Technology</small></div><time>2026</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Best Paper Award</strong><small>KICS Summer Conference</small></div><time>2025</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Two Best Paper Awards</strong><small>KICS Fall energy self-sufficiency contest</small></div><time>2024</time></div>
+              <div class="award-row"><span class="award-icon">✦</span><div><strong>IEEE ICMIC Best Paper Award</strong><small>International Conference on Machine Intelligence and Communication · Taiwan</small></div><time>2026</time></div>
+              <div class="award-row"><span class="award-icon">✦</span><div><strong>Outstanding Graduate Research Achievement Award</strong><small>Kumoh National Institute of Technology · Spring 2026</small></div><time>2026</time></div>
+              <div class="award-row"><span class="award-icon">✦</span><div><strong>KICS Summer Conference Best Paper Award</strong><small>Korean Institute of Communications and Information Sciences</small></div><time>2025</time></div>
+              <div class="award-row"><span class="award-icon">✦</span><div><strong>Two Best Paper Awards</strong><small>KICS Fall Conference · Gumi Industrial Complex Energy Self-Sufficiency Data Academic Paper Contest</small></div><time>2024</time></div>
             </div>
             <div class="signal-cards">
-              <article class="glass-card signal-card reveal"><p class="big">1,600+</p><h3>Problems solved</h3><p>Data-structure and algorithm problems completed across online judges.</p></article>
-              <article class="glass-card signal-card reveal"><p class="big">2×</p><h3>IUBAT IUPC champion</h3><p>Champion in 2021 and 2022, first runner-up in 2020, and Best Fresher Programmer in 2019.</p></article>
-              <article class="glass-card signal-card reveal"><p class="big">ICPC</p><h3>Dhaka Regional finalist</h3><p>Finalist in the 2021 ACM International Collegiate Programming Contest regional.</p></article>
+              <article class="glass-card signal-card reveal"><h3>Competitive programming honors</h3><ul class="activity-list"><li>Champion, IUBAT IUPC — 2022 and 2021</li><li>First Runner-up, IUBAT IUPC — 2020</li><li>Best Fresher Programmer, IUBAT — 2019</li><li>Second Runner-up, UITS IUPC — 2022</li></ul></article>
+              <article class="glass-card signal-card reveal"><h3>ACM ICPC and university contests</h3><ul class="activity-list"><li>ACM ICPC Dhaka Regional finalist — 2021</li><li>Ranked participant at BUET, RUET, BUBT, and AUST IUPC — 2022</li><li>Solved more than 1,600 data-structure and algorithm problems</li></ul></article>
+              <article class="glass-card signal-card reveal"><h3>Peer-review service</h3><p>Reviewer for <em>IEEE Access</em>, <em>ICT Express</em>, and <em>Future Generation Computer Systems</em>.</p></article>
+              <article class="glass-card signal-card reveal"><h3>Teaching and mentoring</h3><p>Data Structures, Algorithms, and Programming Language mentor at IUBAT, supporting students in C, C++, and competitive problem solving.</p></article>
             </div>
           </div>
         </div>
@@ -756,7 +719,7 @@
       <section id="toolkit">
         <div class="wrap">
           <div class="section-head reveal">
-            <div><p class="section-kicker">06 · Technical skills</p><h2>Research and engineering toolkit</h2></div>
+            <div><p class="section-kicker">05 · Technical skills</p><h2>Research and engineering toolkit</h2></div>
             <p>Technologies listed in my current CV, grouped by how I use them.</p>
           </div>
           <div class="toolkit-grid">
@@ -769,7 +732,7 @@
 
       <section id="contact">
         <div class="wrap contact-card reveal">
-          <div><p class="section-kicker">07 · Contact</p><h2>Research collaboration and professional contact</h2><p>I am open to conversations about federated learning, LLM reasoning, computer vision, multimodal AI, digital twins, and intelligent automation.</p><div class="contact-actions"><a class="button primary" href="mailto:mahinuralam213@gmail.com">Email me ↗</a><a class="button" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a></div></div>
+          <div><p class="section-kicker">06 · Contact</p><h2>Research collaboration and professional contact</h2><p>I am open to conversations about federated learning, LLM reasoning, computer vision, multimodal AI, digital twins, and intelligent automation.</p><div class="contact-actions"><a class="button primary" href="mailto:mahinuralam213@gmail.com">Email me ↗</a><a class="button" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a></div></div>
           <div class="contact-links"><a href="https://github.com/mahinuralam" target="_blank" rel="noreferrer"><span>GitHub</span><span>↗</span></a><a href="https://www.linkedin.com/in/mahinur-alam/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>↗</span></a><a href="https://www.researchgate.net/profile/Md-Alam-454/publications" target="_blank" rel="noreferrer"><span>ResearchGate</span><span>↗</span></a><a href="https://www.kaggle.com/mahinuralam" target="_blank" rel="noreferrer"><span>Kaggle</span><span>↗</span></a></div>
         </div>
       </section>

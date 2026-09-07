@@ -549,6 +549,7 @@
       .contact-links a:hover { color: #dbeafe; }
       .footer-line { border-color: #273140; color: #778396; }
     </style>
+    <link rel="stylesheet" href="assets/atmosphere.css?v=1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -600,41 +601,41 @@
             <p>Selected journal and conference papers in computer vision, federated learning, multimodal AI, and digital twins. The complete publication archive is available below.</p>
           </div>
           <div class="research-grid">
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="IEEE ICRA Workshop">
               <div class="research-meta"><span>IEEE ICRA Workshop</span><span>2026</span></div>
               <h3>AI-driven digital twins for warehouse optimization</h3>
               <p>Developed a warehouse digital twin with NVIDIA Omniverse Isaac Sim and FlexSim, then trained a DQN agent for dynamic product-slotting decisions.</p>
               <div class="research-result"><span class="micro-tag">30.83% less picking time</span><span class="micro-tag">13.15% less travel distance</span></div>
               <a class="card-link" href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL" target="_blank" rel="noreferrer">Code ↗</a>
             </article>
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="IEEE ICMIC">
               <div class="research-meta"><span>IEEE ICMIC · Best Paper</span><span>2026</span></div>
               <h3>Adaptive reconstruction for UAV small-object detection</h3>
               <p>Developed an adaptive reconstruction framework that focuses computation on difficult image regions instead of reconstructing the complete grid.</p>
               <div class="research-result"><span class="micro-tag">33.1 APvt</span><span class="micro-tag">83% fewer tiles</span><span class="micro-tag">61.6% fewer GFLOPs</span></div>
             </article>
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="IEEE Access">
               <div class="research-meta"><span>IEEE Access</span><span>2026</span></div>
               <h3>Diffusion-augmented industrial anomaly detection</h3>
               <p>Combined Stable Diffusion-generated defects with an attention-enhanced Multi-CNN Transformer to address limited and imbalanced industrial data.</p>
               <div class="research-result"><span class="micro-tag">98% accuracy</span><span class="micro-tag">4.64% over baseline</span><span class="micro-tag">IEEE Access</span></div>
               <a class="card-link" href="https://ieeexplore.ieee.org/document/11361039" target="_blank" rel="noreferrer">Read the paper ↗</a>
             </article>
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="ICT Express">
               <div class="research-meta"><span>ICT Express</span><span>2025</span></div>
               <h3>TMNet for emotion recognition from EEG and speech</h3>
               <p>Built speech and EEG encoders with cross-attention fusion after denoising, synchronization, MFCC extraction, and FastICA filtering.</p>
               <div class="research-result"><span class="micro-tag">97% accuracy</span><span class="micro-tag">EEG + speech</span><span class="micro-tag">Cross-attention</span></div>
               <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2405959525000517" target="_blank" rel="noreferrer">Read the paper ↗</a>
             </article>
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="JISA">
               <div class="research-meta"><span>JISA</span><span>2026</span></div>
               <h3>Federated multi-attention detection of AI-generated images</h3>
               <p>Built FMACNN across IID and non-IID clients using attention blocks, weighted FedAvg, clipping, and divergence monitoring for stable decentralized training.</p>
               <div class="research-result"><span class="micro-tag">100 clients</span><span class="micro-tag">RealAIGI dataset</span><span class="micro-tag">Federated learning</span></div>
               <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X" target="_blank" rel="noreferrer">Read the paper ↗</a>
             </article>
-            <article class="research-card reveal">
+            <article class="research-card reveal" data-venue="IEEE ICTC">
               <div class="research-meta"><span>IEEE ICTC</span><span>2025</span></div>
               <h3>Digital twin-driven knowledge distillation for edge HMI monitoring</h3>
               <p>Combined digital twins with semi-supervised knowledge distillation to support efficient human–machine-interaction monitoring on edge devices.</p>
@@ -804,8 +805,8 @@
         const matches = matchingPublications();
         const visible = matches.slice(0, visibleCount);
         publicationList.innerHTML = visible.map((publication) => {
-          const links = publication.links.map(([label, href]) => `<a href="${href}" target="_blank" rel="noreferrer">${label} ↗</a>`).join("");
-          return `<article class="publication"><div class="pub-year">${publication.year}</div><div><h3>${publication.title}</h3><p class="pub-meta">${publication.venue}<span class="pub-badge">${publication.status}</span></p></div><div class="pub-links">${links}</div></article>`;
+          const links = publication.links.map(([label, href]) => `<a href="${href}" data-link="${label}" target="_blank" rel="noreferrer">${label} ↗</a>`).join("");
+          return `<article class="publication" data-venue="${publication.venue}"><div class="pub-year">${publication.year}</div><div><h3>${publication.title}</h3><p class="pub-meta"><span class="pub-venue">${publication.venue}</span><span class="pub-badge" data-status="${publication.status}">${publication.status}</span></p></div><div class="pub-links">${links}</div></article>`;
         }).join("");
         publicationCount.textContent = `Showing ${visible.length} of ${matches.length} works`;
         loadMore.hidden = visible.length >= matches.length;
@@ -832,5 +833,7 @@
         document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
       }
     </script>
+    <button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause background motion</button>
+    <script src="assets/atmosphere.js?v=1"></script>
   </body>
 </html>

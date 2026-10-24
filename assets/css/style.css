@@ -760,6 +760,10 @@ strong, b { font-weight: 600; }
 }
 .link-btn .icon { color: var(--accent); }
 .link-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+/* placeholder for code that is not public yet */
+.link-btn--soon,
+.link-btn--soon:hover { border-style: dashed; border-color: var(--rule); background: var(--paper-2); color: var(--ink-3); cursor: default; }
+.link-btn--soon .icon { color: var(--ink-3); }
 
 /* lightbox */
 .lightbox {

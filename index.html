@@ -1,839 +1,1137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md Mahinur Alam — AI Researcher &amp; PhD Student</title>
-    <meta name="description" content="Md Mahinur Alam is a PhD student at UMBC researching federated learning, LLM reasoning, computer vision, digital twins, and intelligent automation." />
-    <link rel="canonical" href="https://mahinuralam.github.io/" />
-    <link rel="icon" href="/src/assets/profile-portrait.jpg" type="image/jpeg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
-    <meta name="theme-color" content="#0b0f14" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Md Mahinur Alam — AI Researcher" />
-    <meta property="og:description" content="Federated learning, LLM reasoning, computer vision, digital twins, and intelligent automation." />
-    <meta property="og:url" content="https://mahinuralam.github.io/" />
-    <meta property="og:image" content="https://mahinuralam.github.io/assets/og-v4.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Md Mahinur Alam — AI Researcher and PhD Student at UMBC" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Md Mahinur Alam — AI Researcher" />
-    <meta name="twitter:description" content="Federated learning, LLM reasoning, computer vision, digital twins, and intelligent automation." />
-    <meta name="twitter:image" content="https://mahinuralam.github.io/assets/og-v4.jpg" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Md Mahinur Alam",
-        "url": "https://mahinuralam.github.io/",
-        "image": "https://mahinuralam.github.io/src/assets/profile-portrait.jpg",
-        "jobTitle": "Graduate Research Assistant and PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Maryland, Baltimore County" },
-        "sameAs": [
-          "https://github.com/mahinuralam",
-          "https://www.linkedin.com/in/mahinur-alam/",
-          "https://scholar.google.com/citations?user=E9OClTAAAAAJ&hl=en"
-        ],
-        "knowsAbout": ["Federated Learning", "Large Language Model Reasoning", "Computer Vision", "Digital Twins", "Intelligent Automation"]
-      }
-    </script>
-    <style>
-      :root {
-        --bg: #07090f;
-        --surface: rgba(255, 255, 255, 0.045);
-        --surface-strong: rgba(13, 17, 28, 0.92);
-        --line: rgba(255, 255, 255, 0.1);
-        --line-strong: rgba(255, 255, 255, 0.17);
-        --text: #e7ecf3;
-        --muted: #9aa4b2;
-        --dim: #697586;
-        --cyan: #22d3ee;
-        --violet: #a78bfa;
-        --pink: #f472b6;
-        --green: #5eead4;
-        --max: 1120px;
-        --radius: 16px;
-      }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Mahinur Alam</title>
+<meta name="description" content="Md Mahinur Alam is a Ph.D. student in Information Systems at UMBC working on federated learning, LLM reasoning, computer vision, and digital twins.">
+<meta name="author" content="Md Mahinur Alam">
+<link rel="canonical" href="https://mahinuralam.github.io/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
 
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-      body {
-        margin: 0;
-        color: var(--text);
-        background:
-          radial-gradient(1200px 800px at 82% -10%, rgba(167, 139, 250, 0.12), transparent 60%),
-          radial-gradient(900px 620px at -12% 28%, rgba(34, 211, 238, 0.1), transparent 60%),
-          var(--bg);
-        background-attachment: fixed;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 16px;
-        line-height: 1.65;
-        -webkit-font-smoothing: antialiased;
-      }
-      body::before {
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        content: "";
-        opacity: 0.42;
-        background-image:
-          linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-        background-size: 42px 42px;
-        mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
-        pointer-events: none;
-      }
-      a { color: inherit; }
-      img { display: block; max-width: 100%; }
-      button, input { font: inherit; }
-      ::selection { color: #071014; background: var(--cyan); }
-      :focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
-      .wrap { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
-      .skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 100; padding: .7rem 1rem; border-radius: 8px; background: white; color: #07090f; }
-      .skip-link:focus { top: 1rem; }
+<!-- Link preview (what shows up when the site is shared) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Md Mahinur Alam | Ph.D. Student, UMBC">
+<meta property="og:description" content="Federated learning, LLM reasoning, computer vision, and digital twins.">
+<meta property="og:url" content="https://mahinuralam.github.io/">
+<meta property="og:image" content="https://mahinuralam.github.io/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Md Mahinur Alam, Ph.D. student in Information Systems at UMBC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Md Mahinur Alam | Ph.D. Student, UMBC">
+<meta name="twitter:description" content="Federated learning, LLM reasoning, computer vision, and digital twins.">
+<meta name="twitter:image" content="https://mahinuralam.github.io/images/social-card.png">
 
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-        border-bottom: 1px solid rgba(255,255,255,.07);
-        background: rgba(7, 9, 15, .63);
-        backdrop-filter: blur(18px);
-      }
-      .nav-shell { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-      .brand { color: white; font-size: .95rem; font-weight: 750; letter-spacing: -.025em; text-decoration: none; }
-      .brand span { color: var(--cyan); }
-      .nav-links { display: flex; align-items: center; gap: 1.45rem; }
-      .nav-links a { color: #aeb8c5; font-size: .77rem; font-weight: 600; text-decoration: none; transition: color 160ms ease; }
-      .nav-links a:hover { color: white; }
-      .nav-links .nav-cta { padding: .55rem .82rem; border: 1px solid rgba(34,211,238,.35); border-radius: 9px; color: #cffafe; background: rgba(34,211,238,.06); }
-      .mobile-nav { display: none; position: relative; }
-      .mobile-nav summary { cursor: pointer; list-style: none; padding: .5rem .72rem; border: 1px solid var(--line-strong); border-radius: 8px; color: #dbe4ef; font-size: .78rem; font-weight: 700; }
-      .mobile-nav summary::-webkit-details-marker { display: none; }
-      .mobile-nav div { position: absolute; top: calc(100% + .65rem); right: 0; display: grid; width: 220px; padding: .55rem; border: 1px solid var(--line); border-radius: 12px; background: #0d111c; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
-      .mobile-nav a { padding: .68rem .72rem; border-radius: 8px; color: #b7c0cc; font-size: .84rem; text-decoration: none; }
-      .mobile-nav a:hover { color: white; background: rgba(255,255,255,.05); }
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-      .hero { min-height: calc(100vh - 66px); display: grid; align-items: center; padding: clamp(4rem, 9vw, 7.5rem) 0 5.5rem; }
-      .hero-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); align-items: center; gap: clamp(2rem, 7vw, 6.5rem); }
-      .status-pill, .tag, .micro-tag { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; }
-      .status-pill { gap: .55rem; margin-bottom: 1.25rem; padding: .42rem .75rem; color: #b7c0cc; background: rgba(255,255,255,.035); font-size: .72rem; font-weight: 650; }
-      .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px rgba(94,234,212,.1), 0 0 18px rgba(94,234,212,.8); }
-      h1, h2 { margin: 0; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -.04em; }
-      h1 { max-width: 760px; font-size: clamp(4.5rem, 10vw, 7.3rem); line-height: .84; }
-      h1 span { display: block; color: transparent; background: linear-gradient(100deg, var(--cyan), var(--violet) 54%, var(--pink)); background-clip: text; -webkit-background-clip: text; }
-      .hero-copy { max-width: 680px; margin: 1.65rem 0 0; color: var(--muted); font-size: clamp(1rem, 1.55vw, 1.13rem); line-height: 1.68; }
-      .hero-copy strong { color: #dce4ee; font-weight: 650; }
-      .hero-actions { display: flex; flex-wrap: wrap; gap: .72rem; margin-top: 1.65rem; }
-      .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; gap: .5rem; padding: .7rem 1rem; border: 1px solid var(--line-strong); border-radius: 10px; color: #e9eef5; background: rgba(255,255,255,.04); font-size: .82rem; font-weight: 750; text-decoration: none; transition: transform 160ms ease, border-color 160ms ease, background 160ms ease; }
-      .button:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.32); background: rgba(255,255,255,.07); }
-      .button.primary { border: 0; color: #071014; background: linear-gradient(100deg, var(--cyan), var(--violet) 58%, var(--pink)); }
-      .button.small { min-height: 38px; padding: .5rem .75rem; border-radius: 8px; font-size: .75rem; }
-      .tag-row { display: flex; flex-wrap: wrap; gap: .42rem; margin-top: 1.3rem; }
-      .tag { padding: .28rem .58rem; color: #7d8999; background: rgba(7,9,15,.35); font: 600 .66rem/1.3 ui-monospace, SFMono-Regular, Menlo, monospace; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
 
-      .portrait-column { justify-self: end; width: min(100%, 330px); text-align: center; }
-      .portrait-orbit { position: relative; display: grid; width: 100%; aspect-ratio: 1; place-items: center; }
-      .portrait-orbit::before, .portrait-orbit::after { position: absolute; border-radius: 50%; content: ""; }
-      .portrait-orbit::before { inset: 0; padding: 2px; background: linear-gradient(130deg, var(--cyan), var(--violet), var(--pink)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 24s linear infinite; }
-      .portrait-orbit::after { inset: 18px; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 0 80px rgba(167,139,250,.16); }
-      .orbit-mark { position: absolute; z-index: 2; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
-      .orbit-mark.one { top: 7%; right: 23%; }
-      .orbit-mark.two { bottom: 17%; left: 7%; background: var(--pink); box-shadow: 0 0 18px var(--pink); }
-      .portrait { position: relative; z-index: 1; width: calc(100% - 48px); aspect-ratio: 1; border: 7px solid #0b0f18; border-radius: 50%; object-fit: cover; object-position: center 16%; filter: saturate(.9) contrast(1.04); }
-      .portrait-badges { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
-      .portrait-badges span { padding: .34rem .62rem; border: 1px solid var(--line); border-radius: 999px; color: #aab4c1; background: rgba(255,255,255,.035); font: 600 .68rem/1.4 ui-monospace, monospace; }
-      @keyframes spin { to { transform: rotate(360deg); } }
+<script>
+  /* Apply a saved light/dark choice before first paint. */
+  (function () {
+    try {
+      var t = localStorage.getItem("mma-theme");
+      if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); }
+    } catch (e) {}
+  })();
+</script>
 
-      .now-card { max-width: 720px; margin-top: 1.75rem; padding: 1rem 1.05rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.032); }
-      .now-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .6rem; }
-      .now-head strong { color: #e2e8f0; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
-      .now-head span { color: var(--dim); font: .67rem ui-monospace, monospace; }
-      .now-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: .65rem; }
-      .now-item { color: #8995a4; font-size: .73rem; line-height: 1.45; }
-      .now-item b { display: block; margin-bottom: .12rem; color: #cdd5df; font-size: .72rem; }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Md Mahinur Alam",
+  "url": "https://mahinuralam.github.io/",
+  "image": "https://mahinuralam.github.io/images/profile.jpg",
+  "jobTitle": "Ph.D. Student and Graduate Research Assistant",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Maryland, Baltimore County" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Kumoh National Institute of Technology" },
+    { "@type": "CollegeOrUniversity", "name": "International University of Business Agriculture and Technology" }
+  ],
+  "knowsAbout": ["Federated learning", "LLM reasoning", "Computer vision", "Digital twins", "Multimodal AI"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=E9OClTAAAAAJ",
+    "https://github.com/mahinuralam",
+    "https://www.linkedin.com/in/mahinur-alam/",
+    "https://www.researchgate.net/profile/Md-Alam-454",
+    "https://www.kaggle.com/mahinuralam"
+  ]
+}
+</script>
+</head>
+<body>
+<!-- PAGE CONTENT START (everything from here to PAGE CONTENT END is also used for the preview) -->
 
-      .metric-strip { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.025); overflow: hidden; }
-      .metric { padding: 1.1rem 1.2rem; border-right: 1px solid var(--line); }
-      .metric:last-child { border-right: 0; }
-      .metric strong { display: block; color: #e7edf5; font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; }
-      .metric span { color: var(--dim); font-size: .68rem; }
+<!-- Icon set: plain line icons, used with <svg class="icon"><use href="#i-name"></use></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9.5 12 4.5l10 5-10 5z"/><path d="M6 11.5v4.8c0 1.4 2.7 2.9 6 2.9s6-1.5 6-2.9v-4.8"/><path d="M22 9.5v5.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/><path d="m13.5 4-3 16"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/><path d="M3 12.5h18"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5h6a3 3 0 0 1 3 3v12a2.5 2.5 0 0 0-2.5-2.5H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2.5 2.5 0 0 1 2.5-2.5H21z"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M5 20v-8"/><path d="M10 20V5"/><path d="M15 20v-6"/><path d="M20 20V9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.2a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M2.5 9 12 3.5 21.5 9"/><path d="M5 21V10.5"/><path d="M19 21V10.5"/><path d="M9.5 21v-5.5h5V21"/><path d="M9 11.5h.01M15 11.5h.01"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13"/><path d="M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5.5 11.5 6.5-6.5 6.5 6.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 6h3v1.5A3.5 3.5 0 0 1 16.6 11M7 6H4v1.5A3.5 3.5 0 0 0 7.4 11"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 10.5v3a1 1 0 0 0 1 1h2.5L12 19V5L6.5 9.5H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a4.5 4.5 0 0 1 0 7"/><path d="M18.5 5.5a8.5 8.5 0 0 1 0 13"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="m20 4-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+</svg>
 
-      section { padding: clamp(5.5rem, 11vw, 8.5rem) 0; }
-      .section-kicker { display: flex; align-items: center; gap: .75rem; margin: 0 0 1rem; color: var(--cyan); font: 700 .68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; }
-      .section-kicker::after { width: 40px; height: 1px; content: ""; background: linear-gradient(90deg, var(--cyan), transparent); }
-      .section-head { display: grid; grid-template-columns: minmax(0, .8fr) minmax(300px, 1.2fr); align-items: end; gap: 3rem; margin-bottom: 2.25rem; }
-      .section-head h2 { color: #eef2f7; font-size: clamp(3.25rem, 6.5vw, 5.3rem); line-height: .96; }
-      .section-head > p { max-width: 610px; margin: 0; color: var(--muted); font-size: .96rem; }
-      .section-head strong { color: #d9e1eb; }
+<a class="skip-link" href="#about">Skip to content</a>
 
-      .about-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 1rem; }
-      .glass-card { border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(140deg, rgba(167,139,250,.06), rgba(34,211,238,.025)), var(--surface); }
-      .about-copy { padding: clamp(1.5rem, 4vw, 2.2rem); }
-      .about-copy p { margin: 0; color: var(--muted); font-size: .95rem; }
-      .about-copy p + p { margin-top: 1rem; }
-      .about-copy strong { color: #e0e6ee; }
-      .focus-list { display: grid; gap: 1rem; padding: 1.35rem; }
-      .focus-item { padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
-      .focus-item:last-child { padding-bottom: 0; border-bottom: 0; }
-      .focus-item span { color: var(--violet); font: 700 .65rem ui-monospace, monospace; }
-      .focus-item strong { display: block; margin-top: .28rem; color: #dce4ed; font-size: .82rem; }
-      .focus-item p { margin: .2rem 0 0; color: var(--dim); font-size: .72rem; line-height: 1.5; }
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="brand" href="#top" aria-label="Md Mahinur Alam, back to top">
+      <svg class="brand__mark" viewBox="0 0 28 28" aria-hidden="true">
+        <rect class="bm-bg" width="28" height="28" rx="7"/>
+        <rect class="bm-t" x="4" y="4" width="5.5" height="5.5" rx="1.2"/><rect class="bm-t" x="11.25" y="4" width="5.5" height="5.5" rx="1.2"/><rect class="bm-on" x="18.5" y="4" width="5.5" height="5.5" rx="1.2"/>
+        <rect class="bm-t" x="4" y="11.25" width="5.5" height="5.5" rx="1.2"/><rect class="bm-hot" x="11.25" y="11.25" width="5.5" height="5.5" rx="1.2"/><rect class="bm-t" x="18.5" y="11.25" width="5.5" height="5.5" rx="1.2"/>
+        <rect class="bm-on" x="4" y="18.5" width="5.5" height="5.5" rx="1.2"/><rect class="bm-t" x="11.25" y="18.5" width="5.5" height="5.5" rx="1.2"/><rect class="bm-t" x="18.5" y="18.5" width="5.5" height="5.5" rx="1.2"/>
+      </svg>
+      <span>Md Mahinur Alam</span>
+    </a>
 
-      .research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-      .research-card { position: relative; min-height: 310px; display: flex; flex-direction: column; overflow: hidden; padding: 1.6rem; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(140deg, rgba(167,139,250,.075), rgba(34,211,238,.03)), var(--surface); transition: transform 180ms ease, border-color 180ms ease; }
-      .research-card:hover { transform: translateY(-3px); border-color: rgba(167,139,250,.32); }
-      .research-card::after { position: absolute; right: -70px; bottom: -90px; width: 210px; height: 210px; border: 1px solid rgba(167,139,250,.16); border-radius: 50%; content: ""; }
-      .research-meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--dim); font: 700 .66rem/1.3 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
-      .research-meta span:first-child { color: var(--cyan); }
-      .research-card h3 { max-width: 26ch; margin: 2.4rem 0 .65rem; color: #ebf0f6; font-size: 1.08rem; line-height: 1.35; letter-spacing: -.02em; }
-      .research-card p { max-width: 56ch; margin: 0; color: #8f9baa; font-size: .8rem; line-height: 1.65; }
-      .research-result { display: flex; flex-wrap: wrap; gap: .4rem; margin: auto 0 0; padding-top: 1.2rem; }
-      .micro-tag { position: relative; z-index: 1; padding: .25rem .52rem; color: #a9b4c1; background: rgba(7,9,15,.42); font: 600 .62rem/1.4 ui-monospace, monospace; }
-      .card-link { position: relative; z-index: 2; display: inline-flex; align-items: center; gap: .35rem; margin-top: 1rem; color: #c9f8ff; font-size: .72rem; font-weight: 700; text-underline-offset: 4px; }
-      .research-footer { display: flex; justify-content: center; margin-top: 1.25rem; }
+    <nav class="nav" id="site-nav" aria-label="Sections">
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-      .archive { margin-top: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.025); }
-      .archive > summary { cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.25rem; color: #d8e0e9; font-size: .8rem; font-weight: 700; list-style: none; }
-      .archive > summary::-webkit-details-marker { display: none; }
-      .archive > summary::after { color: var(--cyan); content: "+"; font: 500 1.3rem ui-monospace, monospace; }
-      .archive[open] > summary::after { content: "−"; }
-      .archive-body { padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--line); }
-      .publication-tools { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
-      .filters { display: flex; flex-wrap: wrap; gap: .4rem; }
-      .filter { cursor: pointer; padding: .42rem .62rem; border: 1px solid var(--line); border-radius: 8px; color: #8e9aa9; background: transparent; font-size: .68rem; font-weight: 700; }
-      .filter[aria-pressed="true"] { border-color: rgba(34,211,238,.36); color: #c9f8ff; background: rgba(34,211,238,.06); }
-      .search { width: min(100%, 250px); padding: .48rem .68rem; border: 1px solid var(--line); border-radius: 8px; color: #dce3ec; background: #0b0e16; font-size: .72rem; }
-      .publication-count { margin: 0 0 .3rem; color: var(--dim); font-size: .66rem; }
-      .publication { display: grid; grid-template-columns: 48px minmax(0,1fr) auto; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
-      .pub-year { color: var(--violet); font: 700 .68rem ui-monospace, monospace; }
-      .publication h3 { margin: 0 0 .25rem; color: #cfd7e1; font-size: .78rem; line-height: 1.5; }
-      .pub-meta { margin: 0; color: var(--dim); font-size: .67rem; }
-      .pub-badge { display: inline-block; margin-left: .4rem; padding: .12rem .34rem; border-radius: 999px; color: #bfeff5; background: rgba(34,211,238,.07); font-size: .56rem; font-weight: 700; }
-      .pub-links { display: flex; gap: .35rem; }
-      .pub-links a { padding: .28rem .45rem; border: 1px solid var(--line); border-radius: 6px; color: #aeb8c4; font-size: .6rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
-      .load-more { display: flex; margin: 1rem auto 0; cursor: pointer; }
+    <div class="masthead__tools">
+      <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+        <svg class="icon icon-sun"><use href="#i-sun"></use></svg>
+        <svg class="icon icon-moon"><use href="#i-moon"></use></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-      .timeline { position: relative; max-width: 940px; margin-left: auto; }
-      .timeline::before { position: absolute; top: 8px; bottom: 18px; left: 152px; width: 1px; content: ""; background: linear-gradient(var(--cyan), rgba(167,139,250,.3), transparent); }
-      .timeline-item { display: grid; grid-template-columns: 125px 1fr; gap: 3.2rem; padding: 0 0 2.8rem; }
-      .timeline-date { padding-top: .14rem; color: #778394; font: 700 .66rem ui-monospace, monospace; }
-      .timeline-content { position: relative; padding: 1.2rem 1.3rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.025); }
-      .timeline-content::before { position: absolute; top: 1.47rem; left: -3.55rem; width: 8px; height: 8px; border: 2px solid var(--bg); border-radius: 50%; content: ""; background: var(--cyan); box-shadow: 0 0 0 4px rgba(34,211,238,.1), 0 0 18px rgba(34,211,238,.55); }
-      .timeline-content h3 { margin: 0; color: #e5ebf2; font-size: .96rem; letter-spacing: -.02em; }
-      .timeline-org { margin: .22rem 0 0; color: var(--violet); font-size: .72rem; font-weight: 650; }
-      .timeline-content ul { margin: .8rem 0 0; padding-left: 1rem; color: #8d98a7; font-size: .75rem; }
-      .timeline-content li + li { margin-top: .35rem; }
-      .timeline-content strong { color: #ccd5df; }
+<main class="layout" id="top">
 
-      .edu-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; }
-      .edu-card { padding: 1.35rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.025); }
-      .edu-year { color: var(--cyan); font: 700 .64rem ui-monospace, monospace; }
-      .edu-card h3 { margin: 1.1rem 0 .28rem; color: #dfe6ee; font-size: .9rem; line-height: 1.35; }
-      .edu-card p { margin: .18rem 0; color: #808c9b; font-size: .71rem; }
-      .edu-card strong { color: #aab5c2; }
-      .mentoring { display: grid; grid-template-columns: .8fr 1.2fr; gap: 1rem; margin-top: 1rem; padding: 1.35rem; }
-      .mentoring h3 { margin: 0; color: #e0e7ef; font-family: "Instrument Serif", Georgia, serif; font-size: 2rem; font-weight: 400; }
-      .mentoring p { margin: 0; color: #8b97a6; font-size: .78rem; }
+  <!-- ===================================================== PROFILE -->
+  <aside class="profile" aria-label="Profile">
+    <img class="profile__photo" src="images/profile.jpg" width="480" height="480" alt="Portrait of Md Mahinur Alam">
+    <div class="profile__head">
+      <h1 class="profile__name">Md Mahinur Alam</h1>
+      <p class="profile__role">Ph.D. Student, Information Systems<br>Federated Learning · LLM Reasoning · Computer Vision · Digital Twins</p>
+    </div>
+    <ul class="profile__facts">
+      <li><svg class="icon"><use href="#i-building"></use></svg><span>University of Maryland, Baltimore County (UMBC)</span></li>
+      <li><svg class="icon"><use href="#i-pin"></use></svg><span>Baltimore, Maryland, USA</span></li>
+      <li><svg class="icon"><use href="#i-mail"></use></svg><a href="mailto:mahinuralam213@gmail.com">mahinuralam213@gmail.com</a></li>
+    </ul>
+    <div class="profile__actions">
+      <a class="btn btn--primary" href="files/Md_Mahinur_Alam_CV.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"></use></svg>CV</a>
+      <a class="btn btn--ghost" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en"><svg class="icon"><use href="#i-cap"></use></svg>Scholar</a>
+    </div>
+    <ul class="profile__links" aria-label="Profiles">
+      <li><a href="https://github.com/mahinuralam"><svg class="icon"><use href="#i-code"></use></svg>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mahinur-alam/"><svg class="icon"><use href="#i-briefcase"></use></svg>LinkedIn</a></li>
+      <li><a href="https://www.researchgate.net/profile/Md-Alam-454"><svg class="icon"><use href="#i-book"></use></svg>ResearchGate</a></li>
+      <li><a href="https://www.kaggle.com/mahinuralam"><svg class="icon"><use href="#i-bars"></use></svg>Kaggle</a></li>
+    </ul>
+  </aside>
 
-      .awards-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1rem; }
-      .award-list { display: grid; }
-      .award-row { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: .85rem; padding: 1.05rem 1.2rem; border: 1px solid var(--line); background: rgba(255,255,255,.025); }
-      .award-row:first-child { border-radius: 14px 14px 0 0; }
-      .award-row:last-child { border-radius: 0 0 14px 14px; }
-      .award-row + .award-row { border-top: 0; }
-      .award-icon { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(167,139,250,.3); border-radius: 50%; color: var(--violet); font-size: .8rem; }
-      .award-row strong { display: block; color: #dce4ed; font-size: .76rem; }
-      .award-row small { display: block; margin-top: .1rem; color: var(--dim); font-size: .64rem; }
-      .award-row time { color: #728092; font: 700 .63rem ui-monospace, monospace; }
-      .signal-cards { display: grid; gap: 1rem; }
-      .signal-card { padding: 1.3rem; }
-      .signal-card .big { margin: 0; color: transparent; background: linear-gradient(90deg, var(--cyan), var(--violet)); background-clip: text; -webkit-background-clip: text; font-family: "Instrument Serif", Georgia, serif; font-size: 3.2rem; line-height: 1; }
-      .signal-card h3 { margin: 0 0 .55rem; color: #dae2eb; font-size: .9rem; }
-      .signal-card p { margin: 0; color: #7f8b99; font-size: .82rem; }
-      .activity-list { margin: 0; padding-left: 1.05rem; color: #96a3b4; font-size: .82rem; line-height: 1.6; }
-      .activity-list li + li { margin-top: .35rem; }
+  <!-- ===================================================== ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <h2 class="visually-hidden" id="about-title">About me</h2>
 
-      .toolkit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-      .toolkit-card { padding: 1.3rem; }
-      .toolkit-card > span { color: var(--violet); font: 700 .65rem ui-monospace, monospace; }
-      .toolkit-card h3 { margin: .75rem 0 .7rem; color: #dfe6ee; font-size: .84rem; }
-      .toolkit-card .tag-row { margin-top: 0; }
+    <div class="callout" role="note">
+      <svg class="icon"><use href="#i-megaphone"></use></svg>
+      <p><strong>Seeking Summer 2027 research internships</strong> in computer vision, federated learning, LLM reasoning, and digital twins. My background fits Research Scientist, Applied Scientist, and ML Research Intern roles, and I am always open to research collaborations. <a href="mailto:mahinuralam213@gmail.com?subject=Summer%202027%20Research%20Internship">Email me</a>.</p>
+    </div>
 
-      .contact-card { position: relative; overflow: hidden; display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 3rem; padding: clamp(1.7rem, 5vw, 3.5rem); border: 1px solid rgba(167,139,250,.22); border-radius: 20px; background: linear-gradient(135deg, rgba(34,211,238,.07), rgba(167,139,250,.1) 55%, rgba(244,114,182,.05)); }
-      .contact-card::after { position: absolute; right: -100px; top: -140px; width: 360px; height: 360px; border: 1px solid rgba(34,211,238,.13); border-radius: 50%; content: ""; }
-      .contact-card h2 { max-width: 720px; color: #f1f4f8; font-size: clamp(3.25rem, 7vw, 5.8rem); line-height: .92; }
-      .contact-card p { max-width: 620px; margin: 1rem 0 0; color: #96a2b1; font-size: .86rem; }
-      .contact-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.3rem; }
-      .contact-links { position: relative; z-index: 1; display: grid; }
-      .contact-links a { display: flex; justify-content: space-between; padding: .7rem 0; border-bottom: 1px solid var(--line); color: #aab5c2; font-size: .74rem; font-weight: 650; text-decoration: none; }
-      .contact-links a:hover { color: white; }
-      footer { padding: 0 0 2rem; }
-      .footer-line { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: #596575; font-size: .65rem; }
+    <div class="prose">
+      <p>I am a Ph.D. student in Information Systems at the <a href="https://umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>, where I work as a Graduate Research Assistant. My research centers on <strong>federated learning, LLM reasoning, computer vision, and digital twins</strong>, and I am passionate about building practical, efficient AI systems that bridge cutting-edge research and real-world applications.</p>
+      <p>At UMBC, I am building a framework to resolve <strong>reasoning collapse in federated LLMs</strong> under heterogeneous data distributions, and developing a <strong>digital-twin simulation of mosquito movement</strong> in NVIDIA Omniverse Isaac Sim. My broader work covers efficient small-object detection in UAV imagery, generative-AI-assisted industrial anomaly detection, federated and multimodal learning, and AI-driven digital twins for warehouse and industrial automation. It has appeared in <strong>IEEE Access, ICT Express, and the Journal of Information Security and Applications</strong>, and at <strong>IEEE ICC, ICTC, ICMIC, ICCIT, and an IEEE ICRA workshop</strong>, including a <strong>Best Paper Award at IEEE ICMIC 2026</strong>.</p>
+      <p>Before UMBC, I was a Ph.D. student in Electrical Engineering at <a href="https://www.georgiasouthern.edu/">Georgia Southern University</a>, where I developed an adaptive reconstruction-guided framework for tiny-object detection in UAV imagery. I earned my M.Eng. in IT Convergence Engineering at <a href="https://www.kumoh.ac.kr/">Kumoh National Institute of Technology (KIT)</a>, South Korea, as a Graduate Research Assistant in the PIC Lab working on industrial AI, multimodal learning, and warehouse automation. Earlier, I was a Research Engineer at the AIMS Lab, United International University, and a Python Software Engineer at Divine IT Ltd. I hold a B.Sc. in Computer Science and Engineering from <a href="https://iubat.edu/">IUBAT</a>, Bangladesh, where I competed in programming contests and reached the ACM ICPC Dhaka Regional as a finalist.</p>
+    </div>
 
-      .reveal { opacity: 0; transform: translateY(14px); transition: opacity 620ms ease, transform 620ms ease; }
-      .reveal.visible { opacity: 1; transform: translateY(0); }
+    <div class="interests">
+      <h3 class="interests__title">Research Interests</h3>
+      <ul class="interests__list">
+        <li>
+          <span class="interests__cat">Efficient visual perception</span>
+          <span class="work"><a href="https://ieeexplore.ieee.org/abstract/document/11708585">Adaptive Reconstruction for UAV Small Objects</a><span class="work__venue">ICMIC 2026 · Best Paper</span></span>
+          <span class="work"><a href="https://ieeexplore.ieee.org/document/11361039">Diffusion-Augmented Anomaly Detection</a><span class="work__venue">IEEE Access</span></span>
+          <span class="work"><a href="https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset">RealAIGI</a><span class="work__venue">ICMIC 2025</span></span>
+        </li>
+        <li>
+          <span class="interests__cat">Federated and distributed learning</span>
+          <span class="work"><a href="https://www.sciencedirect.com/science/article/pii/S221421262600092X">FMACNN</a><span class="work__venue">JISA</span></span>
+          <span class="work"><a href="https://ieeexplore.ieee.org/abstract/document/11387808">Digital Twin-Driven FL for Intrusion Detection</a><span class="work__venue">ICTC 2025</span></span>
+          <span class="work"><a href="https://github.com/mahinuralam/flower-llm-finetune-challenge">Distributed Financial LLM</a><span class="work__venue">Flower leaderboard</span></span>
+        </li>
+        <li>
+          <span class="interests__cat">Digital twins and intelligent automation</span>
+          <span class="work"><a href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">AI-Driven Digital Twin Framework</a><span class="work__venue">ICRA 2026 Workshop</span></span>
+          <span class="work"><a href="https://www.sciencedirect.com/science/article/pii/S2405959526000093">AI-Enhanced Digital Twin Review</a><span class="work__venue">ICT Express</span></span>
+          <span class="work"><a href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing">Semi-Supervised KD on Edge</a><span class="work__venue">ICTC 2025</span></span>
+        </li>
+        <li>
+          <span class="interests__cat">Multimodal learning</span>
+          <span class="work"><a href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">TMNet</a><span class="work__venue">ICT Express</span></span>
+          <span class="work"><a href="https://github.com/mahinuralam/multi-modal-autonomous-driving-hazard-detection">Multi-modal Hazard Detection</a><span class="work__venue">KICS Fall 2025</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-      @media (max-width: 900px) {
-        .nav-links { display: none; }
-        .mobile-nav { display: block; }
-        .hero { min-height: auto; }
-        .hero-grid { grid-template-columns: 1fr; }
-        .portrait-column { grid-row: 1; justify-self: start; width: min(68vw, 280px); }
-        h1 { font-size: clamp(4.2rem, 16vw, 6.3rem); }
-        .section-head, .about-grid, .contact-card, .awards-grid { grid-template-columns: 1fr; }
-        .section-head { align-items: start; gap: 1rem; }
-        .metric-strip { grid-template-columns: repeat(2,1fr); }
-        .metric:nth-child(2) { border-right: 0; }
-        .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-        .research-grid, .toolkit-grid { grid-template-columns: 1fr 1fr; }
-      }
-      @media (max-width: 640px) {
-        .wrap { width: min(100% - 28px, var(--max)); }
-        body::before { background-size: 30px 30px; }
-        .hero { padding-top: 3.2rem; }
-        h1 { font-size: clamp(4rem, 21vw, 5.7rem); }
-        .hero-copy { font-size: .95rem; }
-        .now-list, .research-grid, .edu-grid, .toolkit-grid, .mentoring { grid-template-columns: 1fr; }
-        .now-item + .now-item { padding-top: .55rem; border-top: 1px solid var(--line); }
-        .section-head h2 { font-size: 3.35rem; }
-        .publication-tools { align-items: stretch; flex-direction: column; }
-        .search { width: 100%; }
-        .publication { grid-template-columns: 42px 1fr; }
-        .pub-links { grid-column: 2; }
-        .timeline::before { left: 4px; }
-        .timeline-item { grid-template-columns: 1fr; gap: .6rem; padding-left: 1.7rem; }
-        .timeline-content::before { top: 1.5rem; left: -1.95rem; }
-        .award-row { grid-template-columns: 38px 1fr; }
-        .award-row time { grid-column: 2; }
-        .footer-line { flex-direction: column; }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        html { scroll-behavior: auto; }
-        *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
-        .reveal { opacity: 1; transform: none; }
-      }
-
-      /* CV- and LinkedIn-aligned visual refresh */
-      :root {
-        --bg: #f5f7fb;
-        --surface: #ffffff;
-        --surface-strong: #ffffff;
-        --line: #dfe5ed;
-        --line-strong: #cbd5e1;
-        --text: #172033;
-        --muted: #536174;
-        --dim: #738095;
-        --cyan: #2563eb;
-        --violet: #0f766e;
-        --pink: #7c3aed;
-        --green: #16a34a;
-        --radius: 14px;
-      }
-      body {
-        color: var(--text);
-        background: var(--bg);
-        background-attachment: scroll;
-        font-size: 15px;
-        line-height: 1.65;
-      }
-      body::before { display: none; }
-      ::selection { color: white; background: #2563eb; }
-      :focus-visible { outline-color: #2563eb; }
-      .site-header { border-color: rgba(203,213,225,.8); background: rgba(255,255,255,.9); }
-      .brand { color: #172033; }
-      .brand span { color: #2563eb; }
-      .nav-links a { color: #536174; }
-      .nav-links a:hover { color: #1d4ed8; }
-      .nav-links .nav-cta { border-color: #bfdbfe; color: #1d4ed8; background: #eff6ff; }
-      .mobile-nav summary { border-color: #cbd5e1; color: #334155; background: white; }
-      .mobile-nav div { border-color: #dfe5ed; background: white; box-shadow: 0 18px 44px rgba(15,23,42,.12); }
-      .mobile-nav a { color: #475569; }
-      .mobile-nav a:hover { color: #1d4ed8; background: #eff6ff; }
-      .hero { min-height: auto; padding: clamp(4.5rem, 8vw, 7rem) 0 4rem; }
-      .hero-grid { grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); gap: clamp(2.5rem, 6vw, 5rem); }
-      .status-pill { margin-bottom: 1.1rem; border-color: #bfdbfe; color: #1d4ed8; background: #eff6ff; }
-      .status-dot { background: #16a34a; box-shadow: 0 0 0 3px #dcfce7; }
-      h1, h2 { color: #172033; font-family: Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: -.035em; }
-      h1 { max-width: 760px; font-size: clamp(2.75rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.06; }
-      h1 span { display: inline; color: #2563eb; background: none; -webkit-text-fill-color: initial; }
-      .hero-copy { max-width: 680px; margin-top: 1.35rem; color: #536174; font-size: clamp(.98rem, 1.4vw, 1.08rem); line-height: 1.72; }
-      .hero-copy strong { color: #24324a; }
-      .button { border-color: #cbd5e1; color: #334155; background: white; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
-      .button:hover { border-color: #93c5fd; color: #1d4ed8; background: #f8fbff; }
-      .button.primary { border: 1px solid #2563eb; color: white; background: #2563eb; }
-      .button.primary:hover { color: white; background: #1d4ed8; }
-      .tag { border-color: #dbe3ec; color: #5f6d80; background: #f8fafc; }
-      .portrait-column { width: min(100%, 300px); }
-      .portrait-orbit { aspect-ratio: .92; }
-      .portrait-orbit::before { inset: 0; padding: 0; border: 1px solid #dbe3ec; border-radius: 24px; background: #e8eef7; -webkit-mask: none; mask: none; animation: none; }
-      .portrait-orbit::after { display: none; }
-      .orbit-mark { display: none; }
-      .portrait { width: calc(100% - 18px); height: calc(100% - 18px); aspect-ratio: auto; border: 0; border-radius: 18px; object-position: center top; box-shadow: 0 16px 38px rgba(15,23,42,.12); }
-      .portrait-badges span { border-color: #dbe3ec; color: #536174; background: white; }
-      .now-card { border-color: #dbe3ec; background: white; box-shadow: 0 8px 28px rgba(15,23,42,.05); }
-      .now-head strong { color: #24324a; }
-      .now-head span, .now-item { color: #738095; }
-      .now-item b { color: #334155; }
-      .metric-strip { border-color: #dbe3ec; background: white; box-shadow: 0 8px 28px rgba(15,23,42,.04); }
-      .metric { border-color: #e5eaf1; }
-      .metric strong { color: #172033; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.12rem; font-weight: 750; }
-      .metric span { color: #738095; }
-      section { padding: clamp(4.5rem, 9vw, 7rem) 0; }
-      .section-kicker { color: #2563eb; }
-      .section-kicker::after { background: #93c5fd; }
-      .section-head h2 { color: #172033; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 750; line-height: 1.12; }
-      .section-head > p, .section-head strong { color: #536174; }
-      .glass-card, .research-card, .edu-card, .timeline-content, .signal-card, .toolkit-card { border-color: #dfe5ed; background: white; box-shadow: 0 8px 26px rgba(15,23,42,.045); }
-      .about-copy p { color: #536174; }
-      .about-copy strong { color: #24324a; }
-      .focus-item { border-color: #e5eaf1; }
-      .focus-item span { color: #2563eb; }
-      .focus-item strong { color: #24324a; }
-      .focus-item p { color: #738095; }
-      .research-card { min-height: 285px; background: white; }
-      .research-card:hover { border-color: #93c5fd; box-shadow: 0 14px 36px rgba(37,99,235,.08); }
-      .research-card::after { display: none; }
-      .research-meta { color: #7c899a; }
-      .research-meta span:first-child { color: #1d4ed8; }
-      .research-card h3 { color: #24324a; }
-      .research-card p { color: #5d6a7c; }
-      .micro-tag { border-color: #dbe3ec; color: #536174; background: #f8fafc; }
-      .card-link { color: #1d4ed8; }
-      .archive { border-color: #dfe5ed; background: white; }
-      .archive > summary { color: #334155; }
-      .archive > summary::after { color: #2563eb; }
-      .archive-body, .publication { border-color: #e5eaf1; }
-      .filter { border-color: #dbe3ec; color: #64748b; }
-      .filter[aria-pressed="true"] { border-color: #93c5fd; color: #1d4ed8; background: #eff6ff; }
-      .search { border-color: #dbe3ec; color: #334155; background: #f8fafc; }
-      .publication h3 { color: #334155; }
-      .pub-year { color: #2563eb; }
-      .pub-badge { color: #0f766e; background: #ecfdf5; }
-      .pub-links a { border-color: #dbe3ec; color: #536174; }
-      .timeline::before { background: linear-gradient(#93c5fd, #dbeafe, transparent); }
-      .timeline-content::before { border-color: #f5f7fb; background: #2563eb; box-shadow: 0 0 0 4px #dbeafe; }
-      .timeline-date { color: #738095; }
-      .timeline-content h3 { color: #24324a; }
-      .timeline-org { color: #1d4ed8; }
-      .timeline-content ul { color: #5d6a7c; }
-      .timeline-content strong { color: #334155; }
-      .edu-year { color: #2563eb; }
-      .edu-card h3, .mentoring h3 { color: #24324a; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
-      .edu-card p, .mentoring p { color: #657286; }
-      .award-row { border-color: #dfe5ed; background: white; }
-      .award-icon { border-color: #bfdbfe; color: #2563eb; background: #eff6ff; }
-      .award-row strong { color: #334155; }
-      .award-row small, .award-row time { color: #738095; }
-      .signal-card .big { color: #2563eb; background: none; -webkit-text-fill-color: initial; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 2.5rem; font-weight: 800; }
-      .signal-card h3, .toolkit-card h3 { color: #334155; }
-      .signal-card p { color: #657286; }
-      .toolkit-card > span { color: #2563eb; }
-      .contact-card { border-color: #bfdbfe; background: #eaf2ff; }
-      .contact-card::after { border-color: rgba(37,99,235,.12); }
-      .contact-card h2 { color: #172033; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 750; line-height: 1.12; }
-      .contact-card p { color: #536174; }
-      .contact-links a { border-color: #cbdcf6; color: #475569; }
-      .contact-links a:hover { color: #1d4ed8; }
-      .footer-line { border-color: #dfe5ed; color: #738095; }
-      .status-pill, .tag, .portrait-badges span, .now-head span, .section-kicker,
-      .research-meta, .micro-tag, .timeline-date, .edu-year, .toolkit-card > span,
-      .pub-year { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
-      @media (max-width: 900px) {
-        .hero-grid { grid-template-columns: 1fr; }
-        .portrait-column { grid-row: auto; justify-self: start; width: min(62vw, 260px); }
-      }
-      @media (max-width: 640px) {
-        h1 { font-size: clamp(2.55rem, 12vw, 3.1rem); }
-        .section-head h2, .contact-card h2 { font-size: 1.85rem; }
-      }
-
-      /* Final dark academic theme: restrained contrast, no neon effects */
-      :root {
-        --bg: #0b0f14;
-        --surface: #121821;
-        --surface-strong: #161e29;
-        --line: #273140;
-        --line-strong: #354255;
-        --text: #e7edf5;
-        --muted: #a2adbd;
-        --dim: #778396;
-        --cyan: #6ea8fe;
-        --violet: #8ab4f8;
-        --pink: #9db7d8;
-        --green: #55c58a;
-      }
-      body { color: var(--text); background: var(--bg); }
-      .site-header { border-color: #202936; background: rgba(11,15,20,.92); }
-      .brand { color: #eef3f8; }
-      .brand span { color: #6ea8fe; }
-      .nav-links a { color: #9aa6b7; }
-      .nav-links a:hover { color: #e7edf5; }
-      .nav-links .nav-cta { border-color: #36547b; color: #b9d5ff; background: #142236; }
-      .mobile-nav summary { border-color: #354255; color: #d9e2ed; background: #121821; }
-      .mobile-nav div { border-color: #273140; background: #121821; box-shadow: 0 18px 44px rgba(0,0,0,.35); }
-      .mobile-nav a { color: #aab5c4; }
-      .mobile-nav a:hover { color: #eef3f8; background: #1a2431; }
-      .status-pill { border-color: #324b6c; color: #b7d2f8; background: #111d2c; }
-      .status-dot { background: #55c58a; box-shadow: 0 0 0 3px rgba(85,197,138,.14); }
-      h1, h2 { color: #edf2f7; }
-      h1 span { color: #78aef7; }
-      .hero-copy { color: #a6b1c0; }
-      .hero-copy strong { color: #dce5ee; }
-      .button { border-color: #354255; color: #d5dee9; background: #121821; box-shadow: none; }
-      .button:hover { border-color: #557aab; color: #eef5ff; background: #182230; }
-      .button.primary { border-color: #4f87d1; color: #08111f; background: #78aef7; }
-      .button.primary:hover { color: #08111f; background: #91bcf8; }
-      .tag { border-color: #2b3747; color: #99a7ba; background: #10161e; }
-      .portrait-orbit::before { border-color: #2d3949; background: #151c26; }
-      .portrait { box-shadow: 0 16px 38px rgba(0,0,0,.28); }
-      .portrait-badges span { border-color: #2b3747; color: #9eabbb; background: #10161e; }
-      .now-card, .metric-strip { border-color: #273140; background: #121821; box-shadow: 0 8px 28px rgba(0,0,0,.18); }
-      .now-head strong, .now-item b { color: #dce5ee; }
-      .now-head span, .now-item { color: #8491a3; }
-      .metric { border-color: #273140; }
-      .metric strong { color: #e5ebf2; }
-      .metric span { color: #7f8b9d; }
-      .section-kicker { color: #78aef7; }
-      .section-kicker::after { background: #3d5f8b; }
-      .section-head h2 { color: #edf2f7; }
-      .section-head > p, .section-head strong { color: #a2adbd; }
-      .glass-card, .research-card, .edu-card, .timeline-content, .signal-card, .toolkit-card {
-        border-color: #273140;
-        background: #121821;
-        box-shadow: 0 8px 26px rgba(0,0,0,.14);
-      }
-      .about-copy p { color: #a2adbd; }
-      .about-copy strong, .focus-item strong { color: #dce5ee; }
-      .focus-item { border-color: #273140; }
-      .focus-item span { color: #78aef7; }
-      .focus-item p { color: #7f8b9d; }
-      .research-card { background: #121821; }
-      .research-card:hover { border-color: #426792; box-shadow: 0 14px 36px rgba(0,0,0,.22); }
-      .research-meta { color: #7f8b9d; }
-      .research-meta span:first-child, .card-link { color: #8ab9fa; }
-      .research-card h3 { color: #e0e7ef; }
-      .research-card p { color: #9ba7b7; }
-      .micro-tag { border-color: #2b3747; color: #a2adbd; background: #0f151d; }
-      .archive { border-color: #273140; background: #10161e; }
-      .archive > summary { color: #d7e0ea; }
-      .archive > summary::after { color: #78aef7; }
-      .archive-body, .publication { border-color: #273140; }
-      .filter { border-color: #2d3949; color: #8f9daf; }
-      .filter[aria-pressed="true"] { border-color: #426792; color: #b9d5ff; background: #142236; }
-      .search { border-color: #2d3949; color: #d5dee9; background: #0d131a; }
-      .publication h3 { color: #d0d9e4; }
-      .pub-meta, .publication-count { color: #778396; }
-      .pub-year { color: #78aef7; }
-      .pub-badge { color: #8fd9bb; background: #10251f; }
-      .pub-links a { border-color: #2d3949; color: #a2adbd; }
-      .timeline::before { background: linear-gradient(#496f9d, #26384e, transparent); }
-      .timeline-content::before { border-color: #0b0f14; background: #78aef7; box-shadow: 0 0 0 4px rgba(120,174,247,.12); }
-      .timeline-date { color: #778396; }
-      .timeline-content h3, .edu-card h3, .mentoring h3, .award-row strong, .signal-card h3, .toolkit-card h3 { color: #dce5ee; }
-      .timeline-org, .edu-year, .toolkit-card > span { color: #8ab9fa; }
-      .timeline-content ul, .edu-card p, .mentoring p, .signal-card p { color: #96a3b4; }
-      .timeline-content strong { color: #d4dde7; }
-      .award-row { border-color: #273140; background: #121821; }
-      .award-icon { border-color: #36547b; color: #8ab9fa; background: #142236; }
-      .award-row small, .award-row time { color: #778396; }
-      .signal-card .big { color: #78aef7; }
-      .contact-card { border-color: #32445c; background: #111a26; }
-      .contact-card::after { border-color: rgba(120,174,247,.1); }
-      .contact-card h2 { color: #edf2f7; }
-      .contact-card p { color: #a2adbd; }
-      .contact-links a { border-color: #2b3a4e; color: #aab5c4; }
-      .contact-links a:hover { color: #dbeafe; }
-      .footer-line { border-color: #273140; color: #778396; }
-    </style>
-    <link rel="stylesheet" href="assets/atmosphere.css?v=1" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header">
-      <div class="wrap nav-shell">
-        <a class="brand" href="#top" aria-label="Md Mahinur Alam, home">Md Mahinur <span>Alam</span></a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#awards">Awards</a>
-          <a class="nav-cta" href="#contact">Contact</a>
-        </nav>
-        <details class="mobile-nav">
-          <summary>Menu</summary>
-          <div>
-            <a href="#publications">Publications</a><a href="#experience">Experience</a>
-            <a href="#education">Education</a><a href="#awards">Awards</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
-          </div>
-        </details>
+  <!-- ===================================================== NOW (right rail on wide screens) -->
+  <aside class="now" aria-labelledby="now-title">
+    <div class="now__card">
+      <div class="now__head">
+        <p class="now__eyebrow"><span class="pulse" aria-hidden="true"></span>Now at UMBC</p>
+        <h2 class="now__title" id="now-title">Current research</h2>
       </div>
-    </header>
+      <ul class="now__list">
+        <li><strong>Federated LLM reasoning</strong>A framework to resolve reasoning collapse in federated LLMs under heterogeneous data distributions.</li>
+        <li><strong>Mosquito-movement digital twin</strong>Literature-grounded simulation of mosquito movement in NVIDIA Omniverse Isaac Sim.</li>
+      </ul>
+      <dl class="stats">
+        <div><dt>citations</dt><dd>131</dd></div>
+        <div><dt>h-index</dt><dd>7</dd></div>
+        <div><dt>Best Paper Awards</dt><dd>4</dd></div>
+        <div><dt>papers &amp; manuscripts</dt><dd>40</dd></div>
+      </dl>
+      <p class="now__note">Citations and h-index from <a href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en">Google Scholar</a>, October 2026.</p>
+    </div>
+  </aside>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="wrap hero-grid">
-          <div>
-            <div class="status-pill"><span class="status-dot" aria-hidden="true"></span>PhD Student in Information Systems · UMBC</div>
-            <h1>Md Mahinur <span>Alam</span></h1>
-            <p class="hero-copy">
-              I am a PhD student in Information Systems at the <strong>University of Maryland, Baltimore County</strong>. My research focuses on federated learning, large-language-model reasoning, computer vision, and intelligent automation, with applications in heterogeneous data, UAV perception, industrial inspection, and digital twins. Previously, I worked in applied AI research and Python software engineering.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#publications">View publications <span aria-hidden="true">↓</span></a>
-              <a class="button" href="mailto:mahinuralam213@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+  <div class="sections">
+
+    <!-- ===================================================== NEWS -->
+    <section class="section" id="news" aria-labelledby="news-title">
+      <div class="section__head"><h2 class="section__title" id="news-title">News</h2></div>
+      <ol class="news">
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-08">Aug 2026</time><span class="badge badge--award">Award</span></div>
+          <p class="news__text">Received the <strong>Best Paper Award</strong> at <strong>IEEE ICMIC 2026</strong> for <em>Adaptive Reconstruction and Deformable Attention for UAV Small-Object Detection</em>.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-07">Jul 2026</time><span class="badge badge--paper">Paper</span></div>
+          <p class="news__text"><strong>FMACNN</strong>, a federated multi-attention CNN for artificial image detection, published in the <em>Journal of Information Security and Applications</em>.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-06">Jun 2026</time><span class="badge badge--milestone">Milestone</span></div>
+          <p class="news__text">Started my <strong>Ph.D. in Information Systems at UMBC</strong> as a Graduate Research Assistant.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-06">Jun 2026</time><span class="badge badge--paper">Paper</span></div>
+          <p class="news__text"><em>AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization</em> appeared at an <strong>IEEE ICRA 2026</strong> workshop in Vienna.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026">Spring 2026</time><span class="badge badge--award">Award</span></div>
+          <p class="news__text">Received the <strong>Outstanding Graduate Research Achievement Award</strong> from Kumoh National Institute of Technology.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-01">Jan 2026</time><span class="badge badge--paper">Paper</span></div>
+          <p class="news__text">Two journal papers published: Stable Diffusion-augmented industrial anomaly detection in <strong>IEEE Access</strong>, and a review of AI-enhanced digital twins for warehouse logistics in <strong>ICT Express</strong>.</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2026-01">Jan 2026</time><span class="badge badge--milestone">Milestone</span></div>
+          <p class="news__text">Began a Ph.D. in Electrical Engineering at <strong>Georgia Southern University</strong>, working on tiny-object detection for UAV imagery (later transferred to UMBC).</p>
+        </li>
+        <li class="news__item">
+          <div class="news__meta"><time class="news__date" datetime="2025-12">Dec 2025</time><span class="badge badge--milestone">Milestone</span></div>
+          <p class="news__text">Completed my <strong>M.Eng. in IT Convergence Engineering</strong> at Kumoh National Institute of Technology with a 4.44/4.50 GPA.</p>
+        </li>
+      </ol>
+
+      <details class="more">
+        <summary>Older news</summary>
+        <div class="more__body">
+          <ol class="news">
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-11">Nov 2025</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text">Journal paper on blockchain-aided intrusion detection for marine tactical networks in <em>The Journal of the Korean Institute of Communications and Information Sciences</em>, plus two papers at the <strong>KICS Fall Conference 2025</strong>.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-10">Oct 2025</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text">Two papers at <strong>IEEE ICTC 2025</strong> on digital-twin-driven knowledge distillation and federated intrusion detection.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-08">Aug 2025</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text">Released the <strong>RealAIGI</strong> dataset of real and AI-generated images at <strong>IEEE ICMIC 2025</strong>.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-06">Jun 2025</time><span class="badge badge--award">Award</span></div>
+              <p class="news__text"><strong>Best Paper Award</strong> at the <strong>KICS Summer Conference 2025</strong>.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-06">Jun 2025</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text"><strong>BLIND-Twin</strong>, an LLM-based decision-support system for digital-twin-enhanced industrial AIoT, at <strong>IEEE ICC 2025</strong>.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025-05">May 2025</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text"><strong>TMNet</strong>, a transformer-fused framework for emotion recognition from EEG and speech, published in <em>ICT Express</em>.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2025">2025</time><span class="badge badge--feat">Result</span></div>
+              <p class="news__text">Federated fine-tuning of Qwen-2.5-7B on finance data ranked <strong>5th</strong> on the official <strong>Flower</strong> LLM leaderboard.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2024-11">Nov 2024</time><span class="badge badge--award">Award</span></div>
+              <p class="news__text">Two <strong>Best Paper Awards</strong> at the <strong>KICS Fall Conference 2024</strong> (Gumi Industrial Complex Energy Self-Sufficiency Data Academic Paper Contest).</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2024-10">Oct 2024</time><span class="badge badge--paper">Paper</span></div>
+              <p class="news__text">Three papers at <strong>IEEE ICTC 2024</strong>, including federated semi-supervised digital twins for human-machine interaction.</p>
+            </li>
+            <li class="news__item">
+              <div class="news__meta"><time class="news__date" datetime="2024-03">Mar 2024</time><span class="badge badge--milestone">Milestone</span></div>
+              <p class="news__text">Joined <strong>Kumoh National Institute of Technology</strong>, South Korea, for my M.Eng. and research in the PIC Lab.</p>
+            </li>
+          </ol>
+        </div>
+      </details>
+    </section>
+
+    <!-- ===================================================== RESEARCH HIGHLIGHTS -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section__head"><h2 class="section__title" id="research-title">Research Highlights</h2></div>
+      <p class="section__lede">Selected work in efficient visual perception, federated and multimodal learning, and digital twins. <a href="#publications">See all publications</a>.</p>
+
+      <div class="filters" role="group" aria-label="Filter highlights by area">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__n">8</span></button>
+        <button class="filter" type="button" data-filter="vision" aria-pressed="false">Visual perception <span class="filter__n">3</span></button>
+        <button class="filter" type="button" data-filter="learning" aria-pressed="false">Federated &amp; multimodal <span class="filter__n">2</span></button>
+        <button class="filter" type="button" data-filter="twins" aria-pressed="false">Digital twins <span class="filter__n">3</span></button>
+      </div>
+
+      <div class="highlights">
+
+        <article class="hl" data-cat="vision">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: adaptive tile reconstruction"><img src="images/highlights/uav-adaptive-reconstruction.svg" width="640" height="400" alt="Aerial UAV frame divided into tiles, with a few hard tiles selected and reconstructed in detail"></button>
+            <span class="hl__venue">ICMIC 2026</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://ieeexplore.ieee.org/abstract/document/11708585">Adaptive Reconstruction and Deformable Attention for UAV Small-Object Detection</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, K. J. Tanha, M. Golam, S. S. B. Rahman, E. A. Tuli and T. Jun</p>
+            <p class="hl__venue-line">IEEE ICMIC, 2026</p>
+            <p class="hl__summary">Adaptive reconstruction that spends computation on the hardest image regions instead of reconstructing the full grid.</p>
+            <ul class="chips"><li class="chip chip--award"><svg class="icon"><use href="#i-trophy"></use></svg>Best Paper Award</li></ul>
+            <div class="links"><a class="link-btn" href="https://ieeexplore.ieee.org/abstract/document/11708585"><svg class="icon"><use href="#i-file"></use></svg>Paper</a></div>
+          </div>
+        </article>
+
+        <article class="hl" data-cat="vision">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: diffusion-augmented anomaly detection"><img src="images/highlights/diffusion-anomaly-detection.svg" width="640" height="400" alt="Noise turned into a synthetic defect image, fed to multi-CNN branches and a transformer fusion block that outputs normal or defect"></button>
+            <span class="hl__venue">IEEE Access 2026</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://ieeexplore.ieee.org/document/11361039">Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, M. Golam, and T. Jun</p>
+            <p class="hl__venue-line">IEEE Access · SCIE, IF 4.2, Q1</p>
+            <p class="hl__summary">Stable Diffusion-generated defects and an attention-enhanced Multi-CNN Transformer tackle limited, imbalanced industrial data.</p>
+            <ul class="chips"><li class="chip">98% accuracy</li><li class="chip">+4.64% over baseline</li></ul>
+            <div class="links">
+              <a class="link-btn" href="https://ieeexplore.ieee.org/document/11361039"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
+              <a class="link-btn" href="https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-"><svg class="icon"><use href="#i-code"></use></svg>Code</a>
             </div>
           </div>
-          <div class="portrait-column" aria-label="Portrait and profile highlights">
-            <div class="portrait-orbit"><span class="orbit-mark one"></span><span class="orbit-mark two"></span><img class="portrait" src="src/assets/profile-portrait.jpg" alt="Portrait of Md Mahinur Alam" width="467" height="417" /></div>
-            <div class="portrait-badges"><span>Baltimore, Maryland</span><span>Open to collaboration</span></div>
+        </article>
+
+        <article class="hl" data-cat="learning">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: federated image detection"><img src="images/highlights/federated-image-detection.svg" width="640" height="400" alt="Six federated clients holding real and AI-generated images exchanging updates with a weighted FedAvg server"></button>
+            <span class="hl__venue">JISA 2026</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://www.sciencedirect.com/science/article/pii/S221421262600092X">FMACNN: Federated Multi-Attention CNN Framework for Artificial Image Detection</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, M. Golam, and T. Jun</p>
+            <p class="hl__venue-line">Journal of Information Security and Applications · SCIE, IF 4.4, Q1</p>
+            <p class="hl__summary">Detects AI-generated images across IID and non-IID clients with attention blocks, weighted FedAvg, clipping, and divergence monitoring.</p>
+            <ul class="chips"><li class="chip">100 clients</li><li class="chip">RealAIGI dataset</li></ul>
+            <div class="links">
+              <a class="link-btn" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
+              <a class="link-btn" href="https://github.com/mahinuralam/Federated-Artificial-Image-Detection"><svg class="icon"><use href="#i-code"></use></svg>Code</a>
+            </div>
           </div>
+        </article>
+
+        <article class="hl" data-cat="twins">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: digital twin review"><img src="images/highlights/digital-twin-review.svg" width="640" height="400" alt="A physical warehouse floor synchronised with a wireframe digital twin that an AI module optimises"></button>
+            <span class="hl__venue">ICT Express 2026</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://www.sciencedirect.com/science/article/pii/S2405959526000093">AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, R. A. N. Ugli, K. J. Tanha, and T. Jun</p>
+            <p class="hl__venue-line">ICT Express · SCIE, IF 4.6, Q1</p>
+            <p class="hl__summary">A review of how AI-enhanced digital twins optimize warehouse logistics, with open challenges and future directions.</p>
+            <ul class="chips"><li class="chip">Review</li></ul>
+            <div class="links"><a class="link-btn" href="https://www.sciencedirect.com/science/article/pii/S2405959526000093"><svg class="icon"><use href="#i-file"></use></svg>Paper</a></div>
+          </div>
+        </article>
+
+        <article class="hl" data-cat="twins">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: warehouse digital twin"><img src="images/highlights/warehouse-digital-twin.svg" width="640" height="400" alt="Top view of a warehouse digital twin with shelves, pick locations, and a learned picking route"></button>
+            <span class="hl__venue">ICRA 2026 Workshop</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, K. J. Tanha, M. T. Alam, S. Sakib and M. G. Kim</p>
+            <p class="hl__venue-line">IEEE ICRA Workshop, 2026</p>
+            <p class="hl__summary">A warehouse digital twin in NVIDIA Omniverse Isaac Sim and FlexSim, with a DQN agent for dynamic product-slotting decisions.</p>
+            <ul class="chips"><li class="chip">−30.83% picking time</li><li class="chip">−13.15% travel distance</li></ul>
+            <div class="links">
+              <a class="link-btn" href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
+              <a class="link-btn" href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL"><svg class="icon"><use href="#i-code"></use></svg>Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hl" data-cat="learning">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: TMNet"><img src="images/highlights/tmnet-eeg-speech.svg" width="640" height="400" alt="EEG and speech signals encoded by BiGRU and CNN-BiLSTM, fused with cross-attention into negative, neutral, or positive emotion"></button>
+            <span class="hl__venue">ICT Express 2025</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">TMNet: Transformer-Fused Multimodal Framework for Emotion Recognition via EEG and Speech</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, M. A. Dini, and T. Jun</p>
+            <p class="hl__venue-line">ICT Express · SCIE, IF 4.6, Q1</p>
+            <p class="hl__summary">Speech and EEG encoders fused with cross-attention after denoising, synchronization, MFCC extraction, and FastICA filtering.</p>
+            <ul class="chips"><li class="chip">97% accuracy</li><li class="chip">EEG + speech</li></ul>
+            <div class="links">
+              <a class="link-btn" href="https://www.sciencedirect.com/science/article/pii/S2405959525000517"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
+              <a class="link-btn" href="https://github.com/mahinuralam/TMNet"><svg class="icon"><use href="#i-code"></use></svg>Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hl" data-cat="twins">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: knowledge distillation on edge"><img src="images/highlights/kd-edge-monitoring.svg" width="640" height="400" alt="Digital twin data training a teacher network that is distilled into a small student network on an edge device"></button>
+            <span class="hl__venue">ICTC 2025</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing">Digital Twin-Driven Semi-Supervised Knowledge Distillation for HMI Monitoring on Edge Device</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, K. J. Tanha, and T. Jun</p>
+            <p class="hl__venue-line">IEEE ICTC, 2025</p>
+            <p class="hl__summary">Combines digital twins with semi-supervised knowledge distillation for efficient human-machine-interaction monitoring on edge devices.</p>
+            <ul class="chips"><li class="chip">Edge AI</li><li class="chip">Knowledge distillation</li></ul>
+            <div class="links"><a class="link-btn" href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing"><svg class="icon"><use href="#i-file"></use></svg>Paper</a></div>
+          </div>
+        </article>
+
+        <article class="hl" data-cat="vision">
+          <figure class="hl__fig">
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: RealAIGI dataset"><img src="images/highlights/realaigi-dataset.svg" width="640" height="400" alt="Grid of image thumbnails labelled real or AI under a magnifying glass"></button>
+            <span class="hl__venue">ICMIC 2025</span>
+          </figure>
+          <div class="hl__body">
+            <h3 class="hl__title"><a href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing">RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images</a></h3>
+            <p class="hl__authors"><b>M. M. Alam</b>, K. J. Tanha, and T. Jun</p>
+            <p class="hl__venue-line">IEEE ICMIC, 2025</p>
+            <p class="hl__summary">A dataset of 10k real and AI-generated images, including Sora generations, for training and benchmarking AI-image detectors.</p>
+            <ul class="chips"><li class="chip">10k images</li><li class="chip">Dataset</li></ul>
+            <div class="links">
+              <a class="link-btn" href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
+              <a class="link-btn" href="https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset"><svg class="icon"><use href="#i-db"></use></svg>Dataset</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== PUBLICATIONS -->
+    <section class="section" id="publications" aria-labelledby="pubs-title">
+      <div class="section__head">
+        <h2 class="section__title" id="pubs-title">Publications</h2>
+        <a class="pill-link" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en"><svg class="icon"><use href="#i-cap"></use></svg>Google Scholar</a>
+      </div>
+
+      <p class="scholar">
+        <span><b>131</b>citations</span>
+        <span><b>7</b>h-index</span>
+        <span><b>4</b>i10-index</span>
+        <span class="scholar__asof">Google Scholar, October 2026</span>
+      </p>
+
+      <div class="pub-tools">
+        <div class="search">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+          <label class="visually-hidden" for="pub-filter">Filter publications</label>
+          <input id="pub-filter" type="search" placeholder="Filter by title, author, or venue" autocomplete="off">
         </div>
-      </section>
+        <span class="pub-count" id="pub-count" aria-live="polite">40 papers and manuscripts</span>
+      </div>
+      <p class="empty-note" id="pub-empty" hidden>No publications match that filter.</p>
 
-      <section id="publications">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">01 · Publications</p><h2>Selected publications</h2></div>
-            <p>Selected journal and conference papers in computer vision, federated learning, multimodal AI, and digital twins. The complete publication archive is available below.</p>
-          </div>
-          <div class="research-grid">
-            <article class="research-card reveal" data-venue="IEEE ICRA Workshop">
-              <div class="research-meta"><span>IEEE ICRA Workshop</span><span>2026</span></div>
-              <h3>AI-driven digital twins for warehouse optimization</h3>
-              <p>Developed a warehouse digital twin with NVIDIA Omniverse Isaac Sim and FlexSim, then trained a DQN agent for dynamic product-slotting decisions.</p>
-              <div class="research-result"><span class="micro-tag">30.83% less picking time</span><span class="micro-tag">13.15% less travel distance</span></div>
-              <a class="card-link" href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL" target="_blank" rel="noreferrer">Code ↗</a>
-            </article>
-            <article class="research-card reveal" data-venue="IEEE ICMIC">
-              <div class="research-meta"><span>IEEE ICMIC · Best Paper</span><span>2026</span></div>
-              <h3>Adaptive reconstruction for UAV small-object detection</h3>
-              <p>Developed an adaptive reconstruction framework that focuses computation on difficult image regions instead of reconstructing the complete grid.</p>
-              <div class="research-result"><span class="micro-tag">33.1 APvt</span><span class="micro-tag">83% fewer tiles</span><span class="micro-tag">61.6% fewer GFLOPs</span></div>
-            </article>
-            <article class="research-card reveal" data-venue="IEEE Access">
-              <div class="research-meta"><span>IEEE Access</span><span>2026</span></div>
-              <h3>Diffusion-augmented industrial anomaly detection</h3>
-              <p>Combined Stable Diffusion-generated defects with an attention-enhanced Multi-CNN Transformer to address limited and imbalanced industrial data.</p>
-              <div class="research-result"><span class="micro-tag">98% accuracy</span><span class="micro-tag">4.64% over baseline</span><span class="micro-tag">IEEE Access</span></div>
-              <a class="card-link" href="https://ieeexplore.ieee.org/document/11361039" target="_blank" rel="noreferrer">Read the paper ↗</a>
-            </article>
-            <article class="research-card reveal" data-venue="ICT Express">
-              <div class="research-meta"><span>ICT Express</span><span>2025</span></div>
-              <h3>TMNet for emotion recognition from EEG and speech</h3>
-              <p>Built speech and EEG encoders with cross-attention fusion after denoising, synchronization, MFCC extraction, and FastICA filtering.</p>
-              <div class="research-result"><span class="micro-tag">97% accuracy</span><span class="micro-tag">EEG + speech</span><span class="micro-tag">Cross-attention</span></div>
-              <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2405959525000517" target="_blank" rel="noreferrer">Read the paper ↗</a>
-            </article>
-            <article class="research-card reveal" data-venue="JISA">
-              <div class="research-meta"><span>JISA</span><span>2026</span></div>
-              <h3>Federated multi-attention detection of AI-generated images</h3>
-              <p>Built FMACNN across IID and non-IID clients using attention blocks, weighted FedAvg, clipping, and divergence monitoring for stable decentralized training.</p>
-              <div class="research-result"><span class="micro-tag">100 clients</span><span class="micro-tag">RealAIGI dataset</span><span class="micro-tag">Federated learning</span></div>
-              <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X" target="_blank" rel="noreferrer">Read the paper ↗</a>
-            </article>
-            <article class="research-card reveal" data-venue="IEEE ICTC">
-              <div class="research-meta"><span>IEEE ICTC</span><span>2025</span></div>
-              <h3>Digital twin-driven knowledge distillation for edge HMI monitoring</h3>
-              <p>Combined digital twins with semi-supervised knowledge distillation to support efficient human–machine-interaction monitoring on edge devices.</p>
-              <div class="research-result"><span class="micro-tag">Digital twin</span><span class="micro-tag">Knowledge distillation</span><span class="micro-tag">Edge AI</span></div>
-              <a class="card-link" href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view" target="_blank" rel="noreferrer">Read the paper ↗</a>
-            </article>
-          </div>
-          <div class="research-footer reveal"><a class="button small" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a></div>
+      <!-- Journal articles. Each entry: tag, title, authors (mark yourself with class="me"), venue, links. -->
+      <div class="pub-group" data-group="journal">
+        <h3 class="subhead">Journal Articles</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="tag tag--journal">IEEE Access 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/document/11361039">Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, M. Golam, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE Access</em><span class="metric">SCIE · IF 4.2 · Q1</span></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/document/11361039">Paper</a><a href="https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--journal">JISA 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X">FMACNN: Federated Multi-Attention CNN Framework for Artificial Image Detection</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, M. Golam, and T. Jun</p>
+              <p class="pub__venue"><em>Journal of Information Security and Applications</em><span class="metric">SCIE · IF 4.4 · Q1</span></p>
+              <p class="pub__links"><a href="https://www.sciencedirect.com/science/article/pii/S221421262600092X">Paper</a><a href="https://github.com/mahinuralam/Federated-Artificial-Image-Detection">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--journal">ICT Express 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://www.sciencedirect.com/science/article/pii/S2405959526000093">AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, R. A. N. Ugli, K. J. Tanha, and T. Jun</p>
+              <p class="pub__venue"><em>ICT Express</em><span class="metric">SCIE · IF 4.6 · Q1</span></p>
+              <p class="pub__links"><a href="https://www.sciencedirect.com/science/article/pii/S2405959526000093">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--journal">ICT Express 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">TMNet: Transformer-Fused Multimodal Framework for Emotion Recognition via EEG and Speech</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, M. A. Dini, and T. Jun</p>
+              <p class="pub__venue"><em>ICT Express</em><span class="metric">SCIE · IF 4.6 · Q1</span></p>
+              <p class="pub__links"><a href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">Paper</a><a href="https://github.com/mahinuralam/TMNet">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--journal">J-KICS 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://journal.kics.or.kr/digital-library/105210">Blockchain-Aided Intrusion Detection in Marine Tactical Network Using Reinforcement Learning</a>
+              <p class="pub__authors">M. R. Subhan, <span class="me">M. M. Alam</span>, M. Golam, and T. Jun</p>
+              <p class="pub__venue"><em>The Journal of the Korean Institute of Communications and Information Sciences</em></p>
+              <p class="pub__links"><a href="https://journal.kics.or.kr/digital-library/105210">Paper</a></p>
+            </div>
+          </li>
+        </ol>
+      </div>
 
-          <details class="archive reveal" id="publication-archive">
-            <summary>Browse the complete publication archive <span>40 works · journals &amp; conferences</span></summary>
-            <div class="archive-body">
-              <div class="publication-tools">
-                <div class="filters" aria-label="Filter publications">
-                  <button class="filter" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="journal" aria-pressed="false">Journals</button><button class="filter" data-filter="international" aria-pressed="false">International</button><button class="filter" data-filter="domestic" aria-pressed="false">Domestic</button>
-                </div>
-                <label><span class="skip-link">Search publications</span><input class="search" id="publication-search" type="search" placeholder="Search title or venue…" /></label>
+      <!-- International conference and workshop papers -->
+      <div class="pub-group" data-group="conference">
+        <h3 class="subhead">International Conference &amp; Workshop Papers</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="tag tag--conf">ICMIC 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/abstract/document/11708585">Adaptive Reconstruction and Deformable Attention for UAV Small-Object Detection</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, M. Golam, S. S. B. Rahman, E. A. Tuli and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICMIC, 2026</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/abstract/document/11708585">Paper</a></p>
+              <p class="pub__award"><svg class="icon"><use href="#i-trophy"></use></svg>Best Paper Award</p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--workshop">ICRA WS 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, M. T. Alam, S. Sakib and M. G. Kim</p>
+              <p class="pub__venue"><em>IEEE ICRA Workshop, 2026</em></p>
+              <p class="pub__links"><a href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICAIIC 2026</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/abstract/document/11454426">Deep Reinforcement Learning Approach with Digital Twin Toward Smarter Warehouse</a>
+              <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICAIIC, 2026</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/abstract/document/11454426">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICTC 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing">Digital Twin-Driven Semi-Supervised Knowledge Distillation for HMI Monitoring on Edge Device</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICTC, 2025</em></p>
+              <p class="pub__links"><a href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICMIC 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing">RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICMIC, 2025</em></p>
+              <p class="pub__links"><a href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing">Paper</a><a href="https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset">Dataset</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICC 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/abstract/document/11161313/">BLIND-Twin: Blockchain-Assisted LLM-Based CDS for Digital Twin-Enhanced Industrial AIoT</a>
+              <p class="pub__authors">M. Golam, <span class="me">M. M. Alam</span>, M. R. Subhan, DS. Kim, and JM. Lee</p>
+              <p class="pub__venue"><em>IEEE ICC, 2025</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/abstract/document/11161313/">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICMIC 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/document/11257756">Lightweight Hybrid Deep Learning Model with Digital Twin for Industrial Energy Optimization</a>
+              <p class="pub__authors">M. R. Subhan, <span class="me">M. M. Alam</span>, K. J. Tanha, T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICMIC, 2025</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/document/11257756">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICCIT 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/abstract/document/11490174">Safety-Critical IoMT Security: A Lightweight, Cost-Aware Approach at the Network Edge</a>
+              <p class="pub__authors">A. I. Khan, <span class="me">M. M. Alam</span>, K. J. Tanha, S. Islam</p>
+              <p class="pub__venue"><em>IEEE ICCIT, 2025</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/abstract/document/11490174">Paper</a><a href="https://github.com/mahinuralam/-IoMT-Security">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICTC 2025</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/abstract/document/11387808">Digital Twin-Driven Federated Learning for Intrusion Detection under Simulated Adversarial Conditions</a>
+              <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICTC, 2025</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/abstract/document/11387808">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICTC 2024</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://ieeexplore.ieee.org/document/10827164">Federated Semi-Supervised Digital Twin for Enhanced Human-Machine Interaction in Industry 5.0</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, M. Golam, M. R. Subhan, DS. Kim, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICTC, 2024</em></p>
+              <p class="pub__links"><a href="https://ieeexplore.ieee.org/document/10827164">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICTC 2024</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:Zph67rFs4hoC">BLM-Chain: AI-Driven Blockchain for UAV Threat Resistance in IoBT</a>
+              <p class="pub__authors">M. Golam, <span class="me">M. M. Alam</span>, DS. Kim, and JM. Lee</p>
+              <p class="pub__venue"><em>IEEE ICTC, 2024</em></p>
+              <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:Zph67rFs4hoC">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICTC 2024</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:ULOm3_A8WrAC">A Blockchain-Based System for Efficient, Traceable, and Transparent Maritime Logistics</a>
+              <p class="pub__authors">M. R. Subhan, M. Golam, M. F. Rahaman, <span class="me">M. M. Alam</span>, DS. Kim, and T. Jun</p>
+              <p class="pub__venue"><em>IEEE ICTC, 2024</em></p>
+              <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:ULOm3_A8WrAC">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICCIT 2023</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://www.researchgate.net/publication/378543982_A_Secure_and_Optimized_Healthcare_Data_Governance_Framework_Leveraging_Hyperledger_Fabric_Blockchain">A Secure and Optimized Healthcare Data Governance Framework Leveraging Hyperledger Fabric Blockchain</a>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, M. S. Islam, S. Muntaha, T. Alam, and K. J. Tanha</p>
+              <p class="pub__venue"><em>IEEE ICCIT, 2023</em></p>
+              <p class="pub__links"><a href="https://www.researchgate.net/publication/378543982_A_Secure_and_Optimized_Healthcare_Data_Governance_Framework_Leveraging_Hyperledger_Fabric_Blockchain">Paper</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--conf">ICCIT 2022</span>
+            <div class="pub__body">
+              <a class="pub__title" href="https://www.researchgate.net/publication/369000671_Decentralized_Blockchain_Based_Land_Deed_Verification_and_Reservation_System_in_Bangladesh">Decentralized Blockchain-Based Land Deed Verification and Reservation System in Bangladesh</a>
+              <p class="pub__authors">M. M. R. Hasan, <span class="me">M. M. Alam</span>, K. J. Tanha</p>
+              <p class="pub__venue"><em>IEEE ICCIT, 2022</em></p>
+              <p class="pub__links"><a href="https://www.researchgate.net/publication/369000671_Decentralized_Blockchain_Based_Land_Deed_Verification_and_Reservation_System_in_Bangladesh">Paper</a></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Under review, submitted, or in preparation -->
+      <div class="pub-group" data-group="review">
+        <h3 class="subhead">Under Review &amp; In Preparation</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="tag tag--revision">Major Revision</span>
+            <div class="pub__body">
+              <span class="pub__title">Hierarchical Multi-Target Planning and Control for Autonomous Forklift Navigation with Quantum-Inspired Optimization and Reinforcement Learning</span>
+              <p class="pub__authors">R. A. N. Ugli, <span class="me">M. M. Alam</span>, K. J. Tanha, C. S. Amadi, and T. Jun</p>
+              <p class="pub__venue"><em>International Journal of Control, Automation, and Systems</em></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--review">Under Review</span>
+            <div class="pub__body">
+              <span class="pub__title">BELL-IDS: Blockchain-Empowered Large Language Model-Aided Context-Aware IDS in IoFT</span>
+              <p class="pub__authors">M. Golam, <span class="me">M. M. Alam</span>, M. F. Rahman, DS. Kim, and JM. Lee</p>
+              <p class="pub__venue"><em>IEEE Transactions on Network and Service Management</em></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--review">Under Review</span>
+            <div class="pub__body">
+              <span class="pub__title">Adaptive Quantum-Resistant Deep Reinforcement Learning Framework for 6G Healthcare IoMT Security</span>
+              <p class="pub__authors">M. A. I. Khan, <span class="me">M. M. Alam</span>, M. S. Islam, A. S. Mahmoud, and T. R. Sheltami</p>
+              <p class="pub__venue"><em>IEEE Journal of Biomedical and Health Informatics</em></p>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/IoMT-Intrusion-Detection-with-ML-DL-and-RL">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--review">Under Review</span>
+            <div class="pub__body">
+              <span class="pub__title">HybridQuantumNet: Hybrid Quantum–Classical Federated Learning for IoMT Intrusion Detection</span>
+              <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, M. A. I. Khan, M. S. Islam and T. Jun</p>
+              <p class="pub__venue"><em>International Journal of Machine Learning and Cybernetics</em></p>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/Quantum-FL-IoMT">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--review">Under Review</span>
+            <div class="pub__body">
+              <span class="pub__title">Deep Q-Network Agent-Driven Dynamic Slotting Optimization in Digital Twin-Based Smart Warehouse Logistics</span>
+              <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, and T. Jun</p>
+              <p class="pub__venue"><em>International Journal of Control, Automation, and Systems</em></p>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL">Code</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--review">Submitted</span>
+            <div class="pub__body">
+              <span class="pub__title">Enhancing Quality Control in MES Using Optimized Deep Learning</span>
+              <p class="pub__authors">M. R. Subhan, <span class="me">M. M. Alam</span>, and T. Jun</p>
+              <p class="pub__venue"><em>Measurement</em></p>
+              <p class="pub__links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5152602">Preprint</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="tag tag--prep">To Be Submitted</span>
+            <div class="pub__body">
+              <span class="pub__title">FAR-TOD: Failure-Prior Adaptive Reconstruction Guided Tiny Object Detection in UAV Imagery</span>
+              <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, M. T. Alam, S. Sakib and M. G. Kim</p>
+              <p class="pub__venue"><em>CVPR @ AERO-HPR, 2027</em></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Domestic (KICS) conference papers, collapsed by default -->
+      <details class="more pub-group" data-group="domestic" id="kics">
+        <summary>Domestic conference papers (KICS) <span class="count">14</span></summary>
+        <div class="more__body">
+          <ol class="pubs">
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2026</span>
+              <div class="pub__body">
+                <span class="pub__title">Privacy-Preserving Healthcare Data Governance Using Blockchain and Federated Learning</span>
+                <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2026</em></p>
               </div>
-              <p class="publication-count" id="publication-count" aria-live="polite"></p>
-              <div class="publication-list" id="publication-list"></div>
-              <noscript><p>Please visit <a href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en">Google Scholar</a> for the complete publication list.</p></noscript>
-              <button class="button small load-more" id="load-more" type="button">Show more publications</button>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2025</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">Multi-modal Real-time Hazard Detection for Autonomous Driving Systems</a>
+                <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, M. Kim, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2025</em></p>
+                <p class="pub__links"><a href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">Paper</a><a href="https://github.com/mahinuralam/multi-modal-autonomous-driving-hazard-detection">Code</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2025</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12566810">FlexSim-Based Digital Twin Framework for Smart Warehouse Monitoring and Performance Optimization</a>
+                <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2025</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12566810">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2025</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:mB3voiENLucC">Detecting Threats in Edge IoT Networks Using Federated Learning and Digital Twin</a>
+                <p class="pub__authors">K. J. Tanha, <span class="me">M. M. Alam</span>, M. R. Subhan, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2025</em></p>
+                <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:mB3voiENLucC">Paper</a></p>
+                <p class="pub__award"><svg class="icon"><use href="#i-trophy"></use></svg>Best Paper Award</p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2025</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://drive.google.com/file/d/1ws1ec8HRGmiTnr4VAsWIZR1sshSwIW_D/view?usp=sharing">Novel Zero-Day Zero-Touch Intrusion Detection System Using Generative-AI and Large Language Model</a>
+                <p class="pub__authors"><span class="me">M. M. Alam</span>, K. J. Tanha, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2025</em></p>
+                <p class="pub__links"><a href="https://drive.google.com/file/d/1ws1ec8HRGmiTnr4VAsWIZR1sshSwIW_D/view?usp=sharing">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2025</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE12360567">XAI-Powered Digital Twin for Industrial Energy Prediction and Optimization</a>
+                <p class="pub__authors">M. R. Subhan, <span class="me">M. M. Alam</span>, K. J. Tanha, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2025</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE12360567">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:M3ejUd6NZC8C">DCFL-Chain: Digital-Twin-Based Collaborative FL-Integrated Energy Consumption Prediction for Smart Factory</a>
+                <p class="pub__authors"><span class="me">M. M. Alam</span>, M. Golam, E. A. Tuli, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:M3ejUd6NZC8C">Paper</a><a href="https://github.com/mahinuralam/Gumi-Industiral-Enegy-Consumption-Competition">Code</a></p>
+                <p class="pub__award"><svg class="icon"><use href="#i-trophy"></use></svg>Best Paper Award</p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:4TOpqqG69KYC">Energy-Twin: Explainable AI-Driven Energy Optimization using Digital-Twin for Smart Industry</a>
+                <p class="pub__authors">M. R. Subhan, M. Golam, <span class="me">M. M. Alam</span>, DS. Kim, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:4TOpqqG69KYC">Paper</a></p>
+                <p class="pub__award"><svg class="icon"><use href="#i-trophy"></use></svg>Best Paper Award</p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:YOwf2qJgpHMC">BFL-Net: Blockchain-Assisted Energy Prediction Based on FL-Integrated LLM for Industry 4.0</a>
+                <p class="pub__authors">M. Golam, <span class="me">M. M. Alam</span>, DS. Kim, and JM. Lee</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:YOwf2qJgpHMC">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:_kc_bZDykSQC">Quantum Encrypted Collaborative Energy Consumption Demand Response Management for Smart Industrial System</a>
+                <p class="pub__authors">E. A. Tuli, M. Golam, <span class="me">M. M. Alam</span>, and DS. Kim</p>
+                <p class="pub__venue"><em>KICS Fall Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=E9OClTAAAAAJ&amp;citation_for_view=E9OClTAAAAAJ:_kc_bZDykSQC">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906372">Token-based e-Learning System Harnessing Hyperledger Besu</a>
+                <p class="pub__authors"><span class="me">M. M. Alam</span>, M. J. A. Shanto, DS. Kim, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906372">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906755">PureParking: A Decentralized, Secure Framework for Parking Space Sharing Using Blockchain</a>
+                <p class="pub__authors">M. Tayeb, <span class="me">M. M. Alam</span>, M. A. Khatun, M. J. A. Shanto, DS. Kim, and JM. Lee</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906755">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906763">A Blockchain-Based Framework for Distributing and Managing CNN-Derived Brain Tumor Detection Models</a>
+                <p class="pub__authors">M. J. A. Shanto, <span class="me">M. M. Alam</span>, M. Golam, DS. Kim, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference 2024</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906763">Paper</a></p>
+              </div>
+            </li>
+            <li class="pub">
+              <span class="tag tag--domestic">KICS 2024</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906371">An Efficient, Traceable, and Transparent Maritime Logistic System Based on Blockchain</a>
+                <p class="pub__authors">M. R. Subhan, M. Golam, M. F. Rahaman, <span class="me">M. M. Alam</span>, DS. Kim, and T. Jun</p>
+                <p class="pub__venue"><em>KICS Summer Conference, 2024</em></p>
+                <p class="pub__links"><a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906371">Paper</a></p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </details>
+    </section>
+
+    <!-- ===================================================== HONORS -->
+    <section class="section" id="awards" aria-labelledby="awards-title">
+      <div class="section__head"><h2 class="section__title" id="awards-title">Honors &amp; Awards</h2></div>
+      <ul class="honors">
+        <li><span class="honors__year">2026</span><span class="honors__text"><svg class="icon trophy"><use href="#i-trophy"></use></svg><strong>Best Paper Award</strong>, IEEE ICMIC 2026</span></li>
+        <li><span class="honors__year">2026</span><span class="honors__text"><strong>Outstanding Graduate Research Achievement Award</strong> (Spring 2026), Kumoh National Institute of Technology</span></li>
+        <li><span class="honors__year">2025</span><span class="honors__text"><svg class="icon trophy"><use href="#i-trophy"></use></svg><strong>Best Paper Award</strong>, KICS Summer Conference 2025 · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificate</a></span></li>
+        <li><span class="honors__year">2025</span><span class="honors__text"><strong>5th place</strong>, Flower LLM leaderboard (finance), with federated fine-tuning of Qwen-2.5-7B</span></li>
+        <li><span class="honors__year">2024</span><span class="honors__text"><svg class="icon trophy"><use href="#i-trophy"></use></svg><strong>Two Best Paper Awards</strong>, KICS Fall 2024 Gumi Industrial Complex Energy Self-Sufficiency Data Academic Paper Contest · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificates</a></span></li>
+        <li><span class="honors__year">2021, 2022</span><span class="honors__text"><strong>Champion</strong>, Intra-University Programming Contest (IUPC), IUBAT · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificates</a></span></li>
+        <li><span class="honors__year">2022</span><span class="honors__text"><strong>Second Runner-up</strong>, UITS IUPC 2022 · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificate</a></span></li>
+        <li><span class="honors__year">2022</span><span class="honors__text">Ranked in <strong>BUET, RUET, BUBT, and AUST</strong> Inter-University Programming Contests · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificates</a></span></li>
+        <li><span class="honors__year">2021</span><span class="honors__text"><strong>Finalist</strong>, ACM International Collegiate Programming Contest (ICPC), Dhaka Regional · <a href="https://sites.google.com/view/mahinuralam/achievements">Certificate</a></span></li>
+        <li><span class="honors__year">2020</span><span class="honors__text"><strong>First Runner-up</strong>, Intra-University Programming Contest, IUBAT</span></li>
+        <li><span class="honors__year">2019</span><span class="honors__text"><strong>Best Fresher Programmer</strong>, Intra-University Programming Contest, IUBAT</span></li>
+        <li><span class="honors__year">Ongoing</span><span class="honors__text">Solved more than <strong>1,600 data-structure and algorithm problems</strong> on online judges · <a href="https://www.stopstalk.com/user/profile/Mahinur">Profile</a></span></li>
+      </ul>
+    </section>
+
+    <!-- ===================================================== EDUCATION -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="section__head"><h2 class="section__title" id="edu-title">Education</h2></div>
+      <div class="entries">
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Ph.D. in Information Systems</h3><span class="entry__date">Jun 2026 – Present</span></div>
+          <p class="entry__org"><a href="https://umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>, Baltimore, MD, USA</p>
+          <p class="entry__meta">Graduate Research Assistant<span class="sep">·</span>Federated LLM reasoning and digital twins</p>
+        </article>
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Ph.D. in Electrical Engineering (Transferred)</h3><span class="entry__date">Jan 2026 – May 2026</span></div>
+          <p class="entry__org"><a href="https://www.georgiasouthern.edu/">Georgia Southern University (GSU)</a>, Statesboro, GA, USA</p>
+          <p class="entry__meta">Efficient tiny-object detection for UAV imagery<span class="sep">·</span>Transferred to UMBC</p>
+        </article>
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">M.Eng. in IT Convergence Engineering</h3><span class="entry__date">Mar 2024 – Dec 2025</span></div>
+          <p class="entry__org"><a href="https://www.kumoh.ac.kr/">Kumoh National Institute of Technology (KIT)</a>, Gumi, South Korea</p>
+          <p class="entry__meta">GPA <strong>4.44/4.50</strong> (WES <strong>4.00/4.00</strong>)</p>
+          <p class="entry__meta">Thesis: <em>Synthetic Defective Image Generation and Robust Industrial Anomaly Detection Using Generative AI and Attention Enhanced Multi-CNN Transformer Fusion</em> · <a href="https://ieeexplore.ieee.org/document/11361039">Related paper</a></p>
+        </article>
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">B.Sc. in Computer Science and Engineering</h3><span class="entry__date">Jan 2019 – Dec 2022</span></div>
+          <p class="entry__org"><a href="https://iubat.edu/">International University of Business Agriculture and Technology (IUBAT)</a>, Dhaka, Bangladesh</p>
+          <p class="entry__meta">GPA <strong>3.79/4.00</strong> (WES <strong>3.69/4.00</strong>)</p>
+          <p class="entry__meta">Thesis: <em>Decentralized Blockchain-Based Land Deed Verification and Reservation System in Bangladesh</em> · <a href="https://www.researchgate.net/publication/369000671_Decentralized_Blockchain_Based_Land_Deed_Verification_and_Reservation_System_in_Bangladesh">Paper</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================================================== EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="section__head"><h2 class="section__title" id="exp-title">Experience</h2></div>
+      <div class="entries">
+
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Graduate Research Assistant</h3><span class="entry__date">Jun 2026 – Present</span></div>
+          <p class="entry__org">University of Maryland, Baltimore County, Baltimore, MD, USA</p>
+          <ul class="entry__list">
+            <li>Building a framework to resolve reasoning collapse in federated LLMs under heterogeneous data distributions.</li>
+            <li>Developing a mosquito-movement <strong>digital-twin simulation</strong> in NVIDIA Omniverse Isaac Sim, grounded in a literature survey of mosquito movement.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Graduate Research Assistant</h3><span class="entry__date">Jan 2026 – May 2026</span></div>
+          <p class="entry__org">Georgia Southern University, Statesboro, GA, USA</p>
+          <ul class="entry__list">
+            <li>Developed AR-TOD, an adaptive reconstruction-guided small-object detection framework for UAV imagery that reaches <strong>33.1 AP<sub>vt</sub></strong>, exceeding full-grid reconstruction while using <strong>83%</strong> fewer tiles and <strong>61.6%</strong> fewer GFLOPs.</li>
+            <li>Worked on depth estimation for autonomous-vehicle hazards and on BlueBoat surface-vessel setup and calibration.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Graduate Research Assistant, PIC Lab</h3><span class="entry__date">Mar 2024 – Nov 2025</span></div>
+          <p class="entry__org">Kumoh National Institute of Technology, Gumi, South Korea</p>
+          <div class="projects-in">
+            <div class="subproj">
+              <div class="subproj__head"><h4 class="subproj__title">Real-Time Autonomous Driving Hazard Analysis</h4><span class="entry__date">Sep 2025 – Present</span></div>
+              <ul class="entry__list">
+                <li>Developing a <strong>multimodal</strong> model that fuses speed, vision, and sound to detect driving hazards.</li>
+                <li>Developed a lightweight regression model for speed- and sound-based driver-state detection, and a <strong>VLM</strong> for visual detection.</li>
+              </ul>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/multi-modal-autonomous-driving-hazard-detection">Code</a></p>
             </div>
-          </details>
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">02 · Experience</p><h2>Research and industry experience</h2></div>
-            <p>More than three years of combined experience in <strong>machine-learning research and enterprise software development.</strong></p>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item reveal"><time class="timeline-date">Jun 2026 — Present</time><div class="timeline-content"><h3>Graduate Research Assistant</h3><p class="timeline-org">University of Maryland, Baltimore County · Baltimore, USA</p><ul><li>Researching reasoning collapse in federated LLMs under heterogeneous data distributions.</li><li>Analyzing mosquito movement and developing a digital-twin simulation in <strong>NVIDIA Omniverse Isaac Sim</strong>.</li></ul></div></article>
-            <article class="timeline-item reveal"><time class="timeline-date">Jan — May 2026</time><div class="timeline-content"><h3>Graduate Research Assistant</h3><p class="timeline-org">Georgia Southern University · Statesboro, USA</p><ul><li>Developed an adaptive reconstruction framework for UAV small-object detection, reaching <strong>33.1 APvt with 83% fewer tiles and 61.6% fewer GFLOPs</strong>.</li><li>Worked on depth estimation for autonomous-vehicle hazards and BlueBoat surface-vessel setup and calibration.</li></ul></div></article>
-            <article class="timeline-item reveal"><time class="timeline-date">Mar 2024 — Dec 2025</time><div class="timeline-content"><h3>Graduate Research Assistant</h3><p class="timeline-org">Kumoh National Institute of Technology · Gumi, South Korea</p><ul><li>Developed multimodal driving-hazard detection, digital-twin warehouse optimization, and edge-based daycare recognition systems.</li><li>Built a Stable Diffusion-assisted industrial anomaly detector with <strong>98% accuracy</strong> and a <strong>4.64% improvement</strong> over the baseline.</li></ul></div></article>
-            <article class="timeline-item reveal"><time class="timeline-date">Oct — Dec 2023</time><div class="timeline-content"><h3>Research Engineer</h3><p class="timeline-org">AIMS Lab, United International University · Dhaka, Bangladesh</p><ul><li>Analyzed rural health data to identify high-impact regions and factors associated with disease prevalence.</li></ul></div></article>
-            <article class="timeline-item reveal"><time class="timeline-date">Sep 2022 — Sep 2023</time><div class="timeline-content"><h3>Software Engineer · Python</h3><p class="timeline-org">Divine IT Ltd. · Dhaka, Bangladesh</p><ul><li>Developed APIs, modules, and user-facing features for PrismERP, PrismHRM, and PrismATS.</li><li>Improved stability and performance through bug fixes, parallel processing, efficient algorithms, and database optimization.</li></ul></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="education">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">03 · Education</p><h2>Education</h2></div>
-            <p>Graduate training in information systems and IT convergence, supported by a foundation in computer science and engineering.</p>
-          </div>
-          <div class="edu-grid">
-            <article class="edu-card reveal"><span class="edu-year">2026 — Present · USA</span><h3>Ph.D. in Information Systems</h3><p><strong>University of Maryland, Baltimore County</strong></p><p>Intelligent automation, computer vision, and digital-twin systems.</p></article>
-            <article class="edu-card reveal"><span class="edu-year">Jan — May 2026 · USA</span><h3>Ph.D. in Electrical Engineering</h3><p><strong>Georgia Southern University</strong> · Transferred</p><p>Efficient tiny-object detection for UAV imagery.</p></article>
-            <article class="edu-card reveal"><span class="edu-year">2024 — 2025 · South Korea</span><h3>M.Eng. in IT Convergence Engineering</h3><p><strong>Kumoh National Institute of Technology</strong> · GPA 4.44/4.50</p><p>Generative-AI-assisted industrial anomaly detection.</p></article>
-            <article class="edu-card reveal"><span class="edu-year">2019 — 2022 · Bangladesh</span><h3>B.Sc. in Computer Science &amp; Engineering</h3><p><strong>IUBAT</strong> · GPA 3.79/4.00</p><p>Blockchain-based land deed verification and reservation.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="awards">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">04 · Recognition</p><h2>Awards and professional activities</h2></div>
-            <p>Research distinctions, competitive-programming honors, mentoring, and scholarly service.</p>
-          </div>
-          <div class="awards-grid">
-            <div class="award-list reveal">
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>IEEE ICMIC Best Paper Award</strong><small>International Conference on Machine Intelligence and Communication · Taiwan</small></div><time>2026</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Outstanding Graduate Research Achievement Award</strong><small>Kumoh National Institute of Technology · Spring 2026</small></div><time>2026</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>KICS Summer Conference Best Paper Award</strong><small>Korean Institute of Communications and Information Sciences</small></div><time>2025</time></div>
-              <div class="award-row"><span class="award-icon">✦</span><div><strong>Two Best Paper Awards</strong><small>KICS Fall Conference · Gumi Industrial Complex Energy Self-Sufficiency Data Academic Paper Contest</small></div><time>2024</time></div>
+            <div class="subproj">
+              <div class="subproj__head"><h4 class="subproj__title">AI for Digital Twin-based Warehouse Logistics Optimization</h4><span class="entry__date">Jul 2024 – Present</span></div>
+              <ul class="entry__list">
+                <li>Developed a warehouse digital twin in <strong>NVIDIA Omniverse Isaac Sim</strong> and <strong>FlexSim</strong> to generate synthetic data.</li>
+                <li>Developed a <strong>DQN agent</strong> that reduces average picking time by <strong>30.83%</strong> and average travel distance by <strong>13.15%</strong>.</li>
+              </ul>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/warehouse-logistics-optimization-RL">Code</a></p>
             </div>
-            <div class="signal-cards">
-              <article class="glass-card signal-card reveal"><h3>Competitive programming honors</h3><ul class="activity-list"><li>Champion, IUBAT IUPC — 2022 and 2021</li><li>First Runner-up, IUBAT IUPC — 2020</li><li>Best Fresher Programmer, IUBAT — 2019</li><li>Second Runner-up, UITS IUPC — 2022</li></ul></article>
-              <article class="glass-card signal-card reveal"><h3>ACM ICPC and university contests</h3><ul class="activity-list"><li>ACM ICPC Dhaka Regional finalist — 2021</li><li>Ranked participant at BUET, RUET, BUBT, and AUST IUPC — 2022</li><li>Solved more than 1,600 data-structure and algorithm problems</li></ul></article>
-              <article class="glass-card signal-card reveal"><h3>Peer-review service</h3><p>Reviewer for <em>IEEE Access</em>, <em>ICT Express</em>, and <em>Future Generation Computer Systems</em>.</p></article>
-              <article class="glass-card signal-card reveal"><h3>Teaching and mentoring</h3><p>Data Structures, Algorithms, and Programming Language mentor at IUBAT, supporting students in C, C++, and competitive problem solving.</p></article>
+            <div class="subproj">
+              <div class="subproj__head"><h4 class="subproj__title">Daycare Face and Action Recognition on Edge Device</h4><span class="entry__date">Sep 2024 – Dec 2024</span></div>
+              <ul class="entry__list">
+                <li>Developed a <strong>Transformer</strong> model for daycare face recognition with MTCNN facial embeddings (<strong>98%</strong> accuracy).</li>
+                <li>Reached <strong>97%</strong> accuracy in daycare action recognition with a BiLSTM model on MoveNet pose embeddings.</li>
+                <li>Constructed a Korean children's face and action recognition dataset.</li>
+              </ul>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/Image-Analysis-on-Edge-Devices-for-Daycare-Application">Code</a></p>
+            </div>
+            <div class="subproj">
+              <div class="subproj__head"><h4 class="subproj__title">Industrial Manufacturing System Anomaly Detection</h4><span class="entry__date">Mar 2024 – Jun 2024</span></div>
+              <ul class="entry__list">
+                <li>Developed an <strong>attention-enhanced Multi-CNN Transformer</strong> fusion model with <strong>98%</strong> accuracy.</li>
+                <li>Used <strong>Stable Diffusion</strong> to generate synthetic defect images, easing data limitations and class imbalance.</li>
+                <li>Improved baseline accuracy by <strong>4.64%</strong> through optimized preprocessing, augmentation, and fine-tuning.</li>
+              </ul>
+              <p class="pub__links"><a href="https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-">Code</a></p>
             </div>
           </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Research Engineer, AIMS Lab</h3><span class="entry__date">Oct 2023 – Dec 2023</span></div>
+          <p class="entry__org">United International University, Dhaka, Bangladesh</p>
+          <ul class="entry__list">
+            <li>Analyzed heart failure, kidney disease, and stroke data from rural areas of Bangladesh.</li>
+            <li>Identified high-impact regions and uncovered reasons for disease prevalence.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head"><h3 class="entry__role">Software Engineer (Python)</h3><span class="entry__date">Sep 2022 – Sep 2023</span></div>
+          <p class="entry__org">Divine IT Ltd., Dhaka, Bangladesh</p>
+          <ul class="entry__list">
+            <li>Developed APIs, modules, and user-facing features for the PrismERP, PrismHRM, and PrismATS software suites.</li>
+            <li>Improved stability and performance by resolving bugs and optimizing with parallel processing, efficient algorithms, and database optimization.</li>
+            <li>Contributed to full-stack development of Enterprise Resource Planning (ERP) and Applicant Tracking System (ATS) products.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="proj-title">
+      <div class="section__head"><h2 class="section__title" id="proj-title">Selected Projects</h2><span class="section__meta">Code on GitHub</span></div>
+      <div class="projects">
+        <article class="proj">
+          <h3 class="proj__title">Distributed Financial LLM</h3>
+          <p class="proj__desc">Federated instruction-tuning of Qwen-2.5-7B on a finance corpus with Flower, LoRA via PEFT, and FedAvg across 50 IID client partitions, trained on 2×RTX 3090 GPUs.</p>
+          <p class="proj__metric">FIQA/FPB/TFNS avg 61.53 · 5th on the Flower leaderboard</p>
+          <div class="proj__foot"><ul class="stack"><li>Flower</li><li>LoRA</li><li>PEFT</li></ul><a class="link-btn" href="https://github.com/mahinuralam/flower-llm-finetune-challenge"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+        <article class="proj">
+          <h3 class="proj__title">Federated Artificial Image Detection</h3>
+          <p class="proj__desc">A federated multi-attention CNN that detects AI-generated imagery across IID and non-IID clients, with weighted FedAvg, percentile clipping, and divergence monitoring for stable convergence.</p>
+          <p class="proj__metric">RealAIGI 10k images incl. Sora · 100 clients</p>
+          <div class="proj__foot"><ul class="stack"><li>PyTorch</li><li>FedAvg</li><li>Attention</li></ul><a class="link-btn" href="https://github.com/mahinuralam/Federated-Artificial-Image-Detection"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+        <article class="proj">
+          <h3 class="proj__title">Multimodal Emotion Recognition</h3>
+          <p class="proj__desc">A transformer-fused recognizer that denoises and synchronizes speech and EEG streams (MFCC features, FastICA filtering, dynamic time warping), with CNN-BiLSTM and BiGRU encoders joined by cross-attention.</p>
+          <p class="proj__metric">97% accuracy · ternary affect classification</p>
+          <div class="proj__foot"><ul class="stack"><li>EEG</li><li>Speech</li><li>Cross-attention</li></ul><a class="link-btn" href="https://github.com/mahinuralam/Multimodal-Emotion-Recognition"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+        <article class="proj">
+          <h3 class="proj__title">RL-based IoMT Intrusion Detection</h3>
+          <p class="proj__desc">A lightweight, cost-sensitive intrusion detection system for IoMT using CNN–LSTM and contextual-bandit PPO, with top-K Random Forest feature selection to cut false negatives at the edge.</p>
+          <p class="proj__metric">97.99% accuracy · 1.2 ms latency · &lt;0.15 MB model</p>
+          <div class="proj__foot"><ul class="stack"><li>CNN–LSTM</li><li>PPO</li><li>Edge</li></ul><a class="link-btn" href="https://github.com/mahinuralam/IoMT-Intrusion-Detection-with-ML-DL-and-RL"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+        <article class="proj">
+          <h3 class="proj__title">Gumi Industrial Energy Forecasting</h3>
+          <p class="proj__desc">Visualized real industrial-complex energy data, applied smoothing and scaling, and built a lightweight CNN-BiLSTM forecaster.</p>
+          <p class="proj__metric">98% forecasting accuracy</p>
+          <div class="proj__foot"><ul class="stack"><li>CNN-BiLSTM</li><li>Time series</li></ul><a class="link-btn" href="https://github.com/mahinuralam/Gumi-Industiral-Enegy-Consumption-Competition"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+        <article class="proj">
+          <h3 class="proj__title">Chronic Kidney Disease Risk Prediction</h3>
+          <p class="proj__desc">A risk-scoring pipeline that cleans noisy CKD lab records and trains an XGBoost classifier, served through a FastAPI service with schema validation, a simple frontend, Docker, and Gunicorn.</p>
+          <p class="proj__metric">&gt;90% AUC on the held-out set</p>
+          <div class="proj__foot"><ul class="stack"><li>XGBoost</li><li>FastAPI</li><li>Docker</li></ul><a class="link-btn" href="https://github.com/mahinuralam/Risk_Factor_prediction_of_Chronic_Kidney_Disease"><svg class="icon"><use href="#i-code"></use></svg>Code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================================================== SERVICE -->
+    <section class="section" id="service" aria-labelledby="service-title">
+      <div class="section__head"><h2 class="section__title" id="service-title">Service &amp; Mentoring</h2></div>
+      <dl class="kv">
+        <div class="kv__row"><dt>Peer reviewer</dt><dd><em>IEEE Access</em><span class="dot">·</span><em>ICT Express</em><span class="dot">·</span><em>Future Generation Computer Systems</em></dd></div>
+        <div class="kv__row"><dt>Mentoring</dt><dd>Data Structures, Algorithms &amp; Programming Language Mentor at IUBAT: beginner C and C++ sessions, intermediate data-structures and algorithms sessions, and competitive-programming learning sessions.</dd></div>
+        <div class="kv__row"><dt>Organizing</dt><dd>Organizer, IUBAT Intra-University Programming Contest, 2021 and 2022</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===================================================== SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section__head"><h2 class="section__title" id="skills-title">Technical Skills</h2></div>
+      <dl class="kv">
+        <div class="kv__row"><dt>Data science</dt><dd>TensorFlow, PyTorch, Scikit-Learn, Pandas, Keras, NumPy, Matplotlib, OpenCV, Power BI, LangChain, LangGraph</dd></div>
+        <div class="kv__row"><dt>Concepts</dt><dd>Data analysis, multimodal AI, data visualization, foundation models, RAG, computer vision, federated learning, LLMs, generative AI, diffusion models, time-series forecasting, quantization, signal processing, intrusion detection, VLMs</dd></div>
+        <div class="kv__row"><dt>Software development</dt><dd>Python, C++, OOP, SQL, data structures and algorithms, DRF, FastAPI, JavaScript, Express.js, RESTful APIs, MySQL, SQLite, NoSQL, Postman, Docker, Linux, AWS</dd></div>
+        <div class="kv__row"><dt>Simulation</dt><dd>NVIDIA Omniverse Isaac Sim, FlexSim</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===================================================== CONTACT -->
+    <section class="section" id="contact" aria-label="Collaboration and contact">
+      <div class="engage">
+        <div class="card">
+          <h2 class="card__title">Open to Research Collaboration</h2>
+          <p class="card__lede">I am glad to hear from researchers and students working on related problems, especially:</p>
+          <ul class="topics">
+            <li>Federated learning</li>
+            <li>LLM reasoning</li>
+            <li>Small-object detection</li>
+            <li>Vision-language models</li>
+            <li>Multimodal AI</li>
+            <li>Digital twins</li>
+            <li>Reinforcement learning</li>
+            <li>Generative AI</li>
+            <li>Edge AI</li>
+            <li>Intelligent automation</li>
+          </ul>
         </div>
-      </section>
-
-      <section id="toolkit">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <div><p class="section-kicker">05 · Technical skills</p><h2>Research and engineering toolkit</h2></div>
-            <p>Technologies listed in my current CV, grouped by how I use them.</p>
-          </div>
-          <div class="toolkit-grid">
-            <article class="glass-card toolkit-card reveal"><span>01</span><h3>Research areas</h3><div class="tag-row"><span class="tag">Federated learning</span><span class="tag">Computer vision</span><span class="tag">Vision-language models</span><span class="tag">LLMs</span><span class="tag">Digital twins</span><span class="tag">Reinforcement learning</span></div></article>
-            <article class="glass-card toolkit-card reveal"><span>02</span><h3>Machine learning</h3><div class="tag-row"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Keras</span><span class="tag">OpenCV</span><span class="tag">LangChain</span><span class="tag">LangGraph</span></div></article>
-            <article class="glass-card toolkit-card reveal"><span>03</span><h3>Software development</h3><div class="tag-row"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">DRF</span><span class="tag">FastAPI</span><span class="tag">JavaScript</span><span class="tag">Express.js</span><span class="tag">SQL</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">AWS</span></div></article>
-          </div>
+        <div class="card">
+          <h2 class="card__title">Contact</h2>
+          <dl class="contact-list">
+            <dt>Email</dt>
+            <dd><span class="email-row"><a href="mailto:mahinuralam213@gmail.com">mahinuralam213@gmail.com</a><button class="copy-btn" type="button" data-copy="mahinuralam213@gmail.com"><svg class="icon"><use href="#i-copy"></use></svg><span>Copy</span></button></span></dd>
+            <dt>Department</dt>
+            <dd>Information Systems</dd>
+            <dt>Institution</dt>
+            <dd>University of Maryland, Baltimore County<br>1000 Hilltop Circle, Baltimore, MD 21250, USA</dd>
+            <dt>Profiles</dt>
+            <dd><a href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/mahinuralam">GitHub</a> · <a href="https://www.linkedin.com/in/mahinur-alam/">LinkedIn</a> · <a href="https://www.researchgate.net/profile/Md-Alam-454">ResearchGate</a> · <a href="https://www.kaggle.com/mahinuralam">Kaggle</a></dd>
+          </dl>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact">
-        <div class="wrap contact-card reveal">
-          <div><p class="section-kicker">06 · Contact</p><h2>Research collaboration and professional contact</h2><p>I am open to conversations about federated learning, LLM reasoning, computer vision, multimodal AI, digital twins, and intelligent automation.</p><div class="contact-actions"><a class="button primary" href="mailto:mahinuralam213@gmail.com">Email me ↗</a><a class="button" href="https://scholar.google.com/citations?user=E9OClTAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a></div></div>
-          <div class="contact-links"><a href="https://github.com/mahinuralam" target="_blank" rel="noreferrer"><span>GitHub</span><span>↗</span></a><a href="https://www.linkedin.com/in/mahinur-alam/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>↗</span></a><a href="https://www.researchgate.net/profile/Md-Alam-454/publications" target="_blank" rel="noreferrer"><span>ResearchGate</span><span>↗</span></a><a href="https://www.kaggle.com/mahinuralam" target="_blank" rel="noreferrer"><span>Kaggle</span><span>↗</span></a></div>
-        </div>
-      </section>
-    </main>
+  </div>
+</main>
 
-    <footer><div class="wrap footer-line"><span>© <span id="year"></span> Md Mahinur Alam.</span><span>Baltimore, Maryland · AI researcher &amp; software engineer</span></div></footer>
-    <script>
-      const publications = [
-        {year:"2026",category:"journal",title:"Stable Diffusion-Augmented Industrial Anomaly Detection Using Attention-Enhanced Multi-CNN Transformer Fusion",venue:"IEEE Access",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/document/11361039"],["Code","https://github.com/mahinuralam/Manufacturing-Execution-Systems-MES-"]]},
-        {year:"2025",category:"journal",title:"TMNet: Transformer-Fused Multimodal Framework for Emotion Recognition via EEG and Speech",venue:"ICT Express",status:"Published",links:[["Paper","https://www.sciencedirect.com/science/article/pii/S2405959525000517"],["Code","https://github.com/mahinuralam/TMNet"]]},
-        {year:"2026",category:"journal",title:"FMACNN: Federated Multi-Attention CNN Framework for Artificial Image Detection",venue:"Journal of Information Security and Applications",status:"Published",links:[["Paper","https://www.sciencedirect.com/science/article/pii/S221421262600092X"],["Code","https://github.com/mahinuralam/FMACNN"]]},
-        {year:"2026",category:"journal",title:"AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions",venue:"ICT Express",status:"Published",links:[["Paper","https://www.sciencedirect.com/science/article/pii/S2405959526000093"]]},
-        {year:"2025",category:"journal",title:"Blockchain-Aided Intrusion Detection in Marine Tactical Network Using Reinforcement Learning",venue:"The Journal of the Korean Institute of Communications and Information Sciences",status:"Published",links:[]},
-        {year:"2026",category:"journal",title:"BELL-IDS: Blockchain-Empowered Large Language Model-Aided Context-Aware IDS in IoFT",venue:"IEEE Transactions on Network and Service Management",status:"Under review",links:[]},
-        {year:"2026",category:"journal",title:"Enhancing Quality Control in MES Using Optimized Deep Learning",venue:"Measurement",status:"Submitted",links:[["Preprint","https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5152602"]]},
-        {year:"2026",category:"journal",title:"Adaptive Quantum-Resistant Deep Reinforcement Learning Framework for 6G Healthcare IoMT Security",venue:"IEEE Journal of Biomedical and Health Informatics",status:"Under review",links:[["Code","https://github.com/mahinuralam/IoMT-Intrusion-Detection-with-ML-DL-and-RL"]]},
-        {year:"2026",category:"journal",title:"HybridQuantumNet: A Symmetry-Constrained Hybrid Quantum-Classical Federated Learning Framework for IoMT Intrusion Detection",venue:"MDPI Symmetry",status:"Under review",links:[["Code","https://github.com/mahinuralam/Quantum-FL-IoMT"]]},
-        {year:"2026",category:"journal",title:"Deep Q-Network Agent-Driven Dynamic Slotting Optimization in Digital Twin-Based Smart Warehouse Logistics",venue:"International Journal of Advanced Manufacturing Technology",status:"Under review",links:[["Code","https://github.com/mahinuralam/warehouse-logistics-optimization-RL"]]},
-        {year:"2026",category:"journal",title:"Hierarchical Multi-Target Planning and Control for Autonomous Forklift Navigation with Quantum-Inspired Optimization and Reinforcement Learning",venue:"International Journal of Control, Automation, and Systems",status:"Major revision",links:[]},
-        {year:"2027",category:"international",title:"FAR-TOD: Failure-Prior Adaptive Reconstruction Guided Tiny Object Detection in UAV Imagery",venue:"IEEE ICRA",status:"Under review",links:[]},
-        {year:"2026",category:"international",title:"AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization",venue:"IEEE ICRA Workshop",status:"Published",links:[["Code","https://github.com/mahinuralam/warehouse-logistics-optimization-RL"]]},
-        {year:"2026",category:"international",title:"Adaptive Reconstruction and Deformable Attention for UAV Small-Object Detection",venue:"IEEE ICMIC",status:"Best Paper",links:[]},
-        {year:"2025",category:"international",title:"Digital Twin-Driven Semi-Supervised Knowledge Distillation for HMI Monitoring on Edge Device",venue:"IEEE ICTC",status:"Published",links:[["Paper","https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view"]]},
-        {year:"2024",category:"international",title:"Federated Semi-Supervised Digital Twin for Enhanced Human-Machine Interaction in Industry 5.0",venue:"IEEE ICTC",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/document/10827164"]]},
-        {year:"2023",category:"international",title:"A Secure and Optimized Healthcare Data Governance Framework Leveraging Hyperledger Fabric Blockchain",venue:"IEEE ICCIT",status:"Published",links:[["Paper","https://www.researchgate.net/publication/378543982_A_Secure_and_Optimized_Healthcare_Data_Governance_Framework_Leveraging_Hyperledger_Fabric_Blockchain"]]},
-        {year:"2025",category:"international",title:"RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images",venue:"IEEE ICMIC",status:"Published",links:[["Dataset","https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset"]]},
-        {year:"2025",category:"international",title:"BLIND-Twin: Blockchain-Assisted LLM-Based CDS for Digital Twin-Enhanced Industrial AIoT",venue:"IEEE ICC",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11161313/"]]},
-        {year:"2026",category:"international",title:"Deep Reinforcement Learning Approach with Digital Twin Toward Smarter Warehouse",venue:"IEEE ICAIIC",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11454426"]]},
-        {year:"2025",category:"international",title:"Lightweight Hybrid Deep Learning Model with Digital Twin for Industrial Energy Optimization",venue:"IEEE ICMIC",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/document/11257756"]]},
-        {year:"2025",category:"international",title:"Safety-Critical IoMT Security: A Lightweight, Cost-Aware Approach at the Network Edge",venue:"IEEE ICCIT",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11490174"],["Code","https://github.com/mahinuralam/-IoMT-Security"]]},
-        {year:"2025",category:"international",title:"Digital Twin-Driven Federated Learning for Intrusion Detection under Simulated Adversarial Conditions",venue:"IEEE ICTC",status:"Published",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11387808"]]},
-        {year:"2024",category:"international",title:"BLM-Chain: AI-Driven Blockchain for UAV Threat Resistance in IoBT",venue:"IEEE ICTC",status:"Published",links:[]},
-        {year:"2022",category:"international",title:"Decentralized Blockchain-Based Land Deed Verification and Reservation System in Bangladesh",venue:"IEEE ICCIT",status:"Published",links:[["Paper","https://www.researchgate.net/publication/369000671_Decentralized_Blockchain_Based_Land_Deed_Verification_and_Reservation_System_in_Bangladesh"]]},
-        {year:"2024",category:"international",title:"A Blockchain-Based System for Efficient, Traceable, and Transparent Maritime Logistics",venue:"IEEE ICTC",status:"Published",links:[]},
-        {year:"2025",category:"domestic",title:"Multi-modal Real-time Hazard Detection for Autonomous Driving Systems",venue:"KICS Fall Conference",status:"Published",links:[["Code","https://github.com/mahinuralam/multi-modal-autonomous-driving-hazard-detection"]]},
-        {year:"2025",category:"domestic",title:"Novel Zero-Day Zero-Touch Intrusion Detection System Using Generative AI and Large Language Model",venue:"KICS Summer Conference",status:"Published",links:[]},
-        {year:"2024",category:"domestic",title:"DCFL-Chain: Digital-Twin-Based Collaborative FL-Integrated Energy Consumption Prediction for Smart Factory",venue:"KICS Fall Conference",status:"Best Paper",links:[["Code","https://github.com/mahinuralam/Gumi-Industiral-Enegy-Consumption-Competition"]]},
-        {year:"2024",category:"domestic",title:"Token-Based e-Learning System Harnessing Hyperledger Besu",venue:"KICS Summer Conference",status:"Published",links:[["Paper","https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906372"]]},
-        {year:"2025",category:"domestic",title:"FlexSim-Based Digital Twin Framework for Smart Warehouse Monitoring and Performance Optimization",venue:"KICS Fall Conference",status:"Published",links:[["Paper","https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12566810"]]},
-        {year:"2026",category:"domestic",title:"Privacy-Preserving Healthcare Data Governance Using Blockchain and Federated Learning",venue:"KICS Summer Conference",status:"Published",links:[]},
-        {year:"2025",category:"domestic",title:"XAI-Powered Digital Twin for Industrial Energy Prediction and Optimization",venue:"KICS Summer Conference",status:"Published",links:[["Paper","https://www.researchgate.net/publication/390921228_Energy-Twin_Explainable_AI-Driven_Energy_Optimization_using_Digital-Twin_for_Smart_Industry"]]},
-        {year:"2025",category:"domestic",title:"Detecting Threats in Edge IoT Networks Using Federated Learning and Digital Twin",venue:"KICS Summer Conference",status:"Best Paper",links:[]},
-        {year:"2024",category:"domestic",title:"BFL-Net: Blockchain-Assisted Energy Prediction Based on FL-Integrated LLM for Industry 4.0",venue:"KICS Fall Conference",status:"Published",links:[]},
-        {year:"2024",category:"domestic",title:"PureParking: A Decentralized, Secure Framework for Parking Space Sharing Using Blockchain",venue:"KICS Summer Conference",status:"Published",links:[["Paper","https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906755"]]},
-        {year:"2024",category:"domestic",title:"A Blockchain-Based Framework for Distributing and Managing CNN-Derived Brain Tumor Detection Models",venue:"KICS Summer Conference",status:"Published",links:[["Paper","https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906763"]]},
-        {year:"2024",category:"domestic",title:"Quantum Encrypted Collaborative Energy Consumption Demand Response Management for Smart Industrial System",venue:"KICS Fall Conference",status:"Published",links:[]},
-        {year:"2024",category:"domestic",title:"Energy-Twin: Explainable AI-Driven Energy Optimization Using Digital Twin for Smart Industry",venue:"KICS Fall Conference",status:"Best Paper",links:[]},
-        {year:"2024",category:"domestic",title:"An Efficient, Traceable, and Transparent Maritime Logistic System Based on Blockchain",venue:"KICS Summer Conference",status:"Published",links:[["Paper","https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11906371"]]}
-      ];
+<footer class="site-foot">
+  <p>© 2026 Md Mahinur Alam<span class="sep">·</span>Baltimore, Maryland<span class="sep">·</span>Last updated October 2026</p>
+</footer>
 
-      const publicationList = document.getElementById("publication-list");
-      const publicationCount = document.getElementById("publication-count");
-      const publicationSearch = document.getElementById("publication-search");
-      const loadMore = document.getElementById("load-more");
-      const filterButtons = [...document.querySelectorAll(".filter")];
-      let activeFilter = "all";
-      let visibleCount = 8;
+<button class="to-top" id="to-top" type="button" aria-label="Back to top"><svg class="icon"><use href="#i-arrow-up"></use></svg></button>
 
-      function matchingPublications() {
-        const query = publicationSearch.value.trim().toLowerCase();
-        return publications.filter((publication) => {
-          const categoryMatches = activeFilter === "all" || publication.category === activeFilter;
-          const textMatches = !query || `${publication.title} ${publication.venue} ${publication.year}`.toLowerCase().includes(query);
-          return categoryMatches && textMatches;
-        });
-      }
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close figure">✕</button>
+  <figure class="lightbox__fig">
+    <img id="lightbox-img" src="images/highlights/uav-adaptive-reconstruction.svg" alt="">
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+</div>
 
-      function renderPublications() {
-        const matches = matchingPublications();
-        const visible = matches.slice(0, visibleCount);
-        publicationList.innerHTML = visible.map((publication) => {
-          const links = publication.links.map(([label, href]) => `<a href="${href}" data-link="${label}" target="_blank" rel="noreferrer">${label} ↗</a>`).join("");
-          return `<article class="publication" data-venue="${publication.venue}"><div class="pub-year">${publication.year}</div><div><h3>${publication.title}</h3><p class="pub-meta"><span class="pub-venue">${publication.venue}</span><span class="pub-badge" data-status="${publication.status}">${publication.status}</span></p></div><div class="pub-links">${links}</div></article>`;
-        }).join("");
-        publicationCount.textContent = `Showing ${visible.length} of ${matches.length} works`;
-        loadMore.hidden = visible.length >= matches.length;
-      }
-
-      filterButtons.forEach((button) => button.addEventListener("click", () => {
-        activeFilter = button.dataset.filter;
-        visibleCount = 8;
-        filterButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
-        renderPublications();
-      }));
-      publicationSearch.addEventListener("input", () => { visibleCount = 8; renderPublications(); });
-      loadMore.addEventListener("click", () => { visibleCount += 8; renderPublications(); });
-      document.querySelector(".archive").addEventListener("toggle", (event) => { if (event.target.open) renderPublications(); });
-
-      document.getElementById("year").textContent = new Date().getFullYear();
-      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-        document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
-      } else {
-        const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
-          if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
-        }), { threshold: .08 });
-        document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-      }
-    </script>
-    <button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause background motion</button>
-    <script src="assets/atmosphere.js?v=1"></script>
-  </body>
+<script src="assets/js/main.js"></script>
+<!-- PAGE CONTENT END -->
+</body>
 </html>

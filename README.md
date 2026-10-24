@@ -14,7 +14,7 @@ index.html                  the whole page: profile, about, news, research, publ
 assets/css/style.css        all styling; colours and fonts are tokens at the top
 assets/js/main.js           theme toggle, menu, highlight filters, publication search, copy email
 images/profile.jpg          profile photo (square, 480x480 or larger)
-images/highlights/*.svg     figures on the Research Highlights cards
+images/highlights/          paper figures on the Research Highlights cards
 images/social-card.png      1200x630 preview image shown when the link is shared
 images/favicon.svg|png      tab icon
 files/Md_Mahinur_Alam_CV.pdf  the CV behind the "CV" button

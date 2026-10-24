@@ -2,7 +2,8 @@
    Md Mahinur Alam · academic homepage
    Layout: sticky profile sidebar beside one reading column;
            a single column on phones.
-   Every colour is a token below; the two dark blocks only redefine tokens.
+   Every colour is a token below. Light is the default; the dark block only
+   redefines tokens and applies when a visitor picks dark with the theme button.
    ========================================================================== */
 
 :root {
@@ -52,37 +53,7 @@
   --radius-sm: 8px;
   --header-h: 60px;
   --safe-top: env(safe-area-inset-top, 0px);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #0d1117;
-    --paper-2: #141a23;
-    --paper-3: #1c2330;
-    --ink: #e8ecf3;
-    --ink-2: #b6bfcd;
-    --ink-3: #8c96a8;
-    --rule: #262f3d;
-    --accent: #93a8ff;
-    --accent-ink: #b8c6ff;
-    --accent-soft: #19213e;
-    --on-accent: #0d1117;
-    --signal: #f2b24c;
-    --signal-soft: #2b2010;
-    --teal: #63d1c7;
-    --teal-soft: #0f2a28;
-    --violet: #bba5ff;
-    --violet-soft: #221b3c;
-    --green: #82d496;
-    --green-soft: #13271a;
-    --rose: #f59bc1;
-    --rose-soft: #2d1421;
-    --figure-bg: #e8ecf4;
-    --masthead-bg: rgba(13, 17, 23, 0.86);
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
-    --focus: #93a8ff;
-    color-scheme: dark;
-  }
+  color-scheme: light;
 }
 
 :root[data-theme="dark"] {
@@ -292,10 +263,6 @@ strong, b { font-weight: 600; }
 .theme-toggle .icon-moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: none; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
-}
 
 .nav-toggle { display: none; }
 
@@ -596,6 +563,22 @@ strong, b { font-weight: 600; }
 .more[open] > summary::before { transform: rotate(45deg); }
 .more > summary .count { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3); font-weight: 500; }
 .more__body { margin-top: 14px; }
+
+/* full publication list: collapsed until the visitor opens it */
+.pub-all > summary { list-style: none; }
+.pub-all > summary::-webkit-details-marker { display: none; }
+.pub-all > summary::after {
+  content: "";
+  width: 7px; height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.pub-all[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
+.pub-all[open] .pub-all__show,
+.pub-all:not([open]) .pub-all__hide { display: none; }
+.pub-all__body { display: grid; gap: 18px; margin-top: 18px; }
 
 /* --------------------------------------------------------------------------
    News
@@ -1123,7 +1106,7 @@ a.pub__title:hover { color: var(--accent); text-decoration: underline; }
 }
 
 @media print {
-  .masthead, .to-top, .pub-tools, .theme-toggle, .nav-toggle { display: none !important; }
+  .masthead, .to-top, .pub-tools, .pub-all > summary, .theme-toggle, .nav-toggle { display: none !important; }
   .layout { display: block; }
   .profile { position: static; }
   .more:not([open]) > *:not(summary) { display: block; }

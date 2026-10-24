@@ -31,7 +31,7 @@ Every section starts with a comment like `<!-- ===== NEWS -->`, so search for th
   The coloured label is the `tag` class: `tag--journal`, `tag--conf`, `tag--workshop`,
   `tag--review`, `tag--revision`, `tag--prep`, `tag--domestic`. Wrap your own name in
   `<span class="me">…</span>`. A paper without a link uses `<span class="pub__title">` instead of
-  `<a class="pub__title">`. Then update the count next to the search box (`40 papers and manuscripts`).
+  `<a class="pub__title">`. The paper counts on the page update themselves.
 - **Add a selected publication:** copy an `<article class="hl">…</article>` block in the
   Selected Publications section.
 - **Use a real paper figure:** put a PNG or JPG in `images/highlights/` and point the card's
@@ -39,6 +39,8 @@ Every section starts with a comment like `<!-- ===== NEWS -->`, so search for th
 - **Update Google Scholar numbers:** search for `131` (citations) and update the line under the
   Publications heading, including the month.
 - **Replace the CV:** export your CV to PDF and save it over `files/Md_Mahinur_Alam_CV.pdf`.
+- **Show the full publication list open by default:** add `open` to
+  `<details class="pub-all" id="pub-all">` in the Publications section.
 - **Remove the internship banner:** delete the `<div class="callout">…</div>` block in About.
 - **After editing `style.css` or `main.js`:** change the `?v=` number on their links in `index.html`
   (for example `?v=20261024` to `?v=20261101`) so browsers load the new copy instead of a cached one.

@@ -7,8 +7,7 @@
 <meta name="description" content="Md Mahinur Alam is a Ph.D. student in Information Systems at UMBC working on federated learning, LLM reasoning, computer vision, and digital twins.">
 <meta name="author" content="Md Mahinur Alam">
 <link rel="canonical" href="https://mahinuralam.github.io/">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Link preview (what shows up when the site is shared) -->
 <meta property="og:type" content="profile">
@@ -31,13 +30,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261024">
+<link rel="stylesheet" href="assets/css/style.css?v=20261024-2">
 
 <script>
-  /* Apply a saved light/dark choice before first paint. */
+  /* Apply a saved light/dark choice before first paint. Light is the default. */
   (function () {
     try {
-      var t = localStorage.getItem("mma-theme");
+      localStorage.removeItem("mma-theme");
+      var t = localStorage.getItem("mma-theme-choice");
       if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); }
     } catch (e) {}
   })();
@@ -145,7 +145,7 @@
     <ul class="profile__facts">
       <li><svg class="icon"><use href="#i-building"></use></svg><span>University of Maryland, Baltimore County (UMBC)</span></li>
       <li><svg class="icon"><use href="#i-pin"></use></svg><span>Baltimore, Maryland, USA</span></li>
-      <li><svg class="icon"><use href="#i-mail"></use></svg><a href="mailto:mahinuralam213@gmail.com">mahinuralam213@gmail.com</a></li>
+      <li><svg class="icon"><use href="#i-mail"></use></svg><a href="mailto:malam4@umbc.edu">malam4@umbc.edu</a></li>
     </ul>
     <div class="profile__actions">
       <a class="btn btn--primary" href="files/Md_Mahinur_Alam_CV.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"></use></svg>CV</a>
@@ -165,7 +165,7 @@
 
     <div class="callout" role="note">
       <svg class="icon"><use href="#i-megaphone"></use></svg>
-      <p><strong>Seeking Summer 2027 research internships</strong> in computer vision, federated learning, LLM reasoning, and digital twins. My background fits Research Scientist, Applied Scientist, and ML Research Intern roles, and I am always open to research collaborations. <a href="mailto:mahinuralam213@gmail.com?subject=Summer%202027%20Research%20Internship">Email me</a>.</p>
+      <p><strong>Seeking Summer 2027 research internships</strong> in computer vision, federated learning, LLM reasoning, and digital twins. My background fits Research Scientist, Applied Scientist, and ML Research Intern roles, and I am always open to research collaborations. <a href="mailto:malam4@umbc.edu?subject=Summer%202027%20Research%20Internship">Email me</a>.</p>
     </div>
 
     <div class="prose">
@@ -385,6 +385,11 @@
         <span><b>4</b>i10-index</span>
         <span class="scholar__asof">Google Scholar, October 2026</span>
       </p>
+
+      <!-- The full list stays folded until the visitor clicks the button. Add "open" to show it by default. -->
+      <details class="pub-all" id="pub-all">
+        <summary class="btn btn--ghost"><span class="pub-all__show">Show all <span data-pub-total>40</span> publications</span><span class="pub-all__hide">Hide publications</span></summary>
+        <div class="pub-all__body">
 
       <div class="pub-tools">
         <div class="search">
@@ -785,6 +790,9 @@
           </ol>
         </div>
       </details>
+
+        </div>
+      </details>
     </section>
 
     <!-- ===================================================== HONORS -->
@@ -1008,7 +1016,7 @@
           <h2 class="card__title">Contact</h2>
           <dl class="contact-list">
             <dt>Email</dt>
-            <dd><span class="email-row"><a href="mailto:mahinuralam213@gmail.com">mahinuralam213@gmail.com</a><button class="copy-btn" type="button" data-copy="mahinuralam213@gmail.com"><svg class="icon"><use href="#i-copy"></use></svg><span>Copy</span></button></span></dd>
+            <dd><span class="email-row"><a href="mailto:malam4@umbc.edu">malam4@umbc.edu</a><button class="copy-btn" type="button" data-copy="malam4@umbc.edu"><svg class="icon"><use href="#i-copy"></use></svg><span>Copy</span></button></span></dd>
             <dt>Department</dt>
             <dd>Information Systems</dd>
             <dt>Institution</dt>
@@ -1037,7 +1045,7 @@
   </figure>
 </div>
 
-<script src="assets/js/main.js?v=20261024"></script>
+<script src="assets/js/main.js?v=20261024-2"></script>
 <!-- PAGE CONTENT END -->
 </body>
 </html>

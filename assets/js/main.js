@@ -5,18 +5,19 @@
   var root = document.documentElement;
 
   /* ---------------------------------------------------------------- theme */
+  /* Light is the default; dark applies only after a visitor picks it. */
   var themeBtn = document.getElementById("theme-toggle");
-  var darkQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
 
   function effectiveTheme() {
-    var t = root.getAttribute("data-theme");
-    if (t === "light" || t === "dark") { return t; }
-    return darkQuery && darkQuery.matches ? "dark" : "light";
+    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
   }
 
-  function syncThemeLabel() {
+  function syncTheme() {
+    var dark = effectiveTheme() === "dark";
+    if (themeMeta) { themeMeta.setAttribute("content", dark ? "#0d1117" : "#ffffff"); }
     if (!themeBtn) { return; }
-    var next = effectiveTheme() === "dark" ? "light" : "dark";
+    var next = dark ? "light" : "dark";
     themeBtn.setAttribute("aria-label", "Switch to " + next + " theme");
     themeBtn.setAttribute("title", "Switch to " + next + " theme");
   }
@@ -25,12 +26,11 @@
     themeBtn.addEventListener("click", function () {
       var next = effectiveTheme() === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      try { localStorage.setItem("mma-theme", next); } catch (e) {}
-      syncThemeLabel();
+      try { localStorage.setItem("mma-theme-choice", next); } catch (e) {}
+      syncTheme();
     });
-    if (darkQuery && darkQuery.addEventListener) { darkQuery.addEventListener("change", syncThemeLabel); }
-    syncThemeLabel();
   }
+  syncTheme();
 
   /* ------------------------------------------------------------ menu (narrow) */
   var nav = document.getElementById("site-nav");
@@ -119,6 +119,8 @@
   var kics = document.getElementById("kics");
   var kicsWasOpen = kics ? kics.open : false;
   var total = allPubs.length;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-pub-total]"), function (el) { el.textContent = String(total); });
+  if (countEl) { countEl.textContent = total + " papers and manuscripts"; }
 
   allPubs.forEach(function (li) { li.setAttribute("data-text", li.textContent.replace(/\s+/g, " ").toLowerCase()); });
 
@@ -188,6 +190,16 @@
       window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
     });
   }
+
+  /* ------------------------------------- print every collapsed list in full */
+  var openedForPrint = [];
+  window.addEventListener("beforeprint", function () {
+    openedForPrint = Array.prototype.filter.call(document.querySelectorAll("details:not([open])"), function (d) { d.open = true; return true; });
+  });
+  window.addEventListener("afterprint", function () {
+    openedForPrint.forEach(function (d) { d.open = false; });
+    openedForPrint = [];
+  });
 
   /* ------------------------------------------- external links in a new tab */
   Array.prototype.forEach.call(document.querySelectorAll('a[href^="http"]'), function (a) {

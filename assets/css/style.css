@@ -95,6 +95,8 @@
 [hidden] { display: none !important; }
 
 html {
+  /* 15px base (93.75% of the browser default); every font size below is in rem, so this scales all text */
+  font-size: 93.75%;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + var(--safe-top) + 16px);
   -webkit-text-size-adjust: 100%;
@@ -573,7 +575,7 @@ strong, b { font-weight: 600; }
    -------------------------------------------------------------------------- */
 
 .news-scroll {
-  max-height: 24rem;
+  max-height: 25.6rem; /* about 384px: shows five items and the top of the next, so it reads as scrollable */
   overflow-y: auto;
   overscroll-behavior: contain;
   padding-right: 14px;

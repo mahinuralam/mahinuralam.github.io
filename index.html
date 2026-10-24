@@ -261,17 +261,17 @@
       <div class="section__head"><h2 class="section__title" id="research-title">Research Highlights</h2></div>
 
       <div class="filters" role="group" aria-label="Filter highlights by area">
-        <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__n">8</span></button>
-        <button class="filter" type="button" data-filter="vision" aria-pressed="false">Visual perception <span class="filter__n">3</span></button>
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__n">6</span></button>
+        <button class="filter" type="button" data-filter="vision" aria-pressed="false">Visual perception <span class="filter__n">2</span></button>
         <button class="filter" type="button" data-filter="learning" aria-pressed="false">Federated &amp; multimodal <span class="filter__n">2</span></button>
-        <button class="filter" type="button" data-filter="twins" aria-pressed="false">Digital twins <span class="filter__n">3</span></button>
+        <button class="filter" type="button" data-filter="twins" aria-pressed="false">Digital twins <span class="filter__n">2</span></button>
       </div>
 
       <div class="highlights">
 
         <article class="hl" data-cat="vision">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: adaptive tile reconstruction"><img src="images/highlights/uav-adaptive-reconstruction.svg" width="640" height="400" alt="Aerial UAV frame divided into tiles, with a few hard tiles selected and reconstructed in detail"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: adaptive reconstruction pipeline"><img class="is-contain" src="images/highlights/uav-adaptive-reconstruction.png" width="412" height="430" alt="Pipeline: a UAV input image goes through CD-DPA and weak-region selection, the weak regions are reconstructed, a reconstruction error map guides feature enhancement, and detection produces the final output with small objects found"></button>
             <span class="hl__venue">ICMIC 2026</span>
           </figure>
           <div class="hl__body">
@@ -317,21 +317,6 @@
               <a class="link-btn" href="https://www.sciencedirect.com/science/article/pii/S221421262600092X"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
               <a class="link-btn" href="https://github.com/mahinuralam/Federated-Artificial-Image-Detection"><svg class="icon"><use href="#i-code"></use></svg>Code</a>
             </div>
-          </div>
-        </article>
-
-        <article class="hl" data-cat="twins">
-          <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: digital twin review"><img src="images/highlights/digital-twin-review.svg" width="640" height="400" alt="A physical warehouse floor synchronised with a wireframe digital twin that an AI module optimises"></button>
-            <span class="hl__venue">ICT Express 2026</span>
-          </figure>
-          <div class="hl__body">
-            <h3 class="hl__title"><a href="https://www.sciencedirect.com/science/article/pii/S2405959526000093">AI-Enhanced Digital Twin Systems for Warehouse Logistics Optimization: A Review of Challenges, Solutions, and Future Directions</a></h3>
-            <p class="hl__authors"><b>M. M. Alam</b>, R. A. N. Ugli, K. J. Tanha, and T. Jun</p>
-            <p class="hl__venue-line">ICT Express · SCIE, IF 4.6, Q1</p>
-            <p class="hl__summary">A review of how AI-enhanced digital twins optimize warehouse logistics, with open challenges and future directions.</p>
-            <ul class="chips"><li class="chip">Review</li></ul>
-            <div class="links"><a class="link-btn" href="https://www.sciencedirect.com/science/article/pii/S2405959526000093"><svg class="icon"><use href="#i-file"></use></svg>Paper</a></div>
           </div>
         </article>
 
@@ -383,24 +368,6 @@
             <p class="hl__summary">Combines digital twins with semi-supervised knowledge distillation for efficient human-machine-interaction monitoring on edge devices.</p>
             <ul class="chips"><li class="chip">Edge AI</li><li class="chip">Knowledge distillation</li></ul>
             <div class="links"><a class="link-btn" href="https://drive.google.com/file/d/1vMmlvGevSJcnU0G8HqnafLjOd7ROq5q-/view?usp=sharing"><svg class="icon"><use href="#i-file"></use></svg>Paper</a></div>
-          </div>
-        </article>
-
-        <article class="hl" data-cat="vision">
-          <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: RealAIGI dataset"><img src="images/highlights/realaigi-dataset.svg" width="640" height="400" alt="Grid of image thumbnails labelled real or AI under a magnifying glass"></button>
-            <span class="hl__venue">ICMIC 2025</span>
-          </figure>
-          <div class="hl__body">
-            <h3 class="hl__title"><a href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing">RealAIGI: An Innovative Dataset for Enhanced Detection of Real and AI-Generated Images</a></h3>
-            <p class="hl__authors"><b>M. M. Alam</b>, K. J. Tanha, and T. Jun</p>
-            <p class="hl__venue-line">IEEE ICMIC, 2025</p>
-            <p class="hl__summary">A dataset of 10k real and AI-generated images, including Sora generations, for training and benchmarking AI-image detectors.</p>
-            <ul class="chips"><li class="chip">10k images</li><li class="chip">Dataset</li></ul>
-            <div class="links">
-              <a class="link-btn" href="https://drive.google.com/file/d/1qaFfFqLep0aUFzwkcIBlrA9tSlnLsdyZ/view?usp=sharing"><svg class="icon"><use href="#i-file"></use></svg>Paper</a>
-              <a class="link-btn" href="https://ieee-dataport.org/documents/realaigi-realistic-ai-generated-image-dataset"><svg class="icon"><use href="#i-db"></use></svg>Dataset</a>
-            </div>
           </div>
         </article>
 
@@ -1067,7 +1034,7 @@
 <div class="lightbox" id="lightbox" hidden>
   <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close figure">✕</button>
   <figure class="lightbox__fig">
-    <img id="lightbox-img" src="images/highlights/uav-adaptive-reconstruction.svg" alt="">
+    <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
     <figcaption id="lightbox-cap"></figcaption>
   </figure>
 </div>

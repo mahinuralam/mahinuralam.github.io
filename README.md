@@ -16,7 +16,7 @@ assets/js/main.js           theme toggle, menu, figure zoom, publication search,
 images/profile.jpg          profile photo (square, 480x480 or larger)
 images/highlights/          paper figures on the Selected Publications cards
 images/social-card.png      1200x630 preview image shown when the link is shared
-images/favicon.svg|png      tab icon
+images/favicon.svg|png      the MA logo as the tab icon (the header shows the same logo, inlined in index.html)
 files/Md_Mahinur_Alam_CV.pdf  the CV behind the "CV" button
 ```
 

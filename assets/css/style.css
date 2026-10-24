@@ -31,7 +31,6 @@
   --rose-soft: #fcebf1;
   --figure-bg: #f3f5fa;
   --figure-paper: #ffffff;
-  --mark-hot: #ffb23e;
   --masthead-bg: rgba(255, 255, 255, 0.86);
   --shadow: 0 1px 2px rgba(18, 26, 44, 0.05), 0 6px 20px rgba(18, 26, 44, 0.06);
   --focus: #2747c7;
@@ -205,24 +204,10 @@ strong, b { font-weight: 600; }
   gap: 20px;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--ink);
-  text-decoration: none;
-  font-family: var(--font-display);
-  font-size: 1.1875rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-}
-.brand:hover { color: var(--ink); }
-.brand__mark { width: 28px; height: 28px; flex: none; }
-.brand__mark .bm-bg { fill: var(--accent); }
-.brand__mark .bm-t { fill: var(--on-accent); opacity: 0.3; }
-.brand__mark .bm-on { fill: var(--on-accent); }
-.brand__mark .bm-hot { fill: var(--mark-hot); }
+.brand { display: inline-flex; align-items: center; flex: none; border-radius: 6px; text-decoration: none; }
+.brand__mark { display: block; width: 36px; height: 36px; border-radius: 4.5px; }
+/* the logo tile is near-black, so give it a faint edge on the dark theme */
+:root[data-theme="dark"] .brand__mark { box-shadow: 0 0 0 1px var(--rule); }
 
 .nav { margin-left: auto; }
 .nav__list {

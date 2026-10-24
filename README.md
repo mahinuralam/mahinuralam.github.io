@@ -9,12 +9,12 @@ and no npm: what you see in these files is exactly what GitHub Pages serves.
 ## Files
 
 ```
-index.html                  the whole page: profile, about, news, research, publications, ...
+index.html                  the whole page: profile, about, news, selected publications, ...
 404.html                    "page not found" page
 assets/css/style.css        all styling; colours and fonts are tokens at the top
-assets/js/main.js           theme toggle, menu, highlight filters, publication search, copy email
+assets/js/main.js           theme toggle, menu, figure zoom, publication search, copy email
 images/profile.jpg          profile photo (square, 480x480 or larger)
-images/highlights/          paper figures on the Research Highlights cards
+images/highlights/          paper figures on the Selected Publications cards
 images/social-card.png      1200x630 preview image shown when the link is shared
 images/favicon.svg|png      tab icon
 files/Md_Mahinur_Alam_CV.pdf  the CV behind the "CV" button
@@ -32,14 +32,16 @@ Every section starts with a comment like `<!-- ===== NEWS -->`, so search for th
   `tag--review`, `tag--revision`, `tag--prep`, `tag--domestic`. Wrap your own name in
   `<span class="me">…</span>`. A paper without a link uses `<span class="pub__title">` instead of
   `<a class="pub__title">`. Then update the count next to the search box (`40 papers and manuscripts`).
-- **Add a research highlight:** copy an `<article class="hl">…</article>` block. `data-cat` must be
-  `vision`, `learning` or `twins` (the filter buttons), and update the numbers on the buttons.
+- **Add a selected publication:** copy an `<article class="hl">…</article>` block in the
+  Selected Publications section.
 - **Use a real paper figure:** put a PNG or JPG in `images/highlights/` and point the card's
-  `<img src>` at it. A 16:10 image fits best.
+  `<img src>` at it. Every figure is shown in the same 16:10 frame and scaled to fit, never cropped.
 - **Update Google Scholar numbers:** search for `131` (citations) and update the line under the
   Publications heading, including the month.
 - **Replace the CV:** export your CV to PDF and save it over `files/Md_Mahinur_Alam_CV.pdf`.
 - **Remove the internship banner:** delete the `<div class="callout">…</div>` block in About.
+- **After editing `style.css` or `main.js`:** change the `?v=` number on their links in `index.html`
+  (for example `?v=20261024` to `?v=20261101`) so browsers load the new copy instead of a cached one.
 
 ## Publishing
 

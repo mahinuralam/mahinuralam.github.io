@@ -74,17 +74,6 @@
     tracked.forEach(function (el) { spy.observe(el); });
   }
 
-  /* ------------------------------------------------------- highlight filters */
-  var filters = Array.prototype.slice.call(document.querySelectorAll(".filter[data-filter]"));
-  var cards = Array.prototype.slice.call(document.querySelectorAll(".hl[data-cat]"));
-  filters.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var f = btn.getAttribute("data-filter");
-      filters.forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
-      cards.forEach(function (c) { c.hidden = !(f === "all" || c.getAttribute("data-cat") === f); });
-    });
-  });
-
   /* --------------------------------------------------------------- lightbox */
   var lb = document.getElementById("lightbox");
   var lbImg = document.getElementById("lightbox-img");

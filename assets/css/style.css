@@ -646,28 +646,8 @@ strong, b { font-weight: 600; }
 }
 
 /* --------------------------------------------------------------------------
-   Research highlights
+   Selected publications (figure cards)
    -------------------------------------------------------------------------- */
-
-.filters { display: flex; flex-wrap: wrap; gap: 8px; }
-.filter {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 34px;
-  padding: 5px 13px;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  background: var(--paper);
-  color: var(--ink-2);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-.filter:hover { color: var(--ink); border-color: var(--ink-3); }
-.filter[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
-.filter__n { font-family: var(--font-mono); font-size: 0.75rem; opacity: 0.75; }
 
 .highlights { display: grid; gap: 16px; }
 
@@ -683,7 +663,7 @@ strong, b { font-weight: 600; }
 .hl:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--rule)); }
 
 @media (min-width: 640px) {
-  .hl { grid-template-columns: 280px minmax(0, 1fr); gap: 22px; align-items: center; }
+  .hl { grid-template-columns: 236px minmax(0, 1fr); gap: 20px; align-items: center; }
 }
 
 .hl__fig {
@@ -704,8 +684,8 @@ strong, b { font-weight: 600; }
   cursor: zoom-in;
 }
 .hl__zoom:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); }
-/* figures keep their own shape: never cropped, never letterboxed */
-.hl__fig img { width: 100%; height: auto; display: block; background: var(--figure-paper); }
+/* every figure sits in the same 16:10 frame and is scaled to fit inside it, never cropped */
+.hl__fig img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; display: block; background: var(--figure-paper); }
 .hl__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 2px; }
 .hl__venue {
   padding: 2px 8px;
@@ -1143,7 +1123,7 @@ a.pub__title:hover { color: var(--accent); text-decoration: underline; }
 }
 
 @media print {
-  .masthead, .to-top, .filters, .pub-tools, .theme-toggle, .nav-toggle { display: none !important; }
+  .masthead, .to-top, .pub-tools, .theme-toggle, .nav-toggle { display: none !important; }
   .layout { display: block; }
   .profile { position: static; }
   .more:not([open]) > *:not(summary) { display: block; }

@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20261024">
 
 <script>
   /* Apply a saved light/dark choice before first paint. */
@@ -256,20 +256,13 @@
       </div>
     </section>
 
-    <!-- ===================================================== RESEARCH HIGHLIGHTS -->
+    <!-- ===================================================== SELECTED PUBLICATIONS -->
     <section class="section" id="research" aria-labelledby="research-title">
-      <div class="section__head"><h2 class="section__title" id="research-title">Research Highlights</h2></div>
-
-      <div class="filters" role="group" aria-label="Filter highlights by area">
-        <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__n">7</span></button>
-        <button class="filter" type="button" data-filter="vision" aria-pressed="false">Visual perception <span class="filter__n">2</span></button>
-        <button class="filter" type="button" data-filter="learning" aria-pressed="false">Federated &amp; multimodal <span class="filter__n">2</span></button>
-        <button class="filter" type="button" data-filter="twins" aria-pressed="false">Digital twins <span class="filter__n">3</span></button>
-      </div>
+      <div class="section__head"><h2 class="section__title" id="research-title">Selected Publications</h2></div>
 
       <div class="highlights">
 
-        <article class="hl" data-cat="vision">
+        <article class="hl">
           <figure class="hl__fig">
             <button class="hl__zoom" type="button" aria-label="Enlarge figure: adaptive reconstruction pipeline"><img src="images/highlights/uav-adaptive-reconstruction.png" width="412" height="430" alt="Pipeline: a UAV input image goes through CD-DPA and weak-region selection, the weak regions are reconstructed, a reconstruction error map guides feature enhancement, and detection produces the final output with small objects found"></button>
           </figure>
@@ -281,7 +274,7 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="vision">
+        <article class="hl">
           <figure class="hl__fig">
             <button class="hl__zoom" type="button" aria-label="Enlarge figure: multi-CNN transformer fusion architecture"><img src="images/highlights/anomaly-multicnn-transformer.png" width="647" height="390" alt="Architecture: VGG16, DenseNet121 and ResNet50 branches with CFA, RHA and GCA attention and fine-tuned layers produce features that are concatenated, reshaped, and passed through a transformer block with spatial-reduction multi-head attention before dense and softmax layers"></button>
           </figure>
@@ -296,7 +289,7 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="learning">
+        <article class="hl">
           <figure class="hl__fig">
             <button class="hl__zoom" type="button" aria-label="Enlarge figure: FMACNN federated learning workflow"><img src="images/highlights/fmacnn-federated-workflow.png" width="724" height="503" alt="FMACNN workflow: the central server sends the global MACNN model to edge clients, each client trains on its local private data and returns weight updates, and the server aggregates them by weighted averaging for the next round"></button>
           </figure>
@@ -311,9 +304,9 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="twins">
+        <article class="hl">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: warehouse digital twin"><img src="images/highlights/warehouse-digital-twin.png" width="539" height="261" alt="Simulated warehouse digital twin with rows of shelving in Zones A to D, forklifts, and conveyors"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: warehouse digital twin"><img src="images/highlights/warehouse-digital-twin.png" width="539" height="337" alt="Simulated warehouse digital twin with rows of shelving in Zones A to D, forklifts, and conveyors"></button>
           </figure>
           <div class="hl__body">
             <h3 class="hl__title"><a href="https://drive.google.com/drive/folders/1H6q3W1Jvgn1AUsRagMUmvTRIGBjg9AW7">AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization</a></h3>
@@ -326,9 +319,9 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="learning">
+        <article class="hl">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: TMNet workflow"><img src="images/highlights/tmnet-workflow.png" width="905" height="347" alt="TMNet workflow: EEG signals go through acquisition, noise filtering, artifact removal, normalization, segmentation and feature extraction, audio goes through a spectrogram, noise filtering and feature extraction, and both feature vectors are aligned with DTW and combined by transformer fusion to classify emotion"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: TMNet architecture"><img src="images/highlights/tmnet-workflow.png?v=2" width="1085" height="550" alt="TMNet architecture: a speech model of parallel Conv2D, batch-norm, max-pool and ReLU branches followed by a BiLSTM head processes the audio signal, an EEG model of three GRU branches with batch-norm and dropout processes the EEG signal, and their features are concatenated, reshaped and passed through a transformer encoder that classifies the emotion"></button>
           </figure>
           <div class="hl__body">
             <h3 class="hl__title"><a href="https://www.sciencedirect.com/science/article/pii/S2405959525000517">TMNet: Transformer-Fused Multimodal Framework for Emotion Recognition via EEG and Speech</a></h3>
@@ -341,7 +334,7 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="twins">
+        <article class="hl">
           <figure class="hl__fig">
             <button class="hl__zoom" type="button" aria-label="Enlarge figure: digital twin-driven knowledge distillation"><img src="images/highlights/kd-edge-monitoring.png" width="942" height="500" alt="Teacher-student framework: a teacher model trained on digital twin simulation data produces soft labels and pseudo-labelled data, and a student model trained on real and simulated data learns from soft, hard and bounding-box losses combined into a distillation loss"></button>
           </figure>
@@ -353,7 +346,7 @@
           </div>
         </article>
 
-        <article class="hl" data-cat="twins">
+        <article class="hl">
           <figure class="hl__fig">
             <button class="hl__zoom" type="button" aria-label="Enlarge figure: BLIND-Twin architecture"><img src="images/highlights/blind-twin.png" width="879" height="579" alt="BLIND-Twin architecture: physical and digital twin layers of smart nuclear facilities, power plants and medical sites feed a data and network module, a blockchain layer with IPFS off-chain storage and smart contracts, and a detection layer with network monitoring, intrusion detection, and LLM context learning for threat response against attackers"></button>
           </figure>
@@ -1033,7 +1026,7 @@
   </figure>
 </div>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20261024"></script>
 <!-- PAGE CONTENT END -->
 </body>
 </html>

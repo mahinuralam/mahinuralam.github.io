@@ -2,3 +2,6 @@
 *.swp
 .vscode/
 .idea/
+
+# Files the Claude app saves into this folder
+Claude outputs/

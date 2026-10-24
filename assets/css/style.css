@@ -707,9 +707,8 @@ strong, b { font-weight: 600; }
 .hl__fig img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 /* real paper figures keep their full shape inside the 16:10 frame */
 .hl__fig img.is-contain { object-fit: contain; background: var(--figure-paper); }
+.hl__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 2px; }
 .hl__venue {
-  order: -1;
-  justify-self: start;
   padding: 2px 8px;
   border-radius: 6px;
   background: var(--ink);

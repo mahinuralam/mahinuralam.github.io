@@ -286,7 +286,7 @@
 
         <article class="hl" data-cat="vision">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: diffusion-augmented anomaly detection"><img src="images/highlights/diffusion-anomaly-detection.svg" width="640" height="400" alt="Noise turned into a synthetic defect image, fed to multi-CNN branches and a transformer fusion block that outputs normal or defect"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: multi-CNN transformer fusion architecture"><img class="is-contain" src="images/highlights/anomaly-multicnn-transformer.png" width="647" height="390" alt="Architecture: VGG16, DenseNet121 and ResNet50 branches with CFA, RHA and GCA attention and fine-tuned layers produce features that are concatenated, reshaped, and passed through a transformer block with spatial-reduction multi-head attention before dense and softmax layers"></button>
             <span class="hl__venue">IEEE Access 2026</span>
           </figure>
           <div class="hl__body">
@@ -304,7 +304,7 @@
 
         <article class="hl" data-cat="learning">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: federated image detection"><img src="images/highlights/federated-image-detection.svg" width="640" height="400" alt="Six federated clients holding real and AI-generated images exchanging updates with a weighted FedAvg server"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: FMACNN federated learning workflow"><img src="images/highlights/fmacnn-federated-workflow.png" width="824" height="515" alt="FMACNN workflow: the central server sends the global MACNN model to edge clients, each client trains on its local private data and returns weight updates, and the server aggregates them by weighted averaging for the next round"></button>
             <span class="hl__venue">JISA 2026</span>
           </figure>
           <div class="hl__body">
@@ -355,7 +355,7 @@
 
         <article class="hl" data-cat="learning">
           <figure class="hl__fig">
-            <button class="hl__zoom" type="button" aria-label="Enlarge figure: TMNet"><img src="images/highlights/tmnet-eeg-speech.svg" width="640" height="400" alt="EEG and speech signals encoded by BiGRU and CNN-BiLSTM, fused with cross-attention into negative, neutral, or positive emotion"></button>
+            <button class="hl__zoom" type="button" aria-label="Enlarge figure: TMNet workflow"><img class="is-contain" src="images/highlights/tmnet-workflow.png" width="905" height="347" alt="TMNet workflow: EEG signals go through acquisition, noise filtering, artifact removal, normalization, segmentation and feature extraction, audio goes through a spectrogram, noise filtering and feature extraction, and both feature vectors are aligned with DTW and combined by transformer fusion to classify emotion"></button>
             <span class="hl__venue">ICT Express 2025</span>
           </figure>
           <div class="hl__body">

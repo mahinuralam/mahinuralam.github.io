@@ -52,6 +52,9 @@
   --radius-sm: 8px;
   --header-h: 60px;
   --safe-top: env(safe-area-inset-top, 0px);
+  /* page width: the content spans up to --page-max, with side gutters that grow on wide screens */
+  --page-max: 1400px;
+  --gutter: max(16px, 3vw);
   color-scheme: light;
 }
 
@@ -107,8 +110,8 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
 }
 
 /* paints the phone status-bar band behind the sticky header */
@@ -185,10 +188,10 @@ strong, b { font-weight: 600; }
   position: sticky;
   top: env(safe-area-inset-top, 0px);
   z-index: 50;
-  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
-  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  margin-left: calc(-1 * max(var(--gutter), env(safe-area-inset-left, 0px)));
+  margin-right: calc(-1 * max(var(--gutter), env(safe-area-inset-right, 0px)));
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
   background: var(--masthead-bg);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
   backdrop-filter: saturate(160%) blur(12px);
@@ -196,7 +199,7 @@ strong, b { font-weight: 600; }
 }
 
 .masthead__inner {
-  max-width: 1120px;
+  max-width: var(--page-max);
   height: var(--header-h);
   margin: 0 auto;
   display: flex;
@@ -257,7 +260,7 @@ strong, b { font-weight: 600; }
   .nav {
     position: absolute;
     top: calc(100% + 1px);
-    right: max(16px, env(safe-area-inset-right, 0px));
+    right: max(var(--gutter), env(safe-area-inset-right, 0px));
     left: auto;
     display: none;
     min-width: 220px;
@@ -277,7 +280,7 @@ strong, b { font-weight: 600; }
    -------------------------------------------------------------------------- */
 
 .layout {
-  max-width: 1120px;
+  max-width: var(--page-max);
   margin: 0 auto;
   padding-block: 28px 56px;
   display: grid;
@@ -292,7 +295,7 @@ strong, b { font-weight: 600; }
 
 @media (min-width: 900px) {
   .layout {
-    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-columns: 260px minmax(0, 1fr);
     grid-template-areas:
       "profile about"
       "profile sections";
@@ -321,7 +324,7 @@ strong, b { font-weight: 600; }
 
 .profile__photo {
   width: 100%;
-  max-width: 240px;
+  max-width: 260px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 14px;
@@ -445,7 +448,7 @@ strong, b { font-weight: 600; }
 }
 .callout .icon { margin-top: 3px; font-size: 1.125rem; color: var(--accent); }
 
-.prose { display: grid; gap: 14px; max-width: 72ch; font-size: var(--fs-md); line-height: 1.7; color: var(--ink); }
+.prose { display: grid; gap: 14px; font-size: var(--fs-md); line-height: 1.7; color: var(--ink); }
 .prose strong { color: var(--ink); }
 
 /* --------------------------------------------------------------------------
@@ -1052,7 +1055,7 @@ a.pub__title:hover { color: var(--accent); text-decoration: underline; }
    -------------------------------------------------------------------------- */
 
 .site-foot {
-  max-width: 1120px;
+  max-width: var(--page-max);
   margin: 0 auto;
   padding-block: 24px max(28px, env(safe-area-inset-bottom, 0px));
   border-top: 1px solid var(--rule);

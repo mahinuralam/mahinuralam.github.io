@@ -179,6 +179,17 @@
     });
   });
 
+  /* ------------------------------------------- news box: hide the fade at the end */
+  var newsBox = document.querySelector(".news-scroll");
+  if (newsBox) {
+    var syncNewsEnd = function () {
+      newsBox.classList.toggle("is-end", newsBox.scrollTop + newsBox.clientHeight >= newsBox.scrollHeight - 2);
+    };
+    newsBox.addEventListener("scroll", syncNewsEnd, { passive: true });
+    window.addEventListener("resize", syncNewsEnd);
+    syncNewsEnd();
+  }
+
   /* ------------------------------------------------------------ back to top */
   var topBtn = document.getElementById("to-top");
   if (topBtn) {

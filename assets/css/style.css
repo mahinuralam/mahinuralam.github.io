@@ -575,7 +575,7 @@ strong, b { font-weight: 600; }
    -------------------------------------------------------------------------- */
 
 .news-scroll {
-  max-height: 25.6rem; /* about 384px: shows five items and the top of the next, so it reads as scrollable */
+  max-height: 18rem;
   overflow-y: auto;
   overscroll-behavior: contain;
   padding-right: 14px;
@@ -591,18 +591,33 @@ strong, b { font-weight: 600; }
   .news-scroll { scrollbar-width: thin; scrollbar-color: var(--ink-3) var(--paper-3); }
 }
 .news-scroll:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+/* soft fade at the bottom edge while more news is below; removed once scrolled to the end */
+.news-scroll::after {
+  content: "";
+  position: sticky;
+  bottom: 0;
+  display: block;
+  height: 40px;
+  margin-top: -40px;
+  background: linear-gradient(to bottom, transparent, var(--paper));
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.news-scroll.is-end::after { opacity: 0; }
 
 .news { list-style: none; display: grid; }
+/* one compact row per item: date, type badge, then the text */
 .news__item {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 4px 16px;
-  padding: 12px 0;
+  grid-template-columns: 172px minmax(0, 1fr);
+  gap: 2px 14px;
+  align-items: baseline;
+  padding: 7px 0;
   border-bottom: 1px solid var(--rule);
 }
-.news__item:first-child { padding-top: 2px; }
+.news__item:first-child { padding-top: 0; }
 .news__item:last-child { border-bottom: 0; }
-.news__meta { display: grid; gap: 6px; align-content: start; justify-items: start; }
+.news__meta { display: grid; grid-template-columns: 84px auto; column-gap: 6px; align-items: center; justify-items: start; }
 .news__date {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
@@ -611,11 +626,12 @@ strong, b { font-weight: 600; }
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-.news__text { font-size: 0.9375rem; line-height: 1.6; color: var(--ink); }
+.news__text { font-size: 0.9375rem; line-height: 1.5; color: var(--ink); }
 
-@media (max-width: 520px) {
-  .news__item { grid-template-columns: minmax(0, 1fr); }
-  .news__meta { display: flex; gap: 10px; align-items: center; }
+@media (max-width: 640px) {
+  .news-scroll { max-height: 26rem; }
+  .news__item { grid-template-columns: minmax(0, 1fr); padding: 8px 0; }
+  .news__meta { display: flex; gap: 8px; align-items: center; }
 }
 
 /* --------------------------------------------------------------------------

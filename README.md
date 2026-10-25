@@ -17,7 +17,7 @@ images/profile.jpg          profile photo (square, 480x480 or larger)
 images/highlights/          paper figures on the Selected Publications cards
 images/social-card.png      1200x630 preview image shown when the link is shared
 images/favicon.svg|png      the MA logo as the tab icon (the header shows the same logo, inlined in index.html)
-files/Md_Mahinur_Alam_CV.pdf  the CV behind the "CV" button
+files/Md_Mahinur_Alam_Resume.pdf  the PDF behind the "Resume" button
 ```
 
 ## Common edits (all in `index.html`)
@@ -38,7 +38,7 @@ Every section starts with a comment like `<!-- ===== NEWS -->`, so search for th
   `<img src>` at it. Every figure is shown in the same 16:10 frame and scaled to fit, never cropped.
 - **Update Google Scholar numbers:** search for `131` (citations) and update the line under the
   Publications heading, including the month.
-- **Replace the CV:** export your CV to PDF and save it over `files/Md_Mahinur_Alam_CV.pdf`.
+- **Replace the resume:** export it to PDF and save it over `files/Md_Mahinur_Alam_Resume.pdf`.
 - **Show the full publication list open by default:** add `open` to
   `<details class="pub-all" id="pub-all">` in the Publications section.
 - **Remove the internship banner:** delete the `<div class="callout">…</div>` block in About.

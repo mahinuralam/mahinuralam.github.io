@@ -38,7 +38,8 @@ Every section starts with a comment like `<!-- ===== NEWS -->`, so search for th
   `<img src>` at it. Every figure is shown in the same 16:10 frame and scaled to fit, never cropped.
 - **Update Google Scholar numbers:** search for `131` (citations) and update the line under the
   Publications heading, including the month.
-- **Replace the resume:** export it to PDF and save it over `files/Md_Mahinur_Alam_Resume.pdf`.
+- **Replace the resume:** export it to PDF, save it over `files/Md_Mahinur_Alam_Resume.pdf`, and change the
+  `?v=` number on the Resume button link so browsers fetch the new copy.
 - **Show the full publication list open by default:** add `open` to
   `<details class="pub-all" id="pub-all">` in the Publications section.
 - **Remove the internship banner:** delete the `<div class="callout">…</div>` block in About.
